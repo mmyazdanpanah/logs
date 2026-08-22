@@ -1,0 +1,1763 @@
+mostafa@MMostafa ~ % hermes skills list
+                                   Installed Skills                                    
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━┓
+┃ Name                          ┃ Category             ┃ Source  ┃ Trust   ┃ Status   ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━┩
+│ find-skills                   │                      │ local   │ local   │ enabled  │
+│ qwencloud-audio-tts           │                      │ local   │ local   │ disabled │
+│ qwencloud-deploy              │                      │ local   │ local   │ disabled │
+│ qwencloud-text                │                      │ local   │ local   │ disabled │
+│ qwencloud-vision              │                      │ local   │ local   │ disabled │
+│ apple-notes                   │ apple                │ builtin │ builtin │ enabled  │
+│ apple-reminders               │ apple                │ builtin │ builtin │ enabled  │
+│ findmy                        │ apple                │ builtin │ builtin │ disabled │
+│ imessage                      │ apple                │ builtin │ builtin │ disabled │
+│ claude-code                   │ autonomous-ai-agents │ builtin │ builtin │ disabled │
+│ codex                         │ autonomous-ai-agents │ builtin │ builtin │ disabled │
+│ computer-use                  │ autonomous-ai-agents │ builtin │ builtin │ enabled  │
+│ hermes-agent                  │ autonomous-ai-agents │ builtin │ builtin │ enabled  │
+│ merge-reconciler              │ autonomous-ai-agents │ builtin │ builtin │ disabled │
+│ opencode                      │ autonomous-ai-agents │ builtin │ builtin │ disabled │
+│ architecture-diagram          │ creative             │ builtin │ builtin │ disabled │
+│ ascii-art                     │ creative             │ builtin │ builtin │ disabled │
+│ ascii-video                   │ creative             │ builtin │ builtin │ disabled │
+│ baoyu-infographic             │ creative             │ builtin │ builtin │ enabled  │
+│ claude-design                 │ creative             │ builtin │ builtin │ disabled │
+│ comfyui                       │ creative             │ builtin │ builtin │ disabled │
+│ design-md                     │ creative             │ builtin │ builtin │ disabled │
+│ excalidraw                    │ creative             │ builtin │ builtin │ disabled │
+│ humanizer                     │ creative             │ builtin │ builtin │ enabled  │
+│ manim-video                   │ creative             │ builtin │ builtin │ disabled │
+│ p5js                          │ creative             │ builtin │ builtin │ disabled │
+│ popular-web-designs           │ creative             │ builtin │ builtin │ disabled │
+│ pretext                       │ creative             │ builtin │ builtin │ disabled │
+│ sketch                        │ creative             │ builtin │ builtin │ disabled │
+│ songwriting-and-ai-music      │ creative             │ builtin │ builtin │ disabled │
+│ touchdesigner-mcp             │ creative             │ builtin │ builtin │ disabled │
+│ email-inbox-triage            │ email                │ builtin │ builtin │ disabled │
+│ himalaya                      │ email                │ builtin │ builtin │ disabled │
+│ codebase-inspection           │ github               │ builtin │ builtin │ disabled │
+│ github-auth                   │ github               │ builtin │ builtin │ disabled │
+│ github-code-review            │ github               │ builtin │ builtin │ disabled │
+│ github-issue-to-pr            │ github               │ builtin │ builtin │ disabled │
+│ github-issues                 │ github               │ builtin │ builtin │ disabled │
+│ github-pr-workflow            │ github               │ builtin │ builtin │ disabled │
+│ github-repo-management        │ github               │ builtin │ builtin │ disabled │
+│ gif-search                    │ media                │ builtin │ builtin │ disabled │
+│ songsee                       │ media                │ builtin │ builtin │ disabled │
+│ youtube-content               │ media                │ builtin │ builtin │ disabled │
+│ evaluating-llms-harness       │ mlops                │ builtin │ builtin │ enabled  │
+│ huggingface-hub               │ mlops                │ builtin │ builtin │ enabled  │
+│ llama-cpp                     │ mlops                │ builtin │ builtin │ disabled │
+│ serving-llms-vllm             │ mlops                │ builtin │ builtin │ enabled  │
+│ weights-and-biases            │ mlops                │ builtin │ builtin │ disabled │
+│ obsidian                      │ note-taking          │ builtin │ builtin │ enabled  │
+│ airtable                      │ productivity         │ builtin │ builtin │ disabled │
+│ box                           │ productivity         │ builtin │ builtin │ disabled │
+│ document-to-action-items      │ productivity         │ builtin │ builtin │ enabled  │
+│ docx                          │ productivity         │ builtin │ builtin │ enabled  │
+│ google-workspace              │ productivity         │ builtin │ builtin │ disabled │
+│ maps                          │ productivity         │ builtin │ builtin │ disabled │
+│ meeting-action-items          │ productivity         │ builtin │ builtin │ disabled │
+│ nano-pdf                      │ productivity         │ builtin │ builtin │ enabled  │
+│ notion                        │ productivity         │ builtin │ builtin │ disabled │
+│ ocr-and-documents             │ productivity         │ builtin │ builtin │ enabled  │
+│ pdf                           │ productivity         │ builtin │ builtin │ enabled  │
+│ powerpoint                    │ productivity         │ builtin │ builtin │ enabled  │
+│ product-price-monitor         │ productivity         │ builtin │ builtin │ disabled │
+│ session-librarian             │ productivity         │ builtin │ builtin │ enabled  │
+│ teams-meeting-pipeline        │ productivity         │ builtin │ builtin │ disabled │
+│ weekly-review-planning        │ productivity         │ builtin │ builtin │ disabled │
+│ xlsx                          │ productivity         │ builtin │ builtin │ disabled │
+│ arxiv                         │ research             │ builtin │ builtin │ enabled  │
+│ blocked-page-recovery         │ research             │ builtin │ builtin │ disabled │
+│ blogwatcher                   │ research             │ builtin │ builtin │ enabled  │
+│ competitor-news-monitor       │ research             │ builtin │ builtin │ disabled │
+│ grounded-citations            │ research             │ builtin │ builtin │ enabled  │
+│ llm-wiki                      │ research             │ builtin │ builtin │ enabled  │
+│ research-paper-writing        │ research             │ builtin │ builtin │ enabled  │
+│ openhue                       │ smart-home           │ builtin │ builtin │ disabled │
+│ xurl                          │ social-media         │ builtin │ builtin │ disabled │
+│ dogfood                       │ software-development │ builtin │ builtin │ disabled │
+│ hermes-agent-skill-authoring  │ software-development │ builtin │ builtin │ enabled  │
+│ inspecting-hermes-desktop-dom │ software-development │ builtin │ builtin │ disabled │
+│ node-inspect-debugger         │ software-development │ builtin │ builtin │ enabled  │
+│ plan                          │ software-development │ builtin │ builtin │ enabled  │
+│ python-debugpy                │ software-development │ builtin │ builtin │ enabled  │
+│ requesting-code-review        │ software-development │ builtin │ builtin │ enabled  │
+│ simplify-code                 │ software-development │ builtin │ builtin │ disabled │
+│ spike                         │ software-development │ builtin │ builtin │ disabled │
+│ systematic-debugging          │ software-development │ builtin │ builtin │ enabled  │
+│ test-driven-development       │ software-development │ builtin │ builtin │ disabled │
+└───────────────────────────────┴──────────────────────┴─────────┴─────────┴──────────┘
+0 hub-installed, 81 builtin, 5 local — 29 enabled, 57 disabled
+
+mostafa@MMostafa ~ % hermes config show
+
+┌─────────────────────────────────────────────────────────┐
+│              ⚕ Hermes Configuration                    │
+└─────────────────────────────────────────────────────────┘
+
+◆ Paths
+  Config:       /Users/mostafa/.hermes/config.yaml
+  Secrets:      /Users/mostafa/.hermes/.env
+  Install:      /Users/mostafa/.hermes/hermes-agent
+
+◆ API Keys
+  OpenRouter     sk-o...92bf
+  OpenAI (STT/TTS) (not set)
+  Exa            63d9...8154
+  Parallel       (not set)
+  Firecrawl      (not set)
+  Tavily         tvly...463R
+  Browserbase    (not set)
+  Browser Use    # Br...tart
+  FAL            (not set)
+  Anthropic      sk-a...RgAA
+
+◆ Model
+  Model:        {'default': 'lfm2.5:8b-a1b-q4_K_M', 'provider': 'ollama-launch', 'base_url': 'http://127.0.0.1:11434/api/chat', 'context_length': 64000}
+  Max turns:    40
+
+◆ Display
+  Personality:  none
+  Reasoning:    on
+  Bell:         off
+  User preview: first 2 line(s), last 2 line(s)
+
+◆ Terminal
+  Backend:      local
+  Working dir:  /Users/mostafa/Workspace
+  Timeout:      180s
+
+◆ Timezone
+  Timezone:     (server-local)
+
+◆ Context Compression
+  Enabled:      yes
+  Threshold:    50%
+  Target ratio: 20% of threshold preserved
+  Protect last: 20 messages
+  Protect first: 3 non-system head messages
+  Model:        (auto)
+
+◆ Messaging Platforms
+  Telegram:     not configured
+  Discord:      not configured
+
+────────────────────────────────────────────────────────────
+  hermes config edit     # Edit config file
+  hermes config set <key> <value>
+  hermes setup           # Run setup wizard
+
+mostafa@MMostafa ~ % ls -lah ~/.hermes
+total 38000
+drwx------@ 83 mostafa  staff   2.6K Aug 22 22:44 .
+drwxr-xr--+ 98 mostafa  staff   3.1K Aug 22 22:38 ..
+-rw-r--r--@  1 mostafa  staff   8.0K Aug 22 04:59 .DS_Store
+-rw-r--r--@  1 mostafa  staff     0B Aug 22 22:33 .clean_shutdown
+-rw-------@  1 mostafa  staff    28K Aug 21 20:35 .env
+-rw-r--r--   1 mostafa  staff   1.3K Aug 22 22:25 .hermes_history
+-rw-r--r--@  1 mostafa  staff    64B Aug 22 21:47 .npm_lock_hash_fcdad8330cd1
+-rw-------   1 mostafa  staff    49K Aug 21 01:06 .skills_prompt_snapshot.json
+-rw-r--r--@  1 mostafa  staff    68B Aug 22 21:48 .update_check
+-rw-r--r--@  1 mostafa  staff     1B Aug 22 21:48 .update_exit_code
+-rw-r--r--@  1 mostafa  staff   514B Aug 19 21:48 SOUL.md
+drwxr-xr-x@  3 mostafa  staff    96B Aug 20 04:24 assets
+drwxr-xr-x@  3 mostafa  staff    96B Aug 22 21:48 attachments
+drwx------@  2 mostafa  staff    64B Aug 19 21:48 audio_cache
+-rw-------@  1 mostafa  staff    15K Aug 22 22:26 auth.json
+-rw-r--r--@  1 mostafa  staff     0B Aug 19 22:24 auth.lock
+drwxr-xr-x   3 mostafa  staff    96B Aug 22 21:27 backups
+drwxr-xr-x@  5 mostafa  staff   160B Aug 22 00:15 bin
+drwxr-xr-x@  3 mostafa  staff    96B Aug 19 21:39 bootstrap-cache
+drwxr-xr-x@ 16 mostafa  staff   512B Aug 22 22:27 cache
+-rw-------@  1 mostafa  staff    67B Aug 22 22:27 channel_directory.json
+-rw-------@  1 mostafa  staff   7.2K Aug 22 22:30 config.yaml
+-rw-------@  1 mostafa  staff   5.8K Aug 20 04:25 config.yaml.backup
+-rw-------@  1 mostafa  staff   7.1K Aug 22 04:22 config.yaml.backup-before-lfm-opt
+-rw-------   1 mostafa  staff   6.0K Aug 22 04:57 config.yaml.backup-final-20260822-045753
+-rw-------@  1 mostafa  staff   5.9K Aug 20 04:41 config.yaml.backup.20260820-044110
+-rw-------@  1 mostafa  staff   7.2K Aug 22 22:44 config.yaml.before-auxiliary-fix-20260822-224454
+-rw-------   1 mostafa  staff   5.0K Aug 22 05:26 config.yaml.before-context-fix
+-rw-------   1 mostafa  staff   5.0K Aug 22 05:20 config.yaml.before-context-tune-20260822-052017
+-rw-------@  1 mostafa  staff   7.1K Aug 22 04:27 config.yaml.before-final-lfm-opt
+-rw-------   1 mostafa  staff   6.0K Aug 22 05:04 config.yaml.before-final-model-tune
+-rw-------@  1 mostafa  staff   7.1K Aug 22 05:44 config.yaml.before-final-rollback
+-rw-------   1 mostafa  staff   5.0K Aug 22 05:21 config.yaml.before-hermes-context-fix-20260822-052132
+-rw-------   1 mostafa  staff   5.0K Aug 22 05:29 config.yaml.before-memory-tune
+-rw-------   1 mostafa  staff   6.0K Aug 22 05:38 config.yaml.before-rollback-20260822
+-rw-------@  1 mostafa  staff   7.1K Aug 22 04:28 config.yaml.before-simple-patch
+-rw-------@  1 mostafa  staff   5.8K Aug 20 04:41 config.yaml.corrupt.20260820-044115.bak
+-rw-------   1 mostafa  staff   6.0K Aug 22 04:57 config.yaml.corrupt.20260822-045824.bak
+-rw-------   1 mostafa  staff   5.0K Aug 22 05:32 config.yaml.experimental-broken-20260822-053219
+-rw-------@  1 mostafa  staff    74B Aug 21 19:55 context_length_cache.yaml
+drwx------@  8 mostafa  staff   256B Aug 22 22:33 cron
+drwxr-xr-x@  2 mostafa  staff    64B Aug 22 22:33 desktop
+-rw-r--r--@  1 mostafa  staff   160B Aug 22 21:48 desktop-build-stamp.json
+drwxr-xr-x@  2 mostafa  staff    64B Aug 19 22:24 desktop-plugins
+-rw-r--r--@  1 mostafa  staff   216B Aug 22 22:27 gateway-starts.log
+-rw-------@  1 mostafa  staff   417B Aug 22 22:33 gateway_state.json
+drwxr-xr-x@ 99 mostafa  staff   3.1K Aug 22 21:47 hermes-agent
+-rwxr-xr-x@  1 mostafa  staff    11M Jun  6 03:57 hermes-setup
+drwx------@  2 mostafa  staff    64B Aug 19 21:48 hooks
+drwx------@  2 mostafa  staff    64B Aug 19 21:48 image_cache
+-rw-------@  1 mostafa  staff    33B Aug 19 22:24 install_id
+drwxr-xr-x   3 mostafa  staff    96B Aug 20 23:23 kanban
+-rw-r--r--@  1 mostafa  staff   116K Aug 20 23:23 kanban.db
+-rw-r--r--@  1 mostafa  staff    32K Aug 22 22:33 kanban.db-shm
+-rw-r--r--@  1 mostafa  staff     0B Aug 22 22:33 kanban.db-wal
+-rw-r--r--@  1 mostafa  staff     0B Aug 20 23:23 kanban.db.dispatch.lock
+-rw-r--r--@  1 mostafa  staff     0B Aug 20 23:23 kanban.db.init.lock
+drwx------@ 18 mostafa  staff   576B Aug 22 21:48 logs
+drwx------@  2 mostafa  staff    64B Aug 19 21:48 memories
+-rw-------   1 mostafa  staff    36B Aug 22 21:38 models_dev_cache.etag
+-rw-------   1 mostafa  staff   4.1M Aug 22 21:38 models_dev_cache.json
+drwxr-xr-x@ 10 mostafa  staff   320B Aug 19 21:40 node
+-rw-------@  1 mostafa  staff   381B Aug 22 22:27 ollama_cloud_models_cache.json
+drwx------@  2 mostafa  staff    64B Aug 19 21:48 pairing
+drwx------@  2 mostafa  staff    64B Aug 20 23:23 pending_messages
+drwxr-xr-x@  4 mostafa  staff   128B Aug 22 22:07 pets
+drwxr-xr-x@  3 mostafa  staff    96B Aug 20 05:20 platforms
+drwxr-xr-x@  2 mostafa  staff    64B Aug 19 22:24 plugins
+drwxr-xr-x@  3 mostafa  staff    96B Aug 22 00:13 profiles
+-rw-r--r--@  1 mostafa  staff    44K Aug 22 05:05 projects.db
+-rw-------@  1 mostafa  staff    35K Aug 22 22:27 provider_models_cache.json
+drwxr-xr-x   3 mostafa  staff    96B Aug 19 23:20 sandboxes
+drwx------@  3 mostafa  staff    96B Aug 21 01:06 sessions
+drwx------@  4 mostafa  staff   128B Aug 22 22:26 shared
+drwx------@ 24 mostafa  staff   768B Aug 22 22:33 skills
+-rw-r--r--   1 mostafa  staff   315B Aug 22 22:33 spawn-ledger.json
+drwxr-xr-x   4 mostafa  staff   128B Aug 22 22:33 state
+-rw-r--r--@  1 mostafa  staff   1.0M Aug 22 22:33 state.db
+-rw-r--r--@  1 mostafa  staff   224K Aug 20 23:24 state.db.pre-update-emergency-2026-08-20T19-54-33-200Z.bak
+-rw-r--r--@  1 mostafa  staff   860K Aug 22 02:47 state.db.pre-update-emergency-2026-08-21T23-17-53-732Z.bak
+-rw-r--r--   1 mostafa  staff   988K Aug 22 21:46 state.db.pre-update-emergency-2026-08-22T18-16-58-447Z.bak
+drwxr-xr-x   7 mostafa  staff   224B Aug 22 22:26 terminal-sessions
+-rw-r--r--@  1 mostafa  staff   137B Aug 22 02:48 web-ui-build-stamp.json
+mostafa@MMostafa ~ % find ~/.hermes -maxdepth 2 -type d | sort
+/Users/mostafa/.hermes
+/Users/mostafa/.hermes/assets
+/Users/mostafa/.hermes/attachments
+/Users/mostafa/.hermes/audio_cache
+/Users/mostafa/.hermes/backups
+/Users/mostafa/.hermes/backups/baseline-20260822
+/Users/mostafa/.hermes/bin
+/Users/mostafa/.hermes/bootstrap-cache
+/Users/mostafa/.hermes/cache
+/Users/mostafa/.hermes/cache/audio
+/Users/mostafa/.hermes/cache/documents
+/Users/mostafa/.hermes/cache/images
+/Users/mostafa/.hermes/cache/screenshots
+/Users/mostafa/.hermes/cache/videos
+/Users/mostafa/.hermes/cron
+/Users/mostafa/.hermes/cron/output
+/Users/mostafa/.hermes/desktop
+/Users/mostafa/.hermes/desktop-plugins
+/Users/mostafa/.hermes/hermes-agent
+/Users/mostafa/.hermes/hermes-agent/.git
+/Users/mostafa/.hermes/hermes-agent/.github
+/Users/mostafa/.hermes/hermes-agent/__pycache__
+/Users/mostafa/.hermes/hermes-agent/acp_adapter
+/Users/mostafa/.hermes/hermes-agent/agent
+/Users/mostafa/.hermes/hermes-agent/apps
+/Users/mostafa/.hermes/hermes-agent/assets
+/Users/mostafa/.hermes/hermes-agent/contributors
+/Users/mostafa/.hermes/hermes-agent/cron
+/Users/mostafa/.hermes/hermes-agent/datagen-config-examples
+/Users/mostafa/.hermes/hermes-agent/docker
+/Users/mostafa/.hermes/hermes-agent/docs
+/Users/mostafa/.hermes/hermes-agent/evals
+/Users/mostafa/.hermes/hermes-agent/gateway
+/Users/mostafa/.hermes/hermes-agent/hermes_agent.egg-info
+/Users/mostafa/.hermes/hermes-agent/hermes_cli
+/Users/mostafa/.hermes/hermes-agent/locales
+/Users/mostafa/.hermes/hermes-agent/mcp-research-data
+/Users/mostafa/.hermes/hermes-agent/native
+/Users/mostafa/.hermes/hermes-agent/nix
+/Users/mostafa/.hermes/hermes-agent/node_modules
+/Users/mostafa/.hermes/hermes-agent/optional-mcps
+/Users/mostafa/.hermes/hermes-agent/optional-skills
+/Users/mostafa/.hermes/hermes-agent/plugins
+/Users/mostafa/.hermes/hermes-agent/providers
+/Users/mostafa/.hermes/hermes-agent/scripts
+/Users/mostafa/.hermes/hermes-agent/skills
+/Users/mostafa/.hermes/hermes-agent/tests
+/Users/mostafa/.hermes/hermes-agent/tests-js
+/Users/mostafa/.hermes/hermes-agent/tools
+/Users/mostafa/.hermes/hermes-agent/tui_gateway
+/Users/mostafa/.hermes/hermes-agent/ui-tui
+/Users/mostafa/.hermes/hermes-agent/venv
+/Users/mostafa/.hermes/hermes-agent/web
+/Users/mostafa/.hermes/hermes-agent/website
+/Users/mostafa/.hermes/hooks
+/Users/mostafa/.hermes/image_cache
+/Users/mostafa/.hermes/kanban
+/Users/mostafa/.hermes/logs
+/Users/mostafa/.hermes/logs/curator
+/Users/mostafa/.hermes/logs/update_receipts
+/Users/mostafa/.hermes/memories
+/Users/mostafa/.hermes/node
+/Users/mostafa/.hermes/node/bin
+/Users/mostafa/.hermes/node/etc
+/Users/mostafa/.hermes/node/include
+/Users/mostafa/.hermes/node/lib
+/Users/mostafa/.hermes/node/share
+/Users/mostafa/.hermes/pairing
+/Users/mostafa/.hermes/pending_messages
+/Users/mostafa/.hermes/pets
+/Users/mostafa/.hermes/pets/.thumbs
+/Users/mostafa/.hermes/pets/dalek
+/Users/mostafa/.hermes/platforms
+/Users/mostafa/.hermes/platforms/pairing
+/Users/mostafa/.hermes/plugins
+/Users/mostafa/.hermes/profiles
+/Users/mostafa/.hermes/profiles/research-assistant
+/Users/mostafa/.hermes/sandboxes
+/Users/mostafa/.hermes/sandboxes/singularity
+/Users/mostafa/.hermes/sessions
+/Users/mostafa/.hermes/shared
+/Users/mostafa/.hermes/skills
+/Users/mostafa/.hermes/skills/.hub
+/Users/mostafa/.hermes/skills/apple
+/Users/mostafa/.hermes/skills/autonomous-ai-agents
+/Users/mostafa/.hermes/skills/creative
+/Users/mostafa/.hermes/skills/devops
+/Users/mostafa/.hermes/skills/email
+/Users/mostafa/.hermes/skills/github
+/Users/mostafa/.hermes/skills/media
+/Users/mostafa/.hermes/skills/mlops
+/Users/mostafa/.hermes/skills/note-taking
+/Users/mostafa/.hermes/skills/productivity
+/Users/mostafa/.hermes/skills/research
+/Users/mostafa/.hermes/skills/smart-home
+/Users/mostafa/.hermes/skills/social-media
+/Users/mostafa/.hermes/skills/software-development
+/Users/mostafa/.hermes/state
+/Users/mostafa/.hermes/terminal-sessions
+mostafa@MMostafa ~ % find ~/.hermes -iname "*plugin*" -o -iname "*skill*"
+/Users/mostafa/.hermes/cache/plugin_toolset_keys.json
+/Users/mostafa/.hermes/desktop-plugins
+/Users/mostafa/.hermes/plugins
+/Users/mostafa/.hermes/.skills_prompt_snapshot.json
+/Users/mostafa/.hermes/hermes-agent/ui-tui/src/components/skillsHub.tsx
+/Users/mostafa/.hermes/hermes-agent/ui-tui/src/components/pluginsHub.tsx
+/Users/mostafa/.hermes/hermes-agent/ui-tui/src/__tests__/inlineSlashSkill.test.ts
+/Users/mostafa/.hermes/hermes-agent/tools/skill_ledger.py
+/Users/mostafa/.hermes/hermes-agent/tools/skills_ast_audit.py
+/Users/mostafa/.hermes/hermes-agent/tools/skills_hub.py
+/Users/mostafa/.hermes/hermes-agent/tools/plugin_guard.py
+/Users/mostafa/.hermes/hermes-agent/tools/skill_provenance.py
+/Users/mostafa/.hermes/hermes-agent/tools/skill_usage.py
+/Users/mostafa/.hermes/hermes-agent/tools/__pycache__/skills_hub.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/tools/__pycache__/skill_manager_tool.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/tools/__pycache__/skill_usage.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/tools/__pycache__/skills_sync.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/tools/__pycache__/skills_tool.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/tools/__pycache__/skills_sync_client.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/tools/__pycache__/skills_guard.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/tools/__pycache__/skill_provenance.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/tools/skills_sync.py
+/Users/mostafa/.hermes/hermes-agent/tools/skills_sync_client.py
+/Users/mostafa/.hermes/hermes-agent/tools/skills_tool.py
+/Users/mostafa/.hermes/hermes-agent/tools/skill_linter.py
+/Users/mostafa/.hermes/hermes-agent/tools/skills_guard.py
+/Users/mostafa/.hermes/hermes-agent/tools/skillevaluator_scan.py
+/Users/mostafa/.hermes/hermes-agent/tools/skill_manager_tool.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/plugin_capabilities.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/plugins.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/plugin_packs.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/plugin_dev.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/skills_config.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/web_routers/skills.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/web_routers/__pycache__/skills.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/skills_hub.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/subcommands/plugins.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/subcommands/skills.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/subcommands/__pycache__/plugins.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/subcommands/__pycache__/skills.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/agent_plugins.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/web_dist/assets/SkillsPage-BZjFR20B.js
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/web_dist/assets/plugins-CXox63Jh.js
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/web_dist/assets/PluginsPage-DfOb28qH.js
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/plugins_cmd.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/plugins.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/skills_hub.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/skills_config.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/agent_plugins.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/relay_plugin_cutover.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/plugins_cmd.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/plugin_capabilities.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/relay_plugin_cutover.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/plugin_index.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/codex_runtime_plugin_migration.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/data/plugin_index.json
+/Users/mostafa/.hermes/hermes-agent/plugins
+/Users/mostafa/.hermes/hermes-agent/plugins/image_gen/openai-codex/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/image_gen/openrouter/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/image_gen/deepinfra/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/image_gen/fal/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/image_gen/xai/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/image_gen/krea/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/image_gen/openai/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/dingtalk/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/discord/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/homeassistant/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/google_chat/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/sms/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/feishu/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/a2a/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/wecom/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/irc/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/ntfy/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/simplex/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/line/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/telegram/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/raft/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/teams/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/slack/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/mattermost/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/photon/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/buzz/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/matrix/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/email/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms/whatsapp/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/disk-cleanup/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/cron_providers/chronos/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/dashboard_auth/basic/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/dashboard_auth/self_hosted/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/dashboard_auth/nous/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/dashboard_auth/drain/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/memory/hindsight/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/memory/retaindb/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/memory/openviking/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/memory/holographic/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/memory/honcho/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/memory/byterover/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/memory/mem0/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/memory/supermemory/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/teams_pipeline/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/google_meet/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/google_meet/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/plugins/web/keenable/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/web/parallel/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/web/firecrawl/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/web/exa/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/web/searxng/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/web/xai/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/web/ddgs/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/web/brave_free/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/web/tavily/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/spotify/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/video_gen/deepinfra/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/video_gen/fal/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/video_gen/xai/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/meta-ai/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/openai-codex/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/arcee/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/alibaba-coding-plan/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/gemini/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/copilot-acp/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/openrouter/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/kilocode/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/copilot/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/ai-gateway/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/actual/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/deepinfra/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/fireworks/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/novita/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/minimax/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/qwen-oauth/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/opencode-free/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/alibaba/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/deepseek/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/xai/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/nous/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/commandcode/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/bedrock/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/ollama-cloud/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/stepfun/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/xiaomi/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/nvidia/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/gmi/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/kimi-coding/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/anthropic/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/huggingface/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/opencode-zen/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/vertex/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/upstage/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/custom/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/azure-foundry/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers/zai/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/plugin_utils.py
+/Users/mostafa/.hermes/hermes-agent/plugins/__pycache__/plugin_utils.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/plugins/observability/langfuse/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/browser/firecrawl/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/browser/browserbase/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/browser/browser_use/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/kanban/dashboard/plugin_api.py
+/Users/mostafa/.hermes/hermes-agent/plugins/kanban/dashboard/__pycache__/plugin_api.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/plugins/security-guidance/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/plugins/plugin_storage.py
+/Users/mostafa/.hermes/hermes-agent/plugins/hermes-achievements/dashboard/plugin_api.py
+/Users/mostafa/.hermes/hermes-agent/plugins/hermes-achievements/dashboard/__pycache__/plugin_api.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/optional-skills
+/Users/mostafa/.hermes/hermes-agent/optional-skills/research/parallel-cli/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/research/searxng-search/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/research/gitnexus-explorer/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/research/qmd/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/research/drug-discovery/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/research/osint-investigation/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/research/duckduckgo-search/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/research/scrapling/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/research/darwinian-evolver/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/research/bioinformatics/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/research/pinecone-research/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/research/domain-intel/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/gaming/minecraft-modpack-server/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/gaming/pokemon-player/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/payments/mpp-agent/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/payments/stripe-projects/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/payments/stripe-link-cli/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/devops/pinggy-tunnel/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/devops/hermes-s6-container-supervision/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/devops/docker-management/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/devops/actual-setup/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/devops/watchers/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/devops/inference-sh-cli/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/yuanbao/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/data-science/jupyter-notebook/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/security/sherlock/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/security/web-pentest/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/security/godmode/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/security/oss-forensics/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/security/unbroker/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/security/1password/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/software-development/ast-grep/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/software-development/rest-graphql-debug/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/software-development/code-wiki/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/software-development/subagent-driven-development/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/health/fitness-nutrition/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/health/neuroskill-bci
+/Users/mostafa/.hermes/hermes-agent/optional-skills/health/neuroskill-bci/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/research/dspy/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/nemo-curator/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/accelerate/references/custom-plugins.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/accelerate/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/chroma/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/simpo/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/slime/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/guidance/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/clip/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/training/trl-fine-tuning/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/training/axolotl/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/training/unsloth/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/lambda-labs/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/huggingface-tokenizers/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/models/segment-anything-model/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/obliteratus/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/peft/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/stable-diffusion/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/pinecone/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/tensorrt-llm/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/qdrant/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/inference/outlines/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/faiss/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/pytorch-lightning/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/flash-attention/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/modal/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/llava/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/instructor/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/saelens/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/torchtitan/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/pytorch-fsdp/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops/whisper/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mcp/fastmcp/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mcp/mcp-oauth-remote-gateway/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mcp/mcporter/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/blockchain/hyperliquid/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/blockchain/solana/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/blockchain/evm/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/finance/3-statement-model/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/finance/comps-analysis/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/finance/excel-author/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/finance/merger-model/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/finance/stocks/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/finance/polymarket/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/finance/lbo-model/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/finance/pptx-author/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/finance/dcf-model/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative/hyperframes/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative/creative-ideation/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative/heartmula/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative/draw-your-font/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative/simple-english/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative/unreal-mcp/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative/concept-diagrams/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative/tldraw-offline/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative/meme-generation/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative/baoyu-comic/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative/social-media-content-calendar/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative/pixel-art/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative/kanban-video-orchestrator/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative/audiocraft-audio-generation/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative/baoyu-article-illustrator/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/communication/one-three-one-rule/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/web-development/page-agent/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/web-development/cloudflare-temporary-deploy/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/web-development/har-derived-api-client/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/migration/openclaw-migration/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/email/agentmail/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/autonomous-ai-agents/blackbox/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/autonomous-ai-agents/openhands/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/autonomous-ai-agents/honcho/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/autonomous-ai-agents/grok/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/autonomous-ai-agents/antigravity-cli/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/dogfood/adversarial-ux-test/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/productivity/shop/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/productivity/shopify/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/productivity/memento-flashcards/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/productivity/canvas/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/productivity/telephony/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/productivity/here-now/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/optional-skills/productivity/siyuan/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/web/node_modules/@rolldown/plugin-babel
+/Users/mostafa/.hermes/hermes-agent/web/node_modules/@babel/compat-data/data/overlapping-plugins.json
+/Users/mostafa/.hermes/hermes-agent/web/node_modules/@babel/compat-data/data/plugin-bugfixes.json
+/Users/mostafa/.hermes/hermes-agent/web/node_modules/@babel/compat-data/data/plugins.json
+/Users/mostafa/.hermes/hermes-agent/web/src/plugins
+/Users/mostafa/.hermes/hermes-agent/web/src/plugins/PluginPage.tsx
+/Users/mostafa/.hermes/hermes-agent/web/src/plugins/usePlugins.ts
+/Users/mostafa/.hermes/hermes-agent/web/src/plugins/usePlugins.test.ts
+/Users/mostafa/.hermes/hermes-agent/web/src/components/SkillEditorDialog.tsx
+/Users/mostafa/.hermes/hermes-agent/web/src/pages/PluginsPage.tsx
+/Users/mostafa/.hermes/hermes-agent/web/src/pages/SkillsPage.tsx
+/Users/mostafa/.hermes/hermes-agent/website/docs/user-guide/features/built-in-plugins.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/user-guide/features/skills.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/user-guide/features/plugins.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/user-guide/skills
+/Users/mostafa/.hermes/hermes-agent/website/docs/user-guide/skills/bundled/software-development/software-development-hermes-agent-skill-authoring.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/user-guide/skills/optional/health/health-neuroskill-bci.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/guides/work-with-skills.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/developer-guide/plugin-llm-access.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/developer-guide/plugins
+/Users/mostafa/.hermes/hermes-agent/website/docs/developer-guide/model-provider-plugin.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/developer-guide/secret-source-plugin.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/developer-guide/desktop-plugin-sdk.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/developer-guide/browser-provider-plugin.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/developer-guide/video-gen-provider-plugin.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/developer-guide/memory-provider-plugin.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/developer-guide/context-engine-plugin.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/developer-guide/image-gen-provider-plugin.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/developer-guide/creating-skills.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/developer-guide/web-search-provider-plugin.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/reference/optional-skills-catalog.md
+/Users/mostafa/.hermes/hermes-agent/website/docs/reference/skills-catalog.md
+/Users/mostafa/.hermes/hermes-agent/website/static/img/dashboard/admin-skills-hub.png
+/Users/mostafa/.hermes/hermes-agent/website/scripts/generate-skill-docs.py
+/Users/mostafa/.hermes/hermes-agent/website/scripts/extract-skills.py
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/user-guide/features/built-in-plugins.md
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/user-guide/features/skills.md
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/user-guide/features/plugins.md
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/user-guide/skills
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/user-guide/skills/bundled/software-development/software-development-hermes-agent-skill-authoring.md
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/user-guide/skills/optional/health/health-neuroskill-bci.md
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/guides/work-with-skills.md
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/developer-guide/plugin-llm-access.md
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/developer-guide/plugins
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/developer-guide/model-provider-plugin.md
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/developer-guide/video-gen-provider-plugin.md
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/developer-guide/memory-provider-plugin.md
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/developer-guide/context-engine-plugin.md
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/developer-guide/image-gen-provider-plugin.md
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/developer-guide/creating-skills.md
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/developer-guide/web-search-provider-plugin.md
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/reference/optional-skills-catalog.md
+/Users/mostafa/.hermes/hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/reference/skills-catalog.md
+/Users/mostafa/.hermes/hermes-agent/website/src/pages/skills
+/Users/mostafa/.hermes/hermes-agent/node_modules/colord/plugins
+/Users/mostafa/.hermes/hermes-agent/node_modules/@emnapi/core/dist/plugins
+/Users/mostafa/.hermes/hermes-agent/node_modules/@rolldown/pluginutils
+/Users/mostafa/.hermes/hermes-agent/node_modules/@eslint/plugin-kit
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-plugin-unused-imports
+/Users/mostafa/.hermes/hermes-agent/node_modules/rolldown/dist/parallel-plugin-worker.mjs
+/Users/mostafa/.hermes/hermes-agent/node_modules/rolldown/dist/parallel-plugin.d.mts
+/Users/mostafa/.hermes/hermes-agent/node_modules/rolldown/dist/parallel-plugin.mjs
+/Users/mostafa/.hermes/hermes-agent/node_modules/rolldown/dist/parallel-plugin-worker.d.mts
+/Users/mostafa/.hermes/hermes-agent/node_modules/rolldown/dist/plugins-index.d.mts
+/Users/mostafa/.hermes/hermes-agent/node_modules/rolldown/dist/plugins-index.mjs
+/Users/mostafa/.hermes/hermes-agent/node_modules/prettier/plugins
+/Users/mostafa/.hermes/hermes-agent/node_modules/vitest/dist/chunks/plugin.d.DwFIiJ7i.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/@assistant-ui/react/dist/primitives/composer/ComposerInputPluginContext.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/@assistant-ui/react/dist/primitives/composer/ComposerInputPluginContext.d.ts.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/@assistant-ui/react/dist/primitives/composer/ComposerInputPluginContext.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/@assistant-ui/react/dist/primitives/composer/ComposerInputPluginContext.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/@assistant-ui/react/src/primitives/composer/ComposerInputPluginContext.tsx
+/Users/mostafa/.hermes/hermes-agent/node_modules/@typescript-eslint/eslint-plugin
+/Users/mostafa/.hermes/hermes-agent/node_modules/@typescript-eslint/eslint-plugin/dist/raw-plugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/@typescript-eslint/eslint-plugin/dist/raw-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/@typescript-eslint/eslint-plugin/raw-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-plugin-react-hooks
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.production.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.development.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-plugin-perfectionist
+/Users/mostafa/.hermes/hermes-agent/node_modules/playwright/lib/plugins
+/Users/mostafa/.hermes/hermes-agent/node_modules/playwright/lib/plugins/webServerPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/playwright/lib/plugins/gitCommitInfoPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/@vitejs/plugin-react
+/Users/mostafa/.hermes/hermes-agent/node_modules/@tauri-apps/plugin-process
+/Users/mostafa/.hermes/hermes-agent/node_modules/@tauri-apps/plugin-dialog
+/Users/mostafa/.hermes/hermes-agent/node_modules/@tauri-apps/plugin-opener
+/Users/mostafa/.hermes/hermes-agent/node_modules/@tauri-apps/plugin-shell
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/JoinRequestPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/NextPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/ModulesInRootPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/LogInfoPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/ExportsFieldPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/ParsePlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/UseFilePlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/AliasFieldPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/RootsPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/ModulesInHierarchicalDirectoriesPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/ExtensionAliasPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/CloneBasenamePlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/JoinRequestPartPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/FileExistsPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/MainFieldPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/ImportsFieldPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/ConditionalPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/SelfReferencePlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/SymlinkPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/AppendPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/AliasPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/PnpPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/ModulesInHierachicDirectoriesPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/TryNextPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/TsconfigPathsPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/ResultPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/RestrictionsPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/jsdom/lib/generated/idl/PluginArray.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/jsdom/lib/generated/idl/Plugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/jsdom/lib/jsdom/living/navigator/NavigatorPlugins-impl.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/jsdom/lib/jsdom/living/navigator/Plugin-impl.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/jsdom/lib/jsdom/living/navigator/PluginArray-impl.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/babel-plugin-react-compiler
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-plugin-react-refresh
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/core/lib/config/plugin.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/core/lib/config/files/plugins.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/core/lib/config/files/plugins.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/core/lib/config/plugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/core/lib/config/validation/plugins.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/core/lib/config/validation/plugins.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/core/lib/transformation/plugin-pass.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/core/lib/transformation/block-hoist-plugin.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/core/lib/transformation/block-hoist-plugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/core/lib/transformation/plugin-pass.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/core/lib/parser/util/missing-plugin-helper.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/core/lib/parser/util/missing-plugin-helper.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/compat-data/plugin-bugfixes.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/compat-data/overlapping-plugins.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/compat-data/plugins.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/compat-data/data/overlapping-plugins.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/compat-data/data/plugin-bugfixes.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/@babel/compat-data/data/plugins.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/react-dropzone/typings/tests/plugin.tsx
+/Users/mostafa/.hermes/hermes-agent/node_modules/react-dropzone/examples/plugins
+/Users/mostafa/.hermes/hermes-agent/node_modules/@icons-pack/react-simple-icons/icons/SiSkillshare.cjs
+/Users/mostafa/.hermes/hermes-agent/node_modules/@icons-pack/react-simple-icons/icons/SiSkillshare.mjs
+/Users/mostafa/.hermes/hermes-agent/node_modules/@icons-pack/react-simple-icons/icons/SiHyperskill.cjs
+/Users/mostafa/.hermes/hermes-agent/node_modules/@icons-pack/react-simple-icons/icons/SiHyperskill.mjs
+/Users/mostafa/.hermes/hermes-agent/node_modules/@icons-pack/react-simple-icons/icons/SiHyperskill.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/@icons-pack/react-simple-icons/icons/SiSkillshare.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/@icons-pack/react-simple-icons/src/icons/SiSkillshare.tsx
+/Users/mostafa/.hermes/hermes-agent/node_modules/@icons-pack/react-simple-icons/src/icons/SiHyperskill.tsx
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/dist/declarations/plugin
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/dist/declarations/plugin/dist/leva-plugin.cjs.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/dist/declarations/src/plugin
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/dist/declarations/src/plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/dist/declarations/src/components/Vector/vector-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/dist/vector-plugin-d09ec28c.cjs.dev.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/dist/vector-plugin-5405c78c.cjs.prod.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/dist/vector-plugin-5e122f40.esm.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/plugin
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/plugin/dist/leva-plugin.esm.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/plugin/dist/leva-plugin.cjs.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/plugin/dist/leva-plugin.cjs.dev.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/plugin/dist/leva-plugin.cjs.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/plugin/dist/leva-plugin.cjs.prod.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/src/plugin.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/src/plugin
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/src/components/Interval/interval-plugin.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/src/components/Color/color-plugin.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/src/components/Image/image-plugin.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/src/components/Number/number-plugin.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/src/components/Boolean/boolean-plugin.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/src/components/String/string-plugin.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/src/components/Select/select-plugin.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/leva/src/components/Vector/vector-plugin.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint/messages/eslintrc-plugins.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint/messages/plugin-invalid.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint/messages/plugin-missing.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint/messages/plugin-conflict.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint/messages/config-plugin-missing.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/dayjs/esm/plugin
+/Users/mostafa/.hermes/hermes-agent/node_modules/dayjs/plugin
+/Users/mostafa/.hermes/hermes-agent/node_modules/pretty-format/build/plugins
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/InertiaPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/PhysicsPropsPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/types/physics-2d-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/types/scramble-text-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/types/css-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/types/inertia-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/types/scroll-to-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/types/text-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/types/draw-svg-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/types/pixi-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/types/gsap-plugins.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/types/motion-path-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/types/morph-svg-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/types/css-rule-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/types/easel-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/types/physics-props-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/MotionPathPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/ScrollToPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/TextPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/InertiaPlugin.min.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/CSSRulePlugin.min.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/DrawSVGPlugin.min.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/InertiaPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/EaselPlugin.min.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/PhysicsPropsPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/Physics2DPlugin.min.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/MotionPathPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/ScrollToPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/PixiPlugin.min.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/TextPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/EaselPlugin.min.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/MotionPathPlugin.min.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/ScrambleTextPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/MorphSVGPlugin.min.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/TextPlugin.min.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/ScrollToPlugin.min.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/PixiPlugin.min.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/PixiPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/MorphSVGPlugin.min.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/PhysicsPropsPlugin.min.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/ScrollToPlugin.min.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/DrawSVGPlugin.min.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/DrawSVGPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/CSSRulePlugin.min.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/ScrambleTextPlugin.min.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/TextPlugin.min.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/MotionPathPlugin.min.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/InertiaPlugin.min.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/ScrambleTextPlugin.min.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/EaselPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/Physics2DPlugin.min.js.map
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/PhysicsPropsPlugin.min.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/MorphSVGPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/CSSRulePlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/dist/Physics2DPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/ScrambleTextPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/PixiPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/CSSPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/DrawSVGPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/EaselPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/MorphSVGPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/CSSRulePlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/Physics2DPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/src/InertiaPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/src/PhysicsPropsPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/src/MotionPathPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/src/ScrollToPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/src/TextPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/src/ScrambleTextPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/src/PixiPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/src/CSSPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/src/DrawSVGPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/src/EaselPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/src/MorphSVGPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/src/CSSRulePlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/gsap/src/Physics2DPlugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/tailwindcss/dist/plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/tailwindcss/dist/plugin.d.mts
+/Users/mostafa/.hermes/hermes-agent/node_modules/tailwindcss/dist/plugin.mjs
+/Users/mostafa/.hermes/hermes-agent/node_modules/tailwindcss/dist/plugin.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/@electron/osx-sign/entitlements/default.darwin.plugin.plist
+/Users/mostafa/.hermes/hermes-agent/node_modules/simple-git/dist/src/lib/plugins
+/Users/mostafa/.hermes/hermes-agent/node_modules/simple-git/dist/src/lib/plugins/abort-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/simple-git/dist/src/lib/plugins/plugin-store.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/simple-git/dist/src/lib/plugins/command-config-prefixing-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/simple-git/dist/src/lib/plugins/progress-monitor-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/simple-git/dist/src/lib/plugins/simple-git-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/simple-git/dist/src/lib/plugins/suffix-paths.plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/simple-git/dist/src/lib/plugins/spawn-options-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/simple-git/dist/src/lib/plugins/custom-binary.plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/simple-git/dist/src/lib/plugins/completion-detection.plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/simple-git/dist/src/lib/plugins/block-unsafe-operations-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/simple-git/dist/src/lib/plugins/timout-plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/simple-git/dist/src/lib/plugins/error-detection.plugin.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/simple-git/dist/src/lib/errors/git-plugin-error.d.ts
+/Users/mostafa/.hermes/hermes-agent/tests/honcho_plugin
+/Users/mostafa/.hermes/hermes-agent/tests/test_secret_scope_plugin_families.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skill_manager_tool.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skill_usage.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skills_sync.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skills_tool_profile_scope.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skill_view_dedup.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skills_sync_client.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skill_bundle_provenance.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_approval_plugin_hooks.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skill_view_path_check.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skills_guard.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skills_hub_clawhub.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skill_linter.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_plugin_guard.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skill_provenance.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_image_generation_plugin_dispatch.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_transcription_plugin_dispatch.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skill_view_traversal.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skills_list_modified_diff.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_send_message_plugin_extensibility.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skills_tool_discovery_cache.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_tts_plugin_dispatch.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skill_size_limits.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skills_tool.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skillevaluator_scan.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skill_env_passthrough.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skill_improvements.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skills_ast_audit.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skills_hub.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skills_hub_browse_sh.py
+/Users/mostafa/.hermes/hermes-agent/tests/tools/test_skill_ledger.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_call_mcp.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_codex_runtime_plugin_migration.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_web_server_skills_profiles.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_index_search.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_ownership_ledger.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_runtime_disable_gate.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_api_compat.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_manifest_v2.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugins_cmd.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_skills_config.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_message_injection.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_dashboard_auth_plugin_hook.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_skills_subparser.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_relay_plugin_cutover.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugins.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugins_transcription_registration.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_auxiliary_tasks.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_capabilities.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_skills_skip_confirm.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_skills_uninstall_flags.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_banner_skills_width.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_discord_skill_clamp_warning.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_agent_plugins.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugins_tts_registration.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugins_cmd_category_discovery.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_startup_plugin_gating.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_prompt_sections.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugins_hub_perf_guard.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugins_cmd_list.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_project_plugin_rce_bypass.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_chat_skills_flag.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_cli_registration.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_web_server_skill_editor.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_config_state_bridge.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_skills_install_flags.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_install_ref.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_teams_pipeline_plugin_cli.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/fixtures/plugin_compat_legacy
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/fixtures/plugin_compat_legacy/plugin.yaml
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_packs.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_oneshot_skills.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_scanner_recursion.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_event_bus.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_skills_hub.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_banner_skills.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugins_cmd_enable_disable_nested.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_plugin_dev.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_tui_launcher_skips_plugin_discovery.py
+/Users/mostafa/.hermes/hermes-agent/tests/hermes_cli/test_dashboard_basic_auth_plugin_enable.py
+/Users/mostafa/.hermes/hermes-agent/tests/plugins
+/Users/mostafa/.hermes/hermes-agent/tests/plugins/test_security_guidance_plugin.py
+/Users/mostafa/.hermes/hermes-agent/tests/plugins/test_kanban_dashboard_plugin.py
+/Users/mostafa/.hermes/hermes-agent/tests/plugins/web/test_web_search_provider_plugins.py
+/Users/mostafa/.hermes/hermes-agent/tests/plugins/test_a2a_plugin.py
+/Users/mostafa/.hermes/hermes-agent/tests/plugins/video_gen/test_xai_plugin_integration.py
+/Users/mostafa/.hermes/hermes-agent/tests/plugins/video_gen/test_fal_plugin.py
+/Users/mostafa/.hermes/hermes-agent/tests/plugins/video_gen/test_xai_plugin.py
+/Users/mostafa/.hermes/hermes-agent/tests/plugins/test_achievements_plugin.py
+/Users/mostafa/.hermes/hermes-agent/tests/plugins/browser/test_browser_provider_plugins.py
+/Users/mostafa/.hermes/hermes-agent/tests/plugins/test_teams_pipeline_plugin.py
+/Users/mostafa/.hermes/hermes-agent/tests/plugins/test_google_meet_plugin.py
+/Users/mostafa/.hermes/hermes-agent/tests/plugins/test_langfuse_plugin.py
+/Users/mostafa/.hermes/hermes-agent/tests/plugins/test_retaindb_plugin.py
+/Users/mostafa/.hermes/hermes-agent/tests/plugins/test_plugin_dashboard_auth_contract.py
+/Users/mostafa/.hermes/hermes-agent/tests/plugins/test_disk_cleanup_plugin.py
+/Users/mostafa/.hermes/hermes-agent/tests/providers/test_plugin_discovery.py
+/Users/mostafa/.hermes/hermes-agent/tests/website/test_extract_skills.py
+/Users/mostafa/.hermes/hermes-agent/tests/website/test_generate_skill_docs.py
+/Users/mostafa/.hermes/hermes-agent/tests/test_plugin_storage.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_skill_invocation_description.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_relay_runtime_plugins.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_plugin_context_references.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_skill_commands_reload.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_plugin_llm.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_ghost_skill_pruning.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_skill_utils.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_plugin_llm_task_routing.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_org_skill_namespace.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_skill_bundles.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_plugin_prompt_sections.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_skills_guidance_content_filter.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_project_skills.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_external_skills.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_memory_skill_scaffolding.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_skill_commands.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_skill_todo_retention_parity.py
+/Users/mostafa/.hermes/hermes-agent/tests/agent/test_external_skills_dirs_cache.py
+/Users/mostafa/.hermes/hermes-agent/tests/cli/test_cli_preloaded_skills.py
+/Users/mostafa/.hermes/hermes-agent/tests/cli/test_cli_reload_skills.py
+/Users/mostafa/.hermes/hermes-agent/tests/tui_gateway/test_plugins_manage_install.py
+/Users/mostafa/.hermes/hermes-agent/tests/test_session_skill_previews.py
+/Users/mostafa/.hermes/hermes-agent/tests/run_agent/test_plugin_context_engine_init.py
+/Users/mostafa/.hermes/hermes-agent/tests/run_agent/test_compress_focus_plugin_fallback.py
+/Users/mostafa/.hermes/hermes-agent/tests/run_agent/test_plugin_stream_hooks.py
+/Users/mostafa/.hermes/hermes-agent/tests/scripts/test_build_skills_index_health.py
+/Users/mostafa/.hermes/hermes-agent/tests/test_plugin_utils.py
+/Users/mostafa/.hermes/hermes-agent/tests/test_plugin_skills.py
+/Users/mostafa/.hermes/hermes-agent/tests/test_plugins_manage_profile_scope.py
+/Users/mostafa/.hermes/hermes-agent/tests/fixtures/plugins
+/Users/mostafa/.hermes/hermes-agent/tests/fixtures/plugins/example-dashboard/dashboard/plugin_api.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_darwinian_evolver_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_mcp_oauth_remote_gateway_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_har_derived_api_client_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_email_inbox_triage_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_actual_setup_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_sdlc_review_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_cloudflare_temporary_deploy_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_hermes_agent_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_office_document_skills.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_comfyui_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_merge_reconciler_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_competitor_news_monitor_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_hyperliquid_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_github_issue_to_pr_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_unbroker_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_product_price_monitor_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_social_media_content_calendar_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_grounded_citations_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_weekly_review_planning_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_tldraw_offline_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_meeting_action_items_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_box_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_document_to_action_items_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_pinecone_research_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/skills/test_telephony_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/openviking_plugin
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_slack_plugin_action_handlers.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_stacked_skill_platform_disabled.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_slack_channel_skills.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_unavailable_skill_hint.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_line_plugin.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_plugin_message_injection.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_whatsapp_plugin_setup.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/_plugin_adapter_loader.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_discord_plugin_setup.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_plugin_platform_interface.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_reload_skills_discord_resync.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_compress_plugin_engine.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_mattermost_plugin_setup.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_slack_plugin_setup.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_ntfy_plugin.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_fresh_reset_skill_injection.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_discord_channel_skills.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_wecom_plugin_setup.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_simplex_plugin.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_reload_skills_command.py
+/Users/mostafa/.hermes/hermes-agent/tests/gateway/test_matrix_plugin_setup.py
+/Users/mostafa/.hermes/hermes-agent/tests/cron/test_cron_prompt_injection_skill.py
+/Users/mostafa/.hermes/hermes-agent/tests/cron/test_rewrite_skill_refs.py
+/Users/mostafa/.hermes/hermes-agent/agent/skill_utils.py
+/Users/mostafa/.hermes/hermes-agent/agent/skill_preprocessing.py
+/Users/mostafa/.hermes/hermes-agent/agent/skill_bundles.py
+/Users/mostafa/.hermes/hermes-agent/agent/skill_commands.py
+/Users/mostafa/.hermes/hermes-agent/agent/__pycache__/plugin_stream_hooks.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/agent/__pycache__/skill_commands.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/agent/__pycache__/skill_bundles.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/agent/__pycache__/skill_preprocessing.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/agent/__pycache__/skill_utils.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/agent/plugin_llm.py
+/Users/mostafa/.hermes/hermes-agent/agent/plugin_stream_hooks.py
+/Users/mostafa/.hermes/hermes-agent/docs/rfcs/2026-07-plugin-architecture-lessons-pi-opencode.md
+/Users/mostafa/.hermes/hermes-agent/docs/rfcs/plugin-config-state-bridge.md
+/Users/mostafa/.hermes/hermes-agent/scripts/build_skills_index.py
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/skills-index-freshness.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/skills-index.yml
+/Users/mostafa/.hermes/hermes-agent/skills
+/Users/mostafa/.hermes/hermes-agent/skills/apple/apple-reminders/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/apple/imessage/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/apple/findmy/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/apple/apple-notes/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/research/blocked-page-recovery/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/research/grounded-citations/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/research/blogwatcher/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/research/competitor-news-monitor/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/research/llm-wiki/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/research/arxiv/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/research/research-paper-writing/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/social-media/xurl/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/devops/sdlc-review/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/software-development/test-driven-development/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/software-development/systematic-debugging/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/software-development/plan/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/software-development/inspecting-hermes-desktop-dom/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/software-development/hermes-agent-skill-authoring
+/Users/mostafa/.hermes/hermes-agent/skills/software-development/hermes-agent-skill-authoring/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/software-development/python-debugpy/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/software-development/spike/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/software-development/requesting-code-review/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/software-development/simplify-code/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/software-development/node-inspect-debugger/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/software-development/dogfood/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/index-cache/openai_skills_skills_.json
+/Users/mostafa/.hermes/hermes-agent/skills/index-cache/anthropics_skills_skills_.json
+/Users/mostafa/.hermes/hermes-agent/skills/mlops/huggingface-hub/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/mlops/inference/serving-llms-vllm/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/mlops/inference/llama-cpp/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/mlops/evaluation/evaluating-llms-harness/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/mlops/evaluation/weights-and-biases/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/github/github-auth/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/github/github-repo-management/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/github/github-pr-workflow/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/github/github-issue-to-pr/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/github/github-code-review/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/github/github-issues/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/github/codebase-inspection/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/note-taking/obsidian/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/comfyui/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/baoyu-infographic/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/songwriting-and-ai-music/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/ascii-video/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/touchdesigner-mcp/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/excalidraw/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/claude-design/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/ascii-art/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/design-md/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/popular-web-designs/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/manim-video/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/pretext/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/humanizer/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/p5js/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/architecture-diagram/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/creative/sketch/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/email/himalaya/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/email/email-inbox-triage/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/smart-home/openhue/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/autonomous-ai-agents/claude-code/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/autonomous-ai-agents/codex/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/autonomous-ai-agents/hermes-agent/references/desktop-plugins.md
+/Users/mostafa/.hermes/hermes-agent/skills/autonomous-ai-agents/hermes-agent/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/autonomous-ai-agents/hermes-agent/templates/plugin.js
+/Users/mostafa/.hermes/hermes-agent/skills/autonomous-ai-agents/merge-reconciler/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/autonomous-ai-agents/computer-use/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/autonomous-ai-agents/opencode/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/nano-pdf/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/maps/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/teams-meeting-pipeline/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/session-librarian/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/box/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/xlsx/tests/test_xlsx_skill.py
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/xlsx/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/pdf/tests/test_pdf_skill.py
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/pdf/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/document-to-action-items/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/meeting-action-items/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/notion/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/airtable/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/product-price-monitor/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/powerpoint/tests/test_powerpoint_skill.py
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/powerpoint/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/google-workspace/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/weekly-review-planning/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/ocr-and-documents/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/docx/tests/test_docx_skill.py
+/Users/mostafa/.hermes/hermes-agent/skills/productivity/docx/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/media/youtube-content/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/media/songsee/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/skills/media/gif-search/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/aiohttp/pytest_plugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/cli/skills.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/huggingface_hub/cli/_skills.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/pygments/__pycache__/plugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/pygments/plugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/nemo_relay/__pycache__/plugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/nemo_relay/plugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/nemo_relay/plugin.pyi
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/google/protobuf/compiler/plugin_pb2.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/ai_edge_litert/plugin_pb2.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/ai_edge_litert/aot/core/apply_plugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/numpy/typing/mypy_plugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/botocore/__pycache__/plugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/botocore/plugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/MpoImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/PngImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/AvifImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/XbmImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/PcxImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/SunImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/SpiderImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/MpegImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/GribStubImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/PixarImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/QoiImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/MspImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/MicImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/ImtImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/GifImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/PalmImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/FpxImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/BufrStubImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/PcdImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/DcxImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/Hdf5StubImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/IcoImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/WebPImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/XpmImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/EpsImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/TiffImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/DdsImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/PixarImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/FpxImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/XbmImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/ImImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/BmpImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/CurImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/FliImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/MspImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/MicImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/AvifImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/MpoImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/BlpImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/JpegImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/PsdImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/PpmImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/SpiderImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/MpegImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/GifImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/QoiImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/McIdasImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/BufrStubImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/DcxImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/IcnsImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/Hdf5StubImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/FtexImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/IcoImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/FitsImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/GbrImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/PdfImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/PalmImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/XVThumbImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/TgaImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/PcdImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/Jpeg2KImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/ImtImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/SgiImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/IptcImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/PcxImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/SunImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/GribStubImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/WmfImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/__pycache__/PngImagePlugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/EpsImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/TgaImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/Jpeg2KImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/BlpImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/GbrImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/PdfImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/WmfImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/WebPImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/FliImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/CurImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/TiffImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/IptcImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/BmpImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/IcnsImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/McIdasImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/FitsImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/XpmImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/DdsImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/XVThumbImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/SgiImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/ImImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/PsdImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/JpegImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/PpmImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/PIL/FtexImagePlugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/anyio/pytest_plugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/pip/_vendor/pygments/__pycache__/plugin.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/pip/_vendor/pygments/plugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/narwhals/plugins.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/fastapi/.agents/skills
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/fastapi/.agents/skills/fastapi/SKILL.md
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/pydantic/v1/_hypothesis_plugin.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/pydantic/plugin
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/skill.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/skill_update_params.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/skill_create_params.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/skill_list_params.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/skill_reference_param.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/inline_skill_source.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/inline_skill.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/local_skill.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/__pycache__/local_skill_param.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/__pycache__/inline_skill_source.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/__pycache__/local_skill.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/__pycache__/skill_reference_param.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/__pycache__/skill_reference.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/__pycache__/inline_skill_param.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/__pycache__/inline_skill.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/__pycache__/inline_skill_source_param.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/inline_skill_source_param.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/inline_skill_param.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/skill_reference.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/responses/local_skill_param.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/__pycache__/skill_update_params.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/__pycache__/skill_create_params.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/__pycache__/deleted_skill.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/__pycache__/skill_list_params.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/__pycache__/skill_list.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/__pycache__/skill.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/skills
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/skills/deleted_skill_version.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/skills/skill_version.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/skills/__pycache__/deleted_skill_version.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/skills/__pycache__/skill_version.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/skills/__pycache__/skill_version_list.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/skills/skill_version_list.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/skill_list.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/types/deleted_skill.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/skills
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/skills/skills.py
+/Users/mostafa/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/skills/__pycache__/skills.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/dist/assets/skills-BefOPRSz.js
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/node_modules/@rolldown/plugin-babel
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/node_modules/@babel/compat-data/data/overlapping-plugins.json
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/node_modules/@babel/compat-data/data/plugin-bugfixes.json
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/node_modules/@babel/compat-data/data/plugins.json
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/node_modules/electron/dist/Electron.app/Contents/Frameworks/Electron Helper (Plugin).app
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/node_modules/electron/dist/Electron.app/Contents/Frameworks/Electron Helper (Plugin).app/Contents/MacOS/Electron Helper (Plugin)
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/release/mac-arm64/Hermes.app/Contents/Resources/app.asar.unpacked/dist/assets/skills-BefOPRSz.js
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/release/mac-arm64/Hermes.app/Contents/Frameworks/Hermes Helper (Plugin).app
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/release/mac-arm64/Hermes.app/Contents/Frameworks/Hermes Helper (Plugin).app/Contents/MacOS/Hermes Helper (Plugin)
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/electron/desktop-plugin-install.test.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/electron/desktop-plugin-install.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/electron/plugin-profile-routes.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/electron/plugin-profile-routes.test.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/app/settings/plugin-install-modal.tsx
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/app/settings/plugins-settings.tsx
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/app/settings/plugins-settings.test.tsx
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/app/learning/archive-skill-confirm-dialog.tsx
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/app/skills
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/plugins
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/plugins/hello-runtime/plugin.runtime.js
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/plugins/accent/plugin.tsx
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/plugins/kanban/plugin.tsx
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/plugins/hermes-bots/tests/embed-skills-view.test.mjs
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/plugins/hermes-bots/plugin.js
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/contrib/plugin.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/contrib/plugins-store.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/contrib/plugin.test.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/contrib/plugins.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/components/pane-shell/tree/plugin-pane-close.test.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/sdk/plugin-open-session-plan.test.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/sdk/plugin-open-session-plan.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/lib/plugin-source-urls.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/lib/plugin-source-urls.test.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/api/skills.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/api/plugins.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/i18n/plugin-i18n.test.tsx
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/i18n/plugin-i18n.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/plugin-socket-scope.test.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/store/plugin-install-request.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/store/suggestion-providers/skill.test.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/store/suggestion-providers/skill.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/src/store/agent-plugins.ts
+/Users/mostafa/.hermes/hermes-agent/apps/shared/src/skill-scaffold.ts
+/Users/mostafa/.hermes/hermes-agent/apps/shared/src/skill-scaffold.test.ts
+/Users/mostafa/.hermes/skills
+/Users/mostafa/.hermes/skills/apple/apple-reminders/SKILL.md
+/Users/mostafa/.hermes/skills/apple/imessage/SKILL.md
+/Users/mostafa/.hermes/skills/apple/findmy/SKILL.md
+/Users/mostafa/.hermes/skills/apple/apple-notes/SKILL.md
+/Users/mostafa/.hermes/skills/research/blocked-page-recovery/SKILL.md
+/Users/mostafa/.hermes/skills/research/grounded-citations/SKILL.md
+/Users/mostafa/.hermes/skills/research/blogwatcher/SKILL.md
+/Users/mostafa/.hermes/skills/research/competitor-news-monitor/SKILL.md
+/Users/mostafa/.hermes/skills/research/llm-wiki/SKILL.md
+/Users/mostafa/.hermes/skills/research/arxiv/SKILL.md
+/Users/mostafa/.hermes/skills/research/research-paper-writing/SKILL.md
+/Users/mostafa/.hermes/skills/social-media/xurl/SKILL.md
+/Users/mostafa/.hermes/skills/devops/sdlc-review/SKILL.md
+/Users/mostafa/.hermes/skills/software-development/test-driven-development/SKILL.md
+/Users/mostafa/.hermes/skills/software-development/systematic-debugging/SKILL.md
+/Users/mostafa/.hermes/skills/software-development/plan/SKILL.md
+/Users/mostafa/.hermes/skills/software-development/inspecting-hermes-desktop-dom/SKILL.md
+/Users/mostafa/.hermes/skills/software-development/hermes-agent-skill-authoring
+/Users/mostafa/.hermes/skills/software-development/hermes-agent-skill-authoring/SKILL.md
+/Users/mostafa/.hermes/skills/software-development/python-debugpy/SKILL.md
+/Users/mostafa/.hermes/skills/software-development/spike/SKILL.md
+/Users/mostafa/.hermes/skills/software-development/requesting-code-review/SKILL.md
+/Users/mostafa/.hermes/skills/software-development/simplify-code/SKILL.md
+/Users/mostafa/.hermes/skills/software-development/node-inspect-debugger/SKILL.md
+/Users/mostafa/.hermes/skills/software-development/dogfood/SKILL.md
+/Users/mostafa/.hermes/skills/mlops/huggingface-hub/SKILL.md
+/Users/mostafa/.hermes/skills/mlops/inference/serving-llms-vllm/SKILL.md
+/Users/mostafa/.hermes/skills/mlops/inference/llama-cpp/SKILL.md
+/Users/mostafa/.hermes/skills/mlops/evaluation/evaluating-llms-harness/SKILL.md
+/Users/mostafa/.hermes/skills/mlops/evaluation/weights-and-biases/SKILL.md
+/Users/mostafa/.hermes/skills/find-skills
+/Users/mostafa/.hermes/skills/github/github-auth/SKILL.md
+/Users/mostafa/.hermes/skills/github/github-repo-management/SKILL.md
+/Users/mostafa/.hermes/skills/github/github-pr-workflow/SKILL.md
+/Users/mostafa/.hermes/skills/github/github-issue-to-pr/SKILL.md
+/Users/mostafa/.hermes/skills/github/github-code-review/SKILL.md
+/Users/mostafa/.hermes/skills/github/github-issues/SKILL.md
+/Users/mostafa/.hermes/skills/github/codebase-inspection/SKILL.md
+/Users/mostafa/.hermes/skills/note-taking/obsidian/SKILL.md
+/Users/mostafa/.hermes/skills/creative/comfyui/SKILL.md
+/Users/mostafa/.hermes/skills/creative/baoyu-infographic/SKILL.md
+/Users/mostafa/.hermes/skills/creative/songwriting-and-ai-music/SKILL.md
+/Users/mostafa/.hermes/skills/creative/ascii-video/SKILL.md
+/Users/mostafa/.hermes/skills/creative/touchdesigner-mcp/SKILL.md
+/Users/mostafa/.hermes/skills/creative/excalidraw/SKILL.md
+/Users/mostafa/.hermes/skills/creative/claude-design/SKILL.md
+/Users/mostafa/.hermes/skills/creative/ascii-art/SKILL.md
+/Users/mostafa/.hermes/skills/creative/design-md/SKILL.md
+/Users/mostafa/.hermes/skills/creative/popular-web-designs/SKILL.md
+/Users/mostafa/.hermes/skills/creative/manim-video/SKILL.md
+/Users/mostafa/.hermes/skills/creative/pretext/SKILL.md
+/Users/mostafa/.hermes/skills/creative/humanizer/SKILL.md
+/Users/mostafa/.hermes/skills/creative/p5js/SKILL.md
+/Users/mostafa/.hermes/skills/creative/architecture-diagram/SKILL.md
+/Users/mostafa/.hermes/skills/creative/sketch/SKILL.md
+/Users/mostafa/.hermes/skills/email/himalaya/SKILL.md
+/Users/mostafa/.hermes/skills/email/email-inbox-triage/SKILL.md
+/Users/mostafa/.hermes/skills/smart-home/openhue/SKILL.md
+/Users/mostafa/.hermes/skills/autonomous-ai-agents/claude-code/SKILL.md
+/Users/mostafa/.hermes/skills/autonomous-ai-agents/codex/SKILL.md
+/Users/mostafa/.hermes/skills/autonomous-ai-agents/hermes-agent/references/desktop-plugins.md
+/Users/mostafa/.hermes/skills/autonomous-ai-agents/hermes-agent/SKILL.md
+/Users/mostafa/.hermes/skills/autonomous-ai-agents/hermes-agent/templates/plugin.js
+/Users/mostafa/.hermes/skills/autonomous-ai-agents/merge-reconciler/SKILL.md
+/Users/mostafa/.hermes/skills/autonomous-ai-agents/computer-use/SKILL.md
+/Users/mostafa/.hermes/skills/autonomous-ai-agents/opencode/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/nano-pdf/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/maps/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/teams-meeting-pipeline/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/session-librarian/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/box/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/xlsx/tests/test_xlsx_skill.py
+/Users/mostafa/.hermes/skills/productivity/xlsx/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/pdf/tests/test_pdf_skill.py
+/Users/mostafa/.hermes/skills/productivity/pdf/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/document-to-action-items/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/meeting-action-items/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/notion/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/airtable/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/product-price-monitor/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/powerpoint/tests/test_powerpoint_skill.py
+/Users/mostafa/.hermes/skills/productivity/powerpoint/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/google-workspace/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/weekly-review-planning/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/ocr-and-documents/SKILL.md
+/Users/mostafa/.hermes/skills/productivity/docx/tests/test_docx_skill.py
+/Users/mostafa/.hermes/skills/productivity/docx/SKILL.md
+/Users/mostafa/.hermes/skills/media/youtube-content/SKILL.md
+/Users/mostafa/.hermes/skills/media/songsee/SKILL.md
+/Users/mostafa/.hermes/skills/media/gif-search/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/cache/plugin_toolset_keys.json
+/Users/mostafa/.hermes/profiles/research-assistant/plugins
+/Users/mostafa/.hermes/profiles/research-assistant/.skills_prompt_snapshot.json
+/Users/mostafa/.hermes/profiles/research-assistant/skills
+/Users/mostafa/.hermes/profiles/research-assistant/skills/apple/apple-reminders/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/apple/imessage/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/apple/findmy/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/apple/apple-notes/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/research/blocked-page-recovery/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/research/grounded-citations/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/research/blogwatcher/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/research/competitor-news-monitor/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/research/llm-wiki/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/research/arxiv/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/research/research-paper-writing/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/social-media/xurl/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/devops/sdlc-review/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/software-development/test-driven-development/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/software-development/systematic-debugging/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/software-development/plan/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/software-development/inspecting-hermes-desktop-dom/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/software-development/hermes-agent-skill-authoring
+/Users/mostafa/.hermes/profiles/research-assistant/skills/software-development/hermes-agent-skill-authoring/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/software-development/python-debugpy/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/software-development/spike/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/software-development/requesting-code-review/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/software-development/simplify-code/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/software-development/node-inspect-debugger/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/software-development/dogfood/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/mlops/huggingface-hub/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/mlops/inference/serving-llms-vllm/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/mlops/inference/llama-cpp/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/mlops/evaluation/evaluating-llms-harness/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/mlops/evaluation/weights-and-biases/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/find-skills
+/Users/mostafa/.hermes/profiles/research-assistant/skills/github/github-auth/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/github/github-repo-management/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/github/github-pr-workflow/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/github/github-issue-to-pr/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/github/github-code-review/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/github/github-issues/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/github/codebase-inspection/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/note-taking/obsidian/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/comfyui/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/baoyu-infographic/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/songwriting-and-ai-music/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/ascii-video/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/touchdesigner-mcp/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/excalidraw/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/claude-design/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/ascii-art/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/design-md/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/popular-web-designs/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/manim-video/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/pretext/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/humanizer/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/p5js/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/architecture-diagram/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/creative/sketch/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/email/himalaya/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/email/email-inbox-triage/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/smart-home/openhue/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/autonomous-ai-agents/claude-code/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/autonomous-ai-agents/codex/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/autonomous-ai-agents/hermes-agent/references/desktop-plugins.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/autonomous-ai-agents/hermes-agent/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/autonomous-ai-agents/hermes-agent/templates/plugin.js
+/Users/mostafa/.hermes/profiles/research-assistant/skills/autonomous-ai-agents/merge-reconciler/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/autonomous-ai-agents/computer-use/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/autonomous-ai-agents/opencode/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/nano-pdf/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/maps/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/teams-meeting-pipeline/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/session-librarian/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/box/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/xlsx/tests/test_xlsx_skill.py
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/xlsx/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/pdf/tests/test_pdf_skill.py
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/pdf/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/document-to-action-items/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/meeting-action-items/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/notion/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/airtable/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/product-price-monitor/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/powerpoint/tests/test_powerpoint_skill.py
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/powerpoint/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/google-workspace/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/weekly-review-planning/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/ocr-and-documents/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/docx/tests/test_docx_skill.py
+/Users/mostafa/.hermes/profiles/research-assistant/skills/productivity/docx/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/media/youtube-content/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/media/songsee/SKILL.md
+/Users/mostafa/.hermes/profiles/research-assistant/skills/media/gif-search/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/.skills_prompt_snapshot.json
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/apple/apple-reminders/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/apple/imessage/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/apple/findmy/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/apple/apple-notes/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/research/blocked-page-recovery/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/research/grounded-citations/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/research/blogwatcher/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/research/competitor-news-monitor/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/research/llm-wiki/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/research/arxiv/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/research/research-paper-writing/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/social-media/xurl/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/devops/sdlc-review/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/software-development/test-driven-development/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/software-development/systematic-debugging/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/software-development/plan/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/software-development/inspecting-hermes-desktop-dom/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/software-development/hermes-agent-skill-authoring
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/software-development/hermes-agent-skill-authoring/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/software-development/python-debugpy/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/software-development/spike/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/software-development/requesting-code-review/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/software-development/simplify-code/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/software-development/node-inspect-debugger/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/software-development/dogfood/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/mlops/huggingface-hub/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/mlops/inference/serving-llms-vllm/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/mlops/inference/llama-cpp/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/mlops/evaluation/evaluating-llms-harness/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/mlops/evaluation/weights-and-biases/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/find-skills
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/github/github-auth/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/github/github-repo-management/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/github/github-pr-workflow/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/github/github-issue-to-pr/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/github/github-code-review/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/github/github-issues/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/github/codebase-inspection/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/note-taking/obsidian/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/comfyui/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/baoyu-infographic/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/songwriting-and-ai-music/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/ascii-video/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/touchdesigner-mcp/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/excalidraw/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/claude-design/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/ascii-art/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/design-md/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/popular-web-designs/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/manim-video/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/pretext/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/humanizer/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/p5js/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/architecture-diagram/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/creative/sketch/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/email/himalaya/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/email/email-inbox-triage/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/smart-home/openhue/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/autonomous-ai-agents/claude-code/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/autonomous-ai-agents/codex/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/autonomous-ai-agents/hermes-agent/references/desktop-plugins.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/autonomous-ai-agents/hermes-agent/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/autonomous-ai-agents/hermes-agent/templates/plugin.js
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/autonomous-ai-agents/merge-reconciler/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/autonomous-ai-agents/computer-use/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/autonomous-ai-agents/opencode/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/nano-pdf/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/maps/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/teams-meeting-pipeline/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/session-librarian/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/box/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/xlsx/tests/test_xlsx_skill.py
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/xlsx/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/pdf/tests/test_pdf_skill.py
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/pdf/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/document-to-action-items/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/meeting-action-items/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/notion/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/airtable/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/product-price-monitor/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/powerpoint/tests/test_powerpoint_skill.py
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/powerpoint/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/google-workspace/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/weekly-review-planning/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/ocr-and-documents/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/docx/tests/test_docx_skill.py
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/productivity/docx/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/media/youtube-content/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/media/songsee/SKILL.md
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/media/gif-search/SKILL.md
+mostafa@MMostafa ~ % find ~/.hermes/hermes-agent -maxdepth 2 -type d | grep -E "skill|plugin|tool"
+/Users/mostafa/.hermes/hermes-agent/evals/readtool
+/Users/mostafa/.hermes/hermes-agent/tools
+/Users/mostafa/.hermes/hermes-agent/tools/environments
+/Users/mostafa/.hermes/hermes-agent/tools/wakewords
+/Users/mostafa/.hermes/hermes-agent/tools/__pycache__
+/Users/mostafa/.hermes/hermes-agent/tools/computer_use
+/Users/mostafa/.hermes/hermes-agent/tools/neutts_samples
+/Users/mostafa/.hermes/hermes-agent/plugins
+/Users/mostafa/.hermes/hermes-agent/plugins/image_gen
+/Users/mostafa/.hermes/hermes-agent/plugins/platforms
+/Users/mostafa/.hermes/hermes-agent/plugins/disk-cleanup
+/Users/mostafa/.hermes/hermes-agent/plugins/cron_providers
+/Users/mostafa/.hermes/hermes-agent/plugins/dashboard_auth
+/Users/mostafa/.hermes/hermes-agent/plugins/memory
+/Users/mostafa/.hermes/hermes-agent/plugins/teams_pipeline
+/Users/mostafa/.hermes/hermes-agent/plugins/google_meet
+/Users/mostafa/.hermes/hermes-agent/plugins/web
+/Users/mostafa/.hermes/hermes-agent/plugins/spotify
+/Users/mostafa/.hermes/hermes-agent/plugins/context_engine
+/Users/mostafa/.hermes/hermes-agent/plugins/video_gen
+/Users/mostafa/.hermes/hermes-agent/plugins/model-providers
+/Users/mostafa/.hermes/hermes-agent/plugins/__pycache__
+/Users/mostafa/.hermes/hermes-agent/plugins/observability
+/Users/mostafa/.hermes/hermes-agent/plugins/browser
+/Users/mostafa/.hermes/hermes-agent/plugins/kanban
+/Users/mostafa/.hermes/hermes-agent/plugins/security-guidance
+/Users/mostafa/.hermes/hermes-agent/plugins/hermes-achievements
+/Users/mostafa/.hermes/hermes-agent/optional-skills
+/Users/mostafa/.hermes/hermes-agent/optional-skills/research
+/Users/mostafa/.hermes/hermes-agent/optional-skills/gaming
+/Users/mostafa/.hermes/hermes-agent/optional-skills/payments
+/Users/mostafa/.hermes/hermes-agent/optional-skills/devops
+/Users/mostafa/.hermes/hermes-agent/optional-skills/yuanbao
+/Users/mostafa/.hermes/hermes-agent/optional-skills/data-science
+/Users/mostafa/.hermes/hermes-agent/optional-skills/security
+/Users/mostafa/.hermes/hermes-agent/optional-skills/software-development
+/Users/mostafa/.hermes/hermes-agent/optional-skills/health
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mlops
+/Users/mostafa/.hermes/hermes-agent/optional-skills/mcp
+/Users/mostafa/.hermes/hermes-agent/optional-skills/blockchain
+/Users/mostafa/.hermes/hermes-agent/optional-skills/finance
+/Users/mostafa/.hermes/hermes-agent/optional-skills/creative
+/Users/mostafa/.hermes/hermes-agent/optional-skills/communication
+/Users/mostafa/.hermes/hermes-agent/optional-skills/web-development
+/Users/mostafa/.hermes/hermes-agent/optional-skills/migration
+/Users/mostafa/.hermes/hermes-agent/optional-skills/email
+/Users/mostafa/.hermes/hermes-agent/optional-skills/autonomous-ai-agents
+/Users/mostafa/.hermes/hermes-agent/optional-skills/dogfood
+/Users/mostafa/.hermes/hermes-agent/optional-skills/productivity
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-plugin-unused-imports
+/Users/mostafa/.hermes/hermes-agent/node_modules/es-toolkit
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-plugin-react-hooks
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-plugin-perfectionist
+/Users/mostafa/.hermes/hermes-agent/node_modules/@csstools
+/Users/mostafa/.hermes/hermes-agent/node_modules/babel-plugin-react-compiler
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-plugin-react-refresh
+/Users/mostafa/.hermes/hermes-agent/tests/honcho_plugin
+/Users/mostafa/.hermes/hermes-agent/tests/tools
+/Users/mostafa/.hermes/hermes-agent/tests/plugins
+/Users/mostafa/.hermes/hermes-agent/tests/skills
+/Users/mostafa/.hermes/hermes-agent/tests/openviking_plugin
+/Users/mostafa/.hermes/hermes-agent/scripts/toolperf_abeval
+/Users/mostafa/.hermes/hermes-agent/skills
+/Users/mostafa/.hermes/hermes-agent/skills/apple
+/Users/mostafa/.hermes/hermes-agent/skills/research
+/Users/mostafa/.hermes/hermes-agent/skills/social-media
+/Users/mostafa/.hermes/hermes-agent/skills/devops
+/Users/mostafa/.hermes/hermes-agent/skills/software-development
+/Users/mostafa/.hermes/hermes-agent/skills/index-cache
+/Users/mostafa/.hermes/hermes-agent/skills/mlops
+/Users/mostafa/.hermes/hermes-agent/skills/github
+/Users/mostafa/.hermes/hermes-agent/skills/note-taking
+/Users/mostafa/.hermes/hermes-agent/skills/creative
+/Users/mostafa/.hermes/hermes-agent/skills/email
+/Users/mostafa/.hermes/hermes-agent/skills/smart-home
+/Users/mostafa/.hermes/hermes-agent/skills/autonomous-ai-agents
+/Users/mostafa/.hermes/hermes-agent/skills/productivity
+/Users/mostafa/.hermes/hermes-agent/skills/media
+mostafa@MMostafa ~ % grep -nE "tools|skills|plugins|image|voice|browser|calendar|github" ~/.hermes/config.yaml
+23:toolsets:
+48:browser:
+149:skills:
+170:    - github-auth
+171:    - github-code-review
+172:    - github-issue-to-pr
+173:    - github-issues
+174:    - github-pr-workflow
+175:    - github-repo-management
+231:platform_toolsets:
+254:plugins:
+mostafa@MMostafa ~ % 
