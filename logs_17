@@ -3524,3 +3524,315 @@ find ~/.hermes -iname "*skill*" -o -iname "*plugin*" -o -iname "*tool*"
 /Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/media/songsee/SKILL.md
 /Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/skills/media/gif-search/SKILL.md
 mostafa@MMostafa ~ % 
+mostafa@MMostafa ~ % cp ~/.hermes/config.yaml ~/.hermes/config.yaml.before-lightweight-$(date +%Y%m%d-%H%M%S)
+
+cp ~/.hermes/.env ~/.hermes/.env.before-lightweight-$(date +%Y%m%d-%H%M%S)
+mostafa@MMostafa ~ % >....                                                                                                                                    
+background["enabled"] = False
+background["memory_review"] = False
+background["automatic_review"] = False
+
+
+# -----------------------------
+# Memory
+# -----------------------------
+
+memory = data.setdefault("memory", {})
+
+memory["enabled"] = False
+memory["remote"] = False
+
+
+# -----------------------------
+# Fallback chain
+# -----------------------------
+
+fallback = data.setdefault("fallback", {})
+
+fallback["enabled"] = False
+
+
+# -----------------------------
+# Telemetry
+# -----------------------------
+
+telemetry = data.setdefault("telemetry", {})
+
+telemetry["enabled"] = False
+
+
+# -----------------------------
+# Save
+# -----------------------------
+
+with open(config,"w") as f:
+    yaml.safe_dump(
+        data,
+        f,
+        sort_keys=False
+    )
+
+print("Hermes lightweight configuration applied.")
+PY
+
+
+python3 /tmp/hermes-lightweight-patch.py
+Hermes lightweight configuration applied.
+mostafa@MMostafa ~ % ls ~/.hermes/hermes-agent/skills
+apple			devops			index-cache		note-taking		smart-home
+autonomous-ai-agents	email			media			productivity		social-media
+creative		github			mlops			research		software-development
+mostafa@MMostafa ~ % mkdir -p ~/.hermes/disabled-skills
+
+mv ~/.hermes/hermes-agent/skills/* ~/.hermes/disabled-skills/
+mostafa@MMostafa ~ % nano ~/.hermes/.env
+mostafa@MMostafa ~ % grep -n "title_generation" -A5 ~/.hermes/config.yaml
+265:  title_generation:
+266-    enabled: false
+267-  compression:
+268-    enabled: false
+269-  vision:
+270-    enabled: false
+mostafa@MMostafa ~ % hermes config show
+
+┌─────────────────────────────────────────────────────────┐
+│              ⚕ Hermes Configuration                    │
+└─────────────────────────────────────────────────────────┘
+
+◆ Paths
+  Config:       /Users/mostafa/.hermes/config.yaml
+  Secrets:      /Users/mostafa/.hermes/.env
+  Install:      /Users/mostafa/.hermes/hermes-agent
+
+◆ API Keys
+  OpenRouter     sk-o...92bf
+  OpenAI (STT/TTS) (not set)
+  Exa            (not set)
+  Parallel       (not set)
+  Firecrawl      (not set)
+  Tavily         (not set)
+  Browserbase    (not set)
+  Browser Use    (not set)
+  FAL            (not set)
+  Anthropic      (not set)
+
+◆ Model
+  Model:        {'default': 'lfm2.5:8b-a1b-q4_K_M', 'provider': 'ollama-launch', 'base_url': 'http://127.0.0.1:11434/api/chat', 'context_length': 64000}
+  Max turns:    40
+
+◆ Display
+  Personality:  none
+  Reasoning:    on
+  Bell:         off
+  User preview: first 2 line(s), last 2 line(s)
+
+◆ Terminal
+  Backend:      local
+  Working dir:  /Users/mostafa/Workspace
+  Timeout:      180s
+
+◆ Timezone
+  Timezone:     (server-local)
+
+◆ Context Compression
+  Enabled:      yes
+  Threshold:    50%
+  Target ratio: 20% of threshold preserved
+  Protect last: 20 messages
+  Protect first: 3 non-system head messages
+  Model:        (auto)
+
+◆ Messaging Platforms
+  Telegram:     not configured
+  Discord:      not configured
+
+────────────────────────────────────────────────────────────
+  hermes config edit     # Edit config file
+  hermes config set <key> <value>
+  hermes setup           # Run setup wizard
+
+mostafa@MMostafa ~ % mkdir -p ~/.hermes/profiles
+mostafa@MMostafa ~ % nano ~/.hermes/profiles/local-scholar.yaml
+mostafa@MMostafa ~ % hermes doctor
+
+┌─────────────────────────────────────────────────────────┐
+│                 🩺 Hermes Doctor                        │
+└─────────────────────────────────────────────────────────┘
+
+◆ Security Advisories
+  ✓ No active security advisories
+
+◆ MCP Server Security
+  ✓ No suspicious MCP stdio commands
+
+◆ Python Environment
+  ✓ Python 3.11.15
+  ✓ SQLite 3.53.1
+    → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
+    → state.db: WAL journal mode (1.0 MB)
+    → cron/executions.db: WAL journal mode (20.0 KB)
+    → projects.db: WAL journal mode (44.0 KB)
+    → kanban.db: WAL journal mode (116.0 KB)
+  ✓ Virtual environment active
+  ✓ Version files consistent (0.20.5)
+
+◆ SSL / CA Certificates
+  ✓ SSL CA certificate bundle is valid
+
+◆ Required Packages
+  ✓ OpenAI SDK
+  ✓ Rich (terminal UI)
+  ✓ python-dotenv
+  ✓ PyYAML
+  ✓ HTTPX
+  ✓ Croniter (cron expressions) (optional)
+  ⚠ python-telegram-bot (optional, not installed)
+  ⚠ discord.py (optional, not installed)
+
+◆ Configuration Files
+  ✓ ~/.hermes/.env file exists
+  ✓ API key or custom endpoint configured
+  ✓ ~/.hermes/config.yaml exists
+  ✓ Config version up to date (v38)
+  ✓ No deprecated config keys or env vars
+
+◆ xAI Model Retirement (May 15, 2026)
+  ✓ No retired xAI models in config
+
+◆ Auth Providers
+  ✓ Nous Portal auth (logged in)
+  ⚠ OpenAI Codex auth (not logged in)
+    → No Codex credentials stored. Run `hermes auth` to authenticate.
+    → codex CLI not installed (optional — only required to import tokens from an existing Codex CLI login)
+  ✓ MiniMax OAuth (logged in, region=global)
+  ✓ xAI OAuth (logged in)
+
+◆ Directory Structure
+  ✓ ~/.hermes directory exists
+  ✓ ~/.hermes/cron/ exists
+  ✓ ~/.hermes/sessions/ exists
+  ✓ ~/.hermes/logs/ exists
+  ✓ ~/.hermes/skills/ exists
+  ✓ ~/.hermes/memories/ exists
+  ✓ ~/.hermes/SOUL.md exists (persona configured)
+  ✓ ~/.hermes/memories/ directory exists
+    → MEMORY.md not created yet (will be created when the agent first writes a memory)
+    → USER.md not created yet (will be created when the agent first writes a memory)
+  ✓ ~/.hermes/state.db exists (16 sessions)
+    → state.db logical size 1.0 MB, 258 pages, 0 free, WAL 0 B
+    → 76 messages, 16 sessions, journal_mode=wal
+    → FTS tables: messages_fts, messages_fts_trigram
+
+◆ Command Installation
+  ✓ Venv entry point exists (venv/bin/hermes)
+  ✓ ~/.local/bin/hermes exists (non-symlink)
+
+◆ External Tools
+  ✓ git
+  ✓ ripgrep (rg) (faster file search)
+  ✓ docker (optional)
+  ✓ Node.js
+  ✓ agent-browser (browser automation)
+  ✓ Playwright Chromium (browser engine)
+  ✓ Browser tools (agent-browser) deps (no known vulnerabilities)
+ps aux | grep hermes
+  ⚠ web workspace deps (0 critical, 4 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
+  ⚠ ui-tui workspace deps (0 critical, 3 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
+
+◆ API Connectivity
+  ✗ OpenRouter API (HTTP 403)                                         
+  ✓ Hugging Face        
+  ✓ Alibaba/DashScope   
+  ✓ Alibaba Cloud (Coding Plan)
+
+◆ Tool Availability
+  ✓ a2a
+  ✓ bfl
+  ✓ browser-use
+  ✓ clarify
+  ✓ code_execution
+  ✓ computer_use
+  ✓ cronjob
+  ✓ delegation
+  ✓ desktop_ui
+  ✓ file
+  ✓ memory
+  ✓ project
+  ✓ session_search
+  ✓ skills
+  ✓ terminal
+  ✓ todo
+  ✓ tts
+  ✓ video
+  ✓ video_gen
+  ✓ vision
+  ✓ x_search
+  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
+  ✓ web search (searxng)
+  ✓ web extract (parallel)
+  ⚠ browser (system dependency not met)
+  ⚠ browser-cdp (system dependency not met)
+  ⚠ discord (missing DISCORD_BOT_TOKEN)
+  ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
+  ⚠ feishu_doc (system dependency not met)
+  ⚠ feishu_drive (system dependency not met)
+  ⚠ hermes-yuanbao (system dependency not met)
+  ⚠ homeassistant (system dependency not met)
+  ⚠ image_gen (system dependency not met)
+  ⚠ spotify (system dependency not met)
+
+◆ Skills Hub
+  ✓ Skills Hub directory exists
+  ✓ Lock file OK (0 hub-installed skill(s))
+  ⚠ No GITHUB_TOKEN (60 req/hr rate limit — set in ~/.hermes/.env for better rates)
+
+◆ Memory Provider
+  ✓ Built-in memory active (no external provider configured — this is fine)
+
+◆ Profiles
+  ✓ 1 profile(s) found
+  ✓   research-assistant: lfm2.5:8b-a1b-q4_K_M
+  ⚠ Orphan alias: micro-assistant → profile 'micro-assistant' no longer exists
+
+────────────────────────────────────────────────────────────
+  Found 2 issue(s) to address:
+
+  1. web workspace has 4 npm vulnerabilities
+  2. ui-tui workspace has 3 npm vulnerabilities
+
+  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
+
+mostafa@MMostafa ~ % ps aux | grep hermes
+mostafa          10208   0.0  0.0 410724320   1376 s001  S+   11:12PM   0:00.00 grep hermes
+mostafa@MMostafa ~ % memory_pressure
+The system has 8589934592 (524288 pages with a page size of 16384).
+
+Stats: 
+Pages free: 23258 
+Pages purgeable: 4202 
+Pages purged: 2086073 
+
+Swap I/O:
+Swapins: 14254366 
+Swapouts: 14991934 
+
+Page Q counts:
+Pages active: 157291 
+Pages inactive: 153953 
+Pages speculative: 4112 
+Pages throttled: 0 
+Pages wired down: 101446 
+
+Compressor Stats:
+Pages used by compressor: 48416 
+Pages decompressed: 54991530 
+Pages compressed: 58819891 
+
+File I/O:
+Pageins: 15036657 
+Pageouts: 57405 
+
+System-wide memory free percentage: 69%
+mostafa@MMostafa ~ % 
