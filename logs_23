@@ -1,0 +1,1243 @@
+mostafa@MMostafa Workspace % cd ~/Workspace
+
+git status --short
+
+?? .gitignore
+
+?? .research_os
+
+?? .research_os_frozen
+
+?? 00_Inbox/
+
+?? 01_Research/
+
+?? 01_System/
+
+?? 02_AI_Lab/
+
+?? 03_Engineering/
+
+?? 03_System/
+
+?? 04_Knowledge/
+
+?? 05_Archives/
+
+?? 06_System/
+
+?? 99_Sandbox/
+
+?? AGENTS.md
+
+?? ARCHITECTURE.md
+
+?? INDEX.md
+
+?? README.md
+
+?? RESEARCH_OS_STATUS.md
+
+?? WORKSPACE.md
+
+?? WORKSPACE_COMMANDS.md
+
+?? after_benchmark001_files.txt
+
+?? before_benchmark001_files.txt
+
+?? upgrade_benchmark001_calibration.sh
+
+mostafa@MMostafa Workspace % git add 04_Knowledge
+
+git add 03_Documentation
+
+git add .gitignore
+
+fatal: pathspec '03_Documentation' did not match any files
+
+mostafa@MMostafa Workspace % git status
+
+On branch master
+
+No commits yet
+
+Changes to be committed:
+
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   .gitignore
+
+	new file:   04_Knowledge/.obsidian/app.json
+
+	new file:   04_Knowledge/.obsidian/appearance.json
+
+	new file:   04_Knowledge/.obsidian/core-plugins.json
+
+	new file:   04_Knowledge/.obsidian/workspace.json
+
+	new file:   04_Knowledge/ARCHITECTURE.md
+
+	new file:   04_Knowledge/Concepts/.gitkeep
+
+	new file:   04_Knowledge/Concepts/AI/.gitkeep
+
+	new file:   04_Knowledge/Concepts/Art_Theory/.gitkeep
+
+	new file:   04_Knowledge/Concepts/Art_Theory/Audience_and_Art.md
+
+	new file:   04_Knowledge/Concepts/Artistic-Integrity-Accordion-Effect-Zangwill-1999.md
+
+	new file:   04_Knowledge/Concepts/Convergence-Argument-Zangwill-1999.md
+
+	new file:   04_Knowledge/Concepts/Methodology/.gitkeep
+
+	new file:   04_Knowledge/Concepts/Minimal-Explanation-Principle-Zangwill-1999.md
+
+	new file:   04_Knowledge/Concepts/Monitoring-Exploration-Model-Zangwill-1999.md
+
+	new file:   04_Knowledge/Concepts/Philosophy/.gitkeep
+
+	new file:   04_Knowledge/Concepts/Triangulation-Argument-Zangwill-1999.md
+
+	new file:   04_Knowledge/FINAL_STATUS.md
+
+	new file:   04_Knowledge/INDEX.md
+
+	new file:   04_Knowledge/MIGRATION_LOG.md
+
+	new file:   04_Knowledge/Notes/.gitkeep
+
+	new file:   04_Knowledge/Notes/Analysis/Zangwill-ArtAudience-1999-analysis.md
+
+	new file:   04_Knowledge/Notes/Analysis/Zangwill-ArtAudience-1999-argument-analysis.md
+
+	new file:   04_Knowledge/Notes/Reading/Zangwill-ArtAudience-1999-reading-note.md
+
+	new file:   04_Knowledge/README.md
+
+	new file:   04_Knowledge/Research_Log/Benchmark_001/input/Zangwill-ArtAudience-1999-research-note.md
+
+	new file:   04_Knowledge/Research_Log/Benchmark_001_Final_State.txt
+
+	new file:   04_Knowledge/Research_Log/Benchmark_001_Zangwill.md
+
+	new file:   04_Knowledge/Research_Log/Benchmark_Evaluation_Template.md
+
+	new file:   04_Knowledge/Research_Log/Hermes_Workflow_Observations.md
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/00_Raw/14171f10d68d11993f5bb8fffd9ea347303363723dc0c91b4813486f1a590147-2026-08-18-21-58-47-b5e7d79638714b72b6277352b37155fa.zip
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/ads.json
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/chat.html
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/codex.json
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/conversation_asset_file_names.json
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/conversations-000.json
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/conversations-001.json
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/conversations-002.json
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/conversations-003.json
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/export_manifest.json
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-16gwi2uyTM3p3hCaQzgcBh.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-1x4p9LKqUKrSI4kjkKfVgT9w.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-2Ee7nFYZfoqgZjdSLqkdQY.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-2Y7VGdQbZYqRHaGhPwWCTe.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-3AhKhZJRIpO2bHzcHHC3uYSU.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-3FuaCAqRGSeYhjeXF3E2PK.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-59G4qXpmAPdBFGjcyKJjns.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-5uZO43esXMR9vE9Pib5GAJFg.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-647DejFVEAMcCnsjh7cGff.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-7Qj0QgyJUXAsYRbbF5vlHo59.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-7d547c6gp9HzU5dq5HjHrj.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-8320BA6f2Pomk3uaC0WOYbII.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-CCeoAhwXaVwAxNqSLFj1qX.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-D4qC2P5xKbBawwmSFGVvBb.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-DH2q7JPLVwH9Ch2PuzEXt4.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-DckiRcSwrSfCMcv8BWEeWS.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-E5JQKjCF8RfLnH3F2EYT4W.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-EJR3gZa4bLBDwVXXG6toD4.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-EumT9ng7gRUDRNafEfdXjP.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-F3hM56JT4geJXiuFnPKWjz.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-FNGSqBbtqDULkidxKVTPh8.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-FakryMZAk6LLce3qiirE6k.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-GCnyDaHZ4wkSjdsykX7sQX.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-GQo5SQaCbiqeUSrPutiZFs.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-HCRTCaQDpcZhTchkrqGkua.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-HSCukj9yxwCndc3AHXUWVS.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-HZydaWh1vUpTq2wQayvtkU.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-IIJm8RrFbfSVrrJQ3j0jxVJu.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-Jua6xg0Xbo4uw3AoFoqeTuHQ.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-LHPVGBTcDNWJp7paVvVLBM.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-PejTrRcY3RAdLrS6i4tfj2.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-QUTpWmMETbqdxhXQH3DUhb.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-Qc536gUwEpHdJtSC8EScXQj7.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-Rjt7ebO8l6mqP3byB4kDfVmP.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-RlBgBiRzOtmwj4rjHcip3S80.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-SZWwPS53ZT8keabp6hA8yz.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-TUPgiGPtAsKoDhx4AAuoXS.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-VFm6BhaxptCq4R4nXiuaM8.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-XZHbWUdWRzsxwC4fgRHLLk.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-Y4xjCukbtYcikn2DEnSwcSeL.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-ZWJwVMfcJg64lrXSFRUkrxDV.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-bqclWjXpfbERCiuvsT7DAvvV.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-dI9vksaiMfulcRfODci8HSdb.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-mlW7Vu1vRG7KJqowbDOZjllG.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-oKo6n2xxrG4DBZFHCsudadCw.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-w6gXn8rvaq7Q4bBAZUJbKebY.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-zcIT514C9T4It057AbvXN3RR.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000000250720a88dd6371be02f582.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000045881f4afdb563f07e9f9ec.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000006ac820a9d998000208b5a4e.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000080481f4ae8d9779c013b3ae.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000008108246a0bc690983256107.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000081871f4b8029e81d48f2425.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000009c4820abc8ae7f22d3828bd.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000009fc71f482656435c6899688.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000000ca471f4972ffd0f79810877.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000000e0c720aa7a4419b9ded5b0a.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000108c81f4a9ada25b8b84a294.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000010c882469dd2049886fe5a5d.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000010d8824382a33b6a4f37d91b.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000001164720aa4f5d4d35e8f163f.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000125c720ab8ce13c07a119f6c.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000016a4820a8d943f031e49cc09.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000001944820a81d34865796521d5.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000001a4071f498d79aaf67fac493.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000001b48720a9c70f161bc105ea8.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000200c720a8fcbe2fc3694687b.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000002020720a91b3b50bce3efb1f.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000021a08243b6e742096f1448b4.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000022c0820a83c46ddd87762f36.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000002344722fbfff95d0145e694b.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000240081f9b8a2a08efc1209d0.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000246471f4b47868e1f9e73213.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000025c8720c9b36cfd1616211c8.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000002618720aa1cd7c819617d065.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000026bc820aae9694864900825c.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000002c5871f4bbd0602f8b55723e.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000002d0071f4b7b0bb08a949628f.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000002d9882439ba0fd2d4482f0f7.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000002e7c81f49674cfdeadf5bf7e.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000030f0720aa8295e9d258735bf.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000337081f4b9fc1619fa93873d.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000034a8720aaf0d57857726dc1c.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000034f081f4a64aec25c71b1087.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000391871f8ad02ce60587a9e01.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000039b0820a9da9820ed4efa44d.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000003b98720aa2b8f37eba59aaed.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000003c1472468c68d36b6e528656.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000003c6c720abca9813be2b7781a.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000003ce082439da51ba193f0a875.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000003d60722fbf3f27eaa0c66e9d.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000003d7c81f585c46c0b2f881a7c.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000408481f8a649448b3ca9fbf7.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000041508210a0748a763506d4ba.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000004284822f8e802cc488303d1c.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000435081f794b58de854f289ab.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000044f481f8bbb0865f2fc94b7a.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000045a881f4a7743071838d649b.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000004710820a82694a2cbd53b71b.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000004938720a8ef7a6073716230c.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000049c481f4a90c9c0e2ec5e474.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000004d90820a828d6b8980d1cda6.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000051f4820ab5072f611d2c5bfc.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000005b5471f4be11d438c13fc0eb.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000005c20720cad6aa5c335c0e9bf.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000005cec720a8b2cf262f6c9fd69.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000005cf0722f926ffb28eb7009a3.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000005d648243892d6c8d892215c5.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000005eb07243b564975f1999802b.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000060f47243ae3c67acad7e76f3.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000062ac8246a77f0da9ae289a18.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000062e471f48b745fd26e628689.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000064f882109aa4779c8034c056.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000659471f48b8273b8a11c0267.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000066687246b226642d1f8c297d.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000006a0081f4b2220a279b6eb6f4.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000006b1872468d0e505da1efc079.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000071688246be6ba7fddf792d8d.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000007224824385b1d83b84e14965.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000757481f4a57521da056d0ad3.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000769871f494900bb60b3729fe.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000007de8720a91948f20efd63c29.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000007f4471f4bda8299e43d81ea0.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000007fc482469c2b4bcac582fcf3.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000804872469390f13007a66cf2.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000083cc71f4970aaa727e46997d.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000851471f49afd254c1f310275.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000880871f48857a76f65b41f9e.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000883471f486792266a8db3343.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000088848246a90b9eea1f542e25.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000899081f48a88b1244180146c.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000008a4481f48288c11fdf953f39.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000008de872468896121897e7ce57.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000008eac824685e31a49e17ff7bd.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000090f071f49c92bc4867204494.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000093bc820a887f98d354cb410a.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000009670820a9e1e5c852a7424f9.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000099648246b4bf4e753be6bd77.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000009afc81f4a6b06022de40f158.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000009cbc81f4a27b8f3c6c5eb1b2.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000009cc471f48b4e60987528780e.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000009db4720ab007a6a82e61e1bc.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000009e08720a8caf841e7e731e72.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000009ffc8243a636921ffb2f6672.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000a1687246a39a86734e926b67.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000a28882468afabdcd50de3a18.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000a350720abe3c0ed92c6fa8d5.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000a3ac81f5b761e91423e475c5.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000a73481f4b27cd7fd14ee9e22.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000a92471f4ab9458967f0f0cda.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000aa60620ab515ca7ef10f1b8d.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ae38620aa5650d0485101611.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000af2081f483600b2569f82756.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000b06c81f491e52a443902fe57.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000b11c71fdb79adb0baabd015c.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000b14081f48ef74290b7c969a3.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000b1cc820ab662fd6a309682bb.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000b354720aac6bc376b4274b90.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000b54881fa87943d7bf9ba7a8b.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ba0881f4ae085d942fbd37ea.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000bc28720a84ebb4058e130210.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000bd548243b3123d4d5d7c58a1.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000bdbc81f4a67c06a6edd34f36.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000bf1c71f4a9b76cc873446087.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000c24c7246a789bb218bffd940.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000c3748246a09910edfca40d77.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000c54c7246a97653e5727f50ed.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000c58871f5912abdbb1ee6c81c.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000c6dc8246beea9b132e88d48b.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000c78881f8a876abdb5cb34002.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000c8648243b2600ca3d46046e3.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ca1c820ab9542acd077e592b.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ca3881f49bc7d56037674bc8.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000cb8881f4ae232b05c6f09c70.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000cd68720aa6cdf47bd3c129ad.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ceac824691f0f39a01482914.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000d03081f4839f8dddb540c3e6.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000d040720a85126788e7e56f99.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000d1bc720aa69bbdf7dba80a1c.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000d29871f48e628e2615aeaa08.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000d3c4820aa3451bc0dda827d8.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000d6708230ba51311d8970b7d3.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000db4471f4a40fa245043c860e.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000dcf081f4bb21cc659dd86cde.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000de2c81f4a710f338a6a34f63.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000e098722faeed920103b423d7.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000e2fc720abf8d10907cb0e160.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000e47881f48d6f83d43253f54d.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000e48481f5b93f0b9004756928.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000e614720ab3a7ec592950e9af.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000e71081f49af9b49ff3d18b9b.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000e898824699b4351985a90952.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000eb3081f49ecdcd1c444d3615.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ecd881f4a8195642e2ae7954.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ed847243a46d78f87530229b.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000eed0822fa53d5c1b839b0124.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000efd8820a97ce7b47315bf205.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000efec720a8780dbdf94cc1658.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f0a4720ab73830f5760fcd1b.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f11872439d6a343830f133b5.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f1a07246908c6f3a0851d6ea.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f37071f49247039d4eb64a5e.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f3b081fda63cd8fb91828b64.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f42481f496e917cc83a9673c.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f43071f4a989aad1039f5731.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f60c72438a6b7118a6e18f61.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f6a8824690516bbcc55061fc.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f850720a99baf2ad251217ed.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f864720aa8be6a9f7ad48953.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f99c71fd9e17438aa2461325.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000fb5c8246a0a7cdae446e9399.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000fca881f4bd5464b9491cc7b3.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000fcf0720a9d83160bb025e7bd.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ff1c724399a6edbee12fb8a4.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ff2c81f4892b0ec6116820c9.dat
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/library_files.json
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/message_feedback.json
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/shared_conversations.json
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/user.json
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/user_settings.json
+
+	new file:   04_Knowledge/Scholar_Personal_Archive/README.md
+
+	new file:   04_Knowledge/Scholar_Profile/README.md
+
+	new file:   04_Knowledge/Scholar_Profile/scholar_profile.md
+
+	new file:   04_Knowledge/Sources/.gitkeep
+
+	new file:   04_Knowledge/Sources/Papers/Incoming/Zangwill-ArtAudience-1999 (1).pdf
+
+	new file:   04_Knowledge/Sources/Papers/Incoming/Zangwill-ArtAudience-1999-research-note.md
+
+	new file:   04_Knowledge/Synthesis/.gitkeep
+
+	new file:   04_Knowledge/Synthesis/Essays/.gitkeep
+
+	new file:   04_Knowledge/Synthesis/Frameworks/.gitkeep
+
+	new file:   04_Knowledge/Synthesis/Maps/.gitkeep
+
+	new file:   04_Knowledge/Synthesis/Maps/Zangwill-ArtAudience-1999-synthesis-map.md
+
+	new file:   04_Knowledge/Synthesis/Maps/Zangwill-ArtAudience-concept-map.md
+
+	new file:   04_Knowledge/Templates/Analysis_Template.md
+
+	new file:   04_Knowledge/Templates/Concept_Template.md
+
+	new file:   04_Knowledge/Templates/Reading_Note_Template.md
+
+	new file:   04_Knowledge/Templates/Source_Template.md
+
+	new file:   04_Knowledge/Templates/Synthesis_Template.md
+
+	new file:   04_Knowledge/WORKFLOW.md
+
+Untracked files:
+
+  (use "git add <file>..." to include in what will be committed)
+
+	.research_os
+
+	.research_os_frozen
+
+	00_Inbox/
+
+	01_Research/
+
+	01_System/
+
+	02_AI_Lab/
+
+	03_Engineering/
+
+	03_System/
+
+	05_Archives/
+
+	06_System/
+
+	99_Sandbox/
+
+	AGENTS.md
+
+	ARCHITECTURE.md
+
+	INDEX.md
+
+	README.md
+
+	RESEARCH_OS_STATUS.md
+
+	WORKSPACE.md
+
+	WORKSPACE_COMMANDS.md
+
+	after_benchmark001_files.txt
+
+	before_benchmark001_files.txt
+
+	upgrade_benchmark001_calibration.sh
+
+mostafa@MMostafa Workspace % git commit -m "Initialize Hermes Scholar OS v1 knowledge baseline"
+
+[master (root-commit) 3067555] Initialize Hermes Scholar OS v1 knowledge baseline
+
+ 278 files changed, 835420 insertions(+)
+
+ create mode 100644 .gitignore
+
+ create mode 100644 04_Knowledge/.obsidian/app.json
+
+ create mode 100644 04_Knowledge/.obsidian/appearance.json
+
+ create mode 100644 04_Knowledge/.obsidian/core-plugins.json
+
+ create mode 100644 04_Knowledge/.obsidian/workspace.json
+
+ create mode 100644 04_Knowledge/ARCHITECTURE.md
+
+ create mode 100644 04_Knowledge/Concepts/.gitkeep
+
+ create mode 100644 04_Knowledge/Concepts/AI/.gitkeep
+
+ create mode 100644 04_Knowledge/Concepts/Art_Theory/.gitkeep
+
+ create mode 100644 04_Knowledge/Concepts/Art_Theory/Audience_and_Art.md
+
+ create mode 100644 04_Knowledge/Concepts/Artistic-Integrity-Accordion-Effect-Zangwill-1999.md
+
+ create mode 100644 04_Knowledge/Concepts/Convergence-Argument-Zangwill-1999.md
+
+ create mode 100644 04_Knowledge/Concepts/Methodology/.gitkeep
+
+ create mode 100644 04_Knowledge/Concepts/Minimal-Explanation-Principle-Zangwill-1999.md
+
+ create mode 100644 04_Knowledge/Concepts/Monitoring-Exploration-Model-Zangwill-1999.md
+
+ create mode 100644 04_Knowledge/Concepts/Philosophy/.gitkeep
+
+ create mode 100644 04_Knowledge/Concepts/Triangulation-Argument-Zangwill-1999.md
+
+ create mode 100644 04_Knowledge/FINAL_STATUS.md
+
+ create mode 100644 04_Knowledge/INDEX.md
+
+ create mode 100644 04_Knowledge/MIGRATION_LOG.md
+
+ create mode 100644 04_Knowledge/Notes/.gitkeep
+
+ create mode 100644 04_Knowledge/Notes/Analysis/Zangwill-ArtAudience-1999-analysis.md
+
+ create mode 100644 04_Knowledge/Notes/Analysis/Zangwill-ArtAudience-1999-argument-analysis.md
+
+ create mode 100644 04_Knowledge/Notes/Reading/Zangwill-ArtAudience-1999-reading-note.md
+
+ create mode 100644 04_Knowledge/README.md
+
+ create mode 100644 04_Knowledge/Research_Log/Benchmark_001/input/Zangwill-ArtAudience-1999-research-note.md
+
+ create mode 100644 04_Knowledge/Research_Log/Benchmark_001_Final_State.txt
+
+ create mode 100644 04_Knowledge/Research_Log/Benchmark_001_Zangwill.md
+
+ create mode 100644 04_Knowledge/Research_Log/Benchmark_Evaluation_Template.md
+
+ create mode 100644 04_Knowledge/Research_Log/Hermes_Workflow_Observations.md
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/00_Raw/14171f10d68d11993f5bb8fffd9ea347303363723dc0c91b4813486f1a590147-2026-08-18-21-58-47-b5e7d79638714b72b6277352b37155fa.zip
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/ads.json
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/chat.html
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/codex.json
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/conversation_asset_file_names.json
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/conversations-000.json
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/conversations-001.json
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/conversations-002.json
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/conversations-003.json
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/export_manifest.json
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-16gwi2uyTM3p3hCaQzgcBh.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-1x4p9LKqUKrSI4kjkKfVgT9w.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-2Ee7nFYZfoqgZjdSLqkdQY.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-2Y7VGdQbZYqRHaGhPwWCTe.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-3AhKhZJRIpO2bHzcHHC3uYSU.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-3FuaCAqRGSeYhjeXF3E2PK.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-59G4qXpmAPdBFGjcyKJjns.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-5uZO43esXMR9vE9Pib5GAJFg.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-647DejFVEAMcCnsjh7cGff.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-7Qj0QgyJUXAsYRbbF5vlHo59.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-7d547c6gp9HzU5dq5HjHrj.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-8320BA6f2Pomk3uaC0WOYbII.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-CCeoAhwXaVwAxNqSLFj1qX.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-D4qC2P5xKbBawwmSFGVvBb.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-DH2q7JPLVwH9Ch2PuzEXt4.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-DckiRcSwrSfCMcv8BWEeWS.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-E5JQKjCF8RfLnH3F2EYT4W.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-EJR3gZa4bLBDwVXXG6toD4.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-EumT9ng7gRUDRNafEfdXjP.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-F3hM56JT4geJXiuFnPKWjz.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-FNGSqBbtqDULkidxKVTPh8.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-FakryMZAk6LLce3qiirE6k.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-GCnyDaHZ4wkSjdsykX7sQX.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-GQo5SQaCbiqeUSrPutiZFs.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-HCRTCaQDpcZhTchkrqGkua.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-HSCukj9yxwCndc3AHXUWVS.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-HZydaWh1vUpTq2wQayvtkU.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-IIJm8RrFbfSVrrJQ3j0jxVJu.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-Jua6xg0Xbo4uw3AoFoqeTuHQ.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-LHPVGBTcDNWJp7paVvVLBM.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-PejTrRcY3RAdLrS6i4tfj2.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-QUTpWmMETbqdxhXQH3DUhb.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-Qc536gUwEpHdJtSC8EScXQj7.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-Rjt7ebO8l6mqP3byB4kDfVmP.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-RlBgBiRzOtmwj4rjHcip3S80.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-SZWwPS53ZT8keabp6hA8yz.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-TUPgiGPtAsKoDhx4AAuoXS.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-VFm6BhaxptCq4R4nXiuaM8.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-XZHbWUdWRzsxwC4fgRHLLk.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-Y4xjCukbtYcikn2DEnSwcSeL.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-ZWJwVMfcJg64lrXSFRUkrxDV.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-bqclWjXpfbERCiuvsT7DAvvV.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-dI9vksaiMfulcRfODci8HSdb.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-mlW7Vu1vRG7KJqowbDOZjllG.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-oKo6n2xxrG4DBZFHCsudadCw.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-w6gXn8rvaq7Q4bBAZUJbKebY.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file-zcIT514C9T4It057AbvXN3RR.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000000250720a88dd6371be02f582.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000045881f4afdb563f07e9f9ec.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000006ac820a9d998000208b5a4e.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000080481f4ae8d9779c013b3ae.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000008108246a0bc690983256107.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000081871f4b8029e81d48f2425.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000009c4820abc8ae7f22d3828bd.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000009fc71f482656435c6899688.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000000ca471f4972ffd0f79810877.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000000e0c720aa7a4419b9ded5b0a.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000108c81f4a9ada25b8b84a294.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000010c882469dd2049886fe5a5d.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000010d8824382a33b6a4f37d91b.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000001164720aa4f5d4d35e8f163f.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000125c720ab8ce13c07a119f6c.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000016a4820a8d943f031e49cc09.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000001944820a81d34865796521d5.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000001a4071f498d79aaf67fac493.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000001b48720a9c70f161bc105ea8.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000200c720a8fcbe2fc3694687b.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000002020720a91b3b50bce3efb1f.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000021a08243b6e742096f1448b4.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000022c0820a83c46ddd87762f36.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000002344722fbfff95d0145e694b.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000240081f9b8a2a08efc1209d0.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000246471f4b47868e1f9e73213.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000025c8720c9b36cfd1616211c8.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000002618720aa1cd7c819617d065.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000026bc820aae9694864900825c.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000002c5871f4bbd0602f8b55723e.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000002d0071f4b7b0bb08a949628f.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000002d9882439ba0fd2d4482f0f7.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000002e7c81f49674cfdeadf5bf7e.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000030f0720aa8295e9d258735bf.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000337081f4b9fc1619fa93873d.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000034a8720aaf0d57857726dc1c.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000034f081f4a64aec25c71b1087.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000391871f8ad02ce60587a9e01.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000039b0820a9da9820ed4efa44d.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000003b98720aa2b8f37eba59aaed.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000003c1472468c68d36b6e528656.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000003c6c720abca9813be2b7781a.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000003ce082439da51ba193f0a875.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000003d60722fbf3f27eaa0c66e9d.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000003d7c81f585c46c0b2f881a7c.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000408481f8a649448b3ca9fbf7.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000041508210a0748a763506d4ba.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000004284822f8e802cc488303d1c.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000435081f794b58de854f289ab.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000044f481f8bbb0865f2fc94b7a.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000045a881f4a7743071838d649b.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000004710820a82694a2cbd53b71b.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000004938720a8ef7a6073716230c.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000049c481f4a90c9c0e2ec5e474.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000004d90820a828d6b8980d1cda6.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000051f4820ab5072f611d2c5bfc.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000005b5471f4be11d438c13fc0eb.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000005c20720cad6aa5c335c0e9bf.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000005cec720a8b2cf262f6c9fd69.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000005cf0722f926ffb28eb7009a3.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000005d648243892d6c8d892215c5.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000005eb07243b564975f1999802b.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000060f47243ae3c67acad7e76f3.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000062ac8246a77f0da9ae289a18.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000062e471f48b745fd26e628689.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000064f882109aa4779c8034c056.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000659471f48b8273b8a11c0267.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000066687246b226642d1f8c297d.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000006a0081f4b2220a279b6eb6f4.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000006b1872468d0e505da1efc079.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000071688246be6ba7fddf792d8d.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000007224824385b1d83b84e14965.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000757481f4a57521da056d0ad3.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000769871f494900bb60b3729fe.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000007de8720a91948f20efd63c29.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000007f4471f4bda8299e43d81ea0.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000007fc482469c2b4bcac582fcf3.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000804872469390f13007a66cf2.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000083cc71f4970aaa727e46997d.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000851471f49afd254c1f310275.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000880871f48857a76f65b41f9e.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000883471f486792266a8db3343.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000088848246a90b9eea1f542e25.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000899081f48a88b1244180146c.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000008a4481f48288c11fdf953f39.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000008de872468896121897e7ce57.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000008eac824685e31a49e17ff7bd.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000090f071f49c92bc4867204494.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000093bc820a887f98d354cb410a.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000009670820a9e1e5c852a7424f9.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_0000000099648246b4bf4e753be6bd77.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000009afc81f4a6b06022de40f158.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000009cbc81f4a27b8f3c6c5eb1b2.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000009cc471f48b4e60987528780e.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000009db4720ab007a6a82e61e1bc.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000009e08720a8caf841e7e731e72.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_000000009ffc8243a636921ffb2f6672.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000a1687246a39a86734e926b67.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000a28882468afabdcd50de3a18.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000a350720abe3c0ed92c6fa8d5.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000a3ac81f5b761e91423e475c5.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000a73481f4b27cd7fd14ee9e22.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000a92471f4ab9458967f0f0cda.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000aa60620ab515ca7ef10f1b8d.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ae38620aa5650d0485101611.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000af2081f483600b2569f82756.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000b06c81f491e52a443902fe57.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000b11c71fdb79adb0baabd015c.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000b14081f48ef74290b7c969a3.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000b1cc820ab662fd6a309682bb.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000b354720aac6bc376b4274b90.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000b54881fa87943d7bf9ba7a8b.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ba0881f4ae085d942fbd37ea.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000bc28720a84ebb4058e130210.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000bd548243b3123d4d5d7c58a1.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000bdbc81f4a67c06a6edd34f36.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000bf1c71f4a9b76cc873446087.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000c24c7246a789bb218bffd940.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000c3748246a09910edfca40d77.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000c54c7246a97653e5727f50ed.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000c58871f5912abdbb1ee6c81c.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000c6dc8246beea9b132e88d48b.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000c78881f8a876abdb5cb34002.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000c8648243b2600ca3d46046e3.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ca1c820ab9542acd077e592b.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ca3881f49bc7d56037674bc8.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000cb8881f4ae232b05c6f09c70.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000cd68720aa6cdf47bd3c129ad.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ceac824691f0f39a01482914.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000d03081f4839f8dddb540c3e6.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000d040720a85126788e7e56f99.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000d1bc720aa69bbdf7dba80a1c.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000d29871f48e628e2615aeaa08.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000d3c4820aa3451bc0dda827d8.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000d6708230ba51311d8970b7d3.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000db4471f4a40fa245043c860e.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000dcf081f4bb21cc659dd86cde.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000de2c81f4a710f338a6a34f63.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000e098722faeed920103b423d7.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000e2fc720abf8d10907cb0e160.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000e47881f48d6f83d43253f54d.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000e48481f5b93f0b9004756928.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000e614720ab3a7ec592950e9af.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000e71081f49af9b49ff3d18b9b.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000e898824699b4351985a90952.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000eb3081f49ecdcd1c444d3615.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ecd881f4a8195642e2ae7954.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ed847243a46d78f87530229b.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000eed0822fa53d5c1b839b0124.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000efd8820a97ce7b47315bf205.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000efec720a8780dbdf94cc1658.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f0a4720ab73830f5760fcd1b.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f11872439d6a343830f133b5.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f1a07246908c6f3a0851d6ea.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f37071f49247039d4eb64a5e.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f3b081fda63cd8fb91828b64.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f42481f496e917cc83a9673c.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f43071f4a989aad1039f5731.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f60c72438a6b7118a6e18f61.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f6a8824690516bbcc55061fc.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f850720a99baf2ad251217ed.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f864720aa8be6a9f7ad48953.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000f99c71fd9e17438aa2461325.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000fb5c8246a0a7cdae446e9399.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000fca881f4bd5464b9491cc7b3.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000fcf0720a9d83160bb025e7bd.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ff1c724399a6edbee12fb8a4.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/file_00000000ff2c81f4892b0ec6116820c9.dat
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/library_files.json
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/message_feedback.json
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/shared_conversations.json
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/user.json
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/ChatGPT/01_Converted/raw_export/user_settings.json
+
+ create mode 100644 04_Knowledge/Scholar_Personal_Archive/README.md
+
+ create mode 100644 04_Knowledge/Scholar_Profile/README.md
+
+ create mode 100644 04_Knowledge/Scholar_Profile/scholar_profile.md
+
+ create mode 100644 04_Knowledge/Sources/.gitkeep
+
+ create mode 100644 04_Knowledge/Sources/Papers/Incoming/Zangwill-ArtAudience-1999 (1).pdf
+
+ create mode 100644 04_Knowledge/Sources/Papers/Incoming/Zangwill-ArtAudience-1999-research-note.md
+
+ create mode 100644 04_Knowledge/Synthesis/.gitkeep
+
+ create mode 100644 04_Knowledge/Synthesis/Essays/.gitkeep
+
+ create mode 100644 04_Knowledge/Synthesis/Frameworks/.gitkeep
+
+ create mode 100644 04_Knowledge/Synthesis/Maps/.gitkeep
+
+ create mode 100644 04_Knowledge/Synthesis/Maps/Zangwill-ArtAudience-1999-synthesis-map.md
+
+ create mode 100644 04_Knowledge/Synthesis/Maps/Zangwill-ArtAudience-concept-map.md
+
+ create mode 100644 04_Knowledge/Templates/Analysis_Template.md
+
+ create mode 100644 04_Knowledge/Templates/Concept_Template.md
+
+ create mode 100644 04_Knowledge/Templates/Reading_Note_Template.md
+
+ create mode 100644 04_Knowledge/Templates/Source_Template.md
+
+ create mode 100644 04_Knowledge/Templates/Synthesis_Template.md
+
+ create mode 100644 04_Knowledge/WORKFLOW.md
+
+mostafa@MMostafa Workspace % git branch -m main
+
+mostafa@MMostafa Workspace % git branch
+
+git log --oneline -1
+
+* main
+
+3067555 (HEAD -> main) Initialize Hermes Scholar OS v1 knowledge baseline
+
+mostafa@MMostafa Workspace % 
