@@ -1,0 +1,625 @@
+ # NÆRA EXP003 — Final Adversarial Execution Audit
+
+> **STATUS: AUDIT ONLY — NO CODE MODIFICATION**
+>
+> This document performs a final adversarial audit of the proposed EXP003
+> execution protocol before implementation authorization.
+>
+> **NO CODE WAS MODIFIED.**
+
+---
+
+## Repository State
+
+| Item | Status |
+|------|--------|
+| **Working directory** | `/Users/mostafa/Workspace/02_AI_Lab/Agent_Experiments/DSH/DSH_Workspace` |
+| **Git branch** | `main` (ahead of origin/main by 1 commit) |
+| **Tracked modifications in DSH_Workspace** | None |
+| **Untracked files** | Many outside DSH_Workspace (`01_Active_Research/`, `02_AI_Lab/`, `04_Knowledge/`, etc.) — unrelated to NÆRA |
+| **EXP002 implementation** | Isolated in `naera/substrate/` — untouched |
+| **Stage 0 baseline** | Intact in `tests/test_stage0_baseline.py` — untouched |
+| **EXP003 implementation files** | Do not exist yet. No `naera/substrate_exp003/` directory. |
+| **Documentation consistency** | 7 core EXP003 docs consolidated and consistent. 1 critical inconsistency found (see Audit 1). |
+
+**Contamination risks:** None detected. `naera/substrate/` explicitly isolates from cognition/LLM.
+
+---
+
+## Current Protocol Verdict
+
+**CONDITIONAL APPROVAL**
+
+The experiment is conceptually sound: it tests whether a deterministic mechanism's output depends on its initial state and accumulated data. The minimal substrate removes the most serious circularity risks. The controls are conceptually adequate.
+
+However, the current protocol contains **one fundamental methodological flaw** that must be corrected before implementation:
+
+> **The history-difference measurement is asymmetric by construction.**
+
+Run Y (blank state) produces `⊥` (no prediction) for every observation in the shared sequence, while Run X (populated state) produces symbols from Σ. This makes μ_d > 0.5 trivially achievable. The experiment would measure state inequality, not an informative consequence of accumulated history.
+
+Additionally, there are **three secondary issues** that require correction:
+1. The response function has an unresolved tie-breaking ambiguity.
+2. The provenance category `LEARNED_REPRESENTATION` is theoretically loaded.
+3. The statistical criteria (μ_d > 0.5, 2σ, N ≥ 10) are not mathematically justified for the actual binary measurement being proposed.
+
+---
+
+## 1. Primary Measurement Audit
+
+### The Flaw
+
+The proposed measurement:
+
+```
+d_i = 1 if r^X_i ≠ r^Y_i else 0
+μ_d = mean(d_i)
+```
+
+where Run X has accumulated state s_N and Run Y has s_0 = ∅.
+
+**The response function is:**
+```
+r_t = most_frequent_follower(last_k_symbols(s_t)) in s_t
+```
+If no follower exists, return `⊥`.
+
+### Why This Is Trivial
+
+| Run | State | `last_k_symbols(s_t)` | Followers exist? | Response |
+|-----|-------|----------------------|------------------|----------|
+| **X** | s_N (populated) | Some substring | Usually yes | Symbol from Σ |
+| **Y** | ∅ (empty) | ∅ | Never | `⊥` |
+
+For **every** observation in the shared sequence:
+- Run X produces a symbol from Σ (or `⊥` if no follower)
+- Run Y produces `⊥` (empty state has no followers)
+
+Therefore, `d_i = 1` for **every** step where Run X produces a symbol. The measurement is trivially asymmetric.
+
+### Can μ_d > 0.5 occur trivially?
+
+**Yes, by construction.** The blank state cannot produce followers by definition. The populated state can. The comparison does not isolate history — it isolates state non-emptiness.
+
+### What the measurement actually tests
+
+The current measurement tests:
+> "Does a populated string produce followers more often than an empty string?"
+
+This is a tautology. It does not test:
+> "Does accumulated history produce different responses than blank history?"
+
+### Is the response function well-defined for every state?
+
+**No.** The response function is undefined for the empty string in the sense that it always returns `⊥`. This creates an asymmetry that invalidates the comparison.
+
+### Mandatory Correction 1
+
+The response function or comparison protocol must be redesigned to eliminate the asymmetry. Options:
+
+**Option A:** Change the blank state from ∅ to a state that can produce followers but has no history. For example, a "padding" state `s_0 = •` (separator symbol) that allows the response function to operate but contains no accumulated history.
+
+**Option B:** Change the response function to return a default symbol (e.g., the most frequent symbol in Σ) when no follower exists, instead of `⊥`. This makes the response always defined but may introduce a frequency preference.
+
+**Option C:** Redesign the measurement to compare response distributions rather than binary differences. For example, compare the multiset of responses rather than individual response differences.
+
+**Recommended:** Option A. It preserves the operational definition of "blank" (no accumulated history) while making the response function well-defined.
+
+---
+
+## 2. Response-Function Audit
+
+### Formalization
+
+```
+query(s_t) = last_k_symbols(s_t)
+followers(s_t, query) = { s_t[i+len(query)] | s_t[i:i+len(query)] == query, i+len(query) < len(s_t) }
+r_t = argmax_{σ ∈ Σ} count(σ in followers(s_t, query))
+      if followers is empty: return ⊥
+```
+
+### Ambiguities
+
+| Ambiguity | Status | Resolution |
+|-----------|--------|------------|
+| **Query at end of string** | If `last_k_symbols(s_t)` occurs at the very end of s_t, there is no follower. | Correctly returns `⊥`. |
+| **Query occurs multiple times** | Count all followers, return most frequent. | Well-defined. |
+| **Tie in follower counts** | **NOT SPECIFIED.** | Must be resolved: return first in Σ order, or random (seeded), or all tied symbols. |
+| **Empty string query** | When s_t = ∅, query = ∅. Followers of ∅ in ∅ = ∅. Returns `⊥`. | This is the source of the asymmetry in Audit 1. |
+
+### Does the response mechanism introduce hidden optimization?
+
+**Yes, subtly.** The response function returns the **most frequent** follower. This embeds a preference for frequency over rarity. While this is a property of the deterministic rule (not a researcher-defined goal), it is still a value judgment: frequency is treated as more "important" than rarity.
+
+**Is this fatal?** No. The preference is explicit and documented. But it must be acknowledged as an architectural prior, not as a "neutral" lookup.
+
+### Mandatory Correction 2
+
+Resolve the tie-breaking rule explicitly. Recommended: return the first symbol in Σ order (deterministic, no randomness).
+
+---
+
+## 3. History-Comparison Audit
+
+### Are Run X and Run Y valid counterfactuals?
+
+**No, not in the current formulation.** They differ in multiple ways beyond history:
+
+| Dimension | Run X | Run Y | Intended difference? |
+|-----------|-------|-------|---------------------|
+| Initial state | s_N (populated) | ∅ (empty) | YES — this is the history difference |
+| State length | Long | 0 | YES — consequence of history |
+| State content | Specific history | None | YES — consequence of history |
+| Response availability | Usually symbols | Always `⊥` | **NO — this is a construction artifact** |
+| Processing history | N observations | 0 observations | YES — consequence of history |
+
+The critical invalidity is **response availability**. Run Y cannot produce symbol responses by construction. The comparison is not between "history" and "no history" — it is between "populated state" and "empty state that cannot respond."
+
+### What else could arise
+
+- **Timing:** Both runs process the same shared sequence, so timing should be identical.
+- **Randomization:** Both use the same seed for the shared sequence, so randomization is controlled.
+- **Stream position:** Both start at the same position in the shared sequence.
+- **Serialization/restart:** Only relevant for the persistence test, not the primary comparison.
+
+### Mandatory Correction 3
+
+Redesign the blank state so that the response function is well-defined and can produce the same type of output as the populated state. See Mandatory Correction 1.
+
+---
+
+## 4. Control Audit
+
+### Condition A: Persistent (baseline)
+**Verdict:** OK. Standard substrate with full state history.
+
+### Condition B: No-memory
+**Implementation:** Reset state to ∅ after each observation.
+
+**Problem:** If state is reset to ∅ after each observation, the response for every step is `⊥`. History-difference is trivially 0 (or trivially 1 if Run X produces symbols). This control does not test "persistence" — it tests whether the response function can produce non-`⊥` outputs.
+
+**Variable claimed to isolate:** Persistence.
+**Variable actually isolated:** Response availability.
+
+**Mandatory Correction 4:** Condition B must reset to a state that allows response function operation (see Option A in Audit 1), not to ∅.
+
+### Condition C: Shuffled temporal
+**Implementation:** Permute observation order within trials.
+
+**Problem:** Shuffling changes the state trajectories, not just temporal structure. The comparison is between different state structures, not just different temporal ordering. This is acceptable if the goal is to disrupt temporal regularities, but it must be acknowledged that the control changes the experiment.
+
+**Variable claimed to isolate:** Temporal structure.
+**Variable actually isolated:** Temporal structure AND state trajectory.
+
+**Verdict:** Acceptable with acknowledgment. The control tests whether temporal contiguity matters, but it does so by creating a different state trajectory.
+
+### Condition D: Random state
+**Implementation:** Initialize state with random symbols from Σ.
+
+**Problem:** Random symbols may accidentally create followers, producing spurious responses. The control may show history-difference not because of accumulated history but because of random symbol coincidences.
+
+**Variable claimed to isolate:** State initialization.
+**Variable actually isolated:** State initialization AND random symbol effects.
+
+**Mandatory Correction 5:** Condition D must use a deterministic "random" initialization (fixed seed) and must be analyzed to ensure random symbols do not create systematic followers.
+
+### Condition E: No-update
+**Implementation:** State never changes: s_{t+1} = s_t.
+
+**Problem:** If state never changes, the response is constant (same `last_k_symbols(s_t)` at every step). History-difference is trivially 0. This control works correctly for isolating state modification.
+
+**Variable claimed to isolate:** State modification.
+**Variable actually isolated:** State modification.
+
+**Verdict:** OK. This control is valid.
+
+### Control Isolation Summary
+
+| Comparison | Isolates | Validity |
+|------------|----------|----------|
+| A vs B | Persistence | **INVALID** — response availability confound |
+| A vs C | Temporal structure | **WEAK** — also changes state trajectories |
+| A vs D | State initialization | **WEAK** — random symbols may create spurious effects |
+| A vs E | State modification | VALID |
+
+### Mandatory Correction 6
+
+Add a control that isolates persistence without changing response availability. For example:
+- **Condition B':** Reset to a "history-less but response-capable" state after each observation (e.g., `s_0 = •`).
+
+---
+
+## 5. Persistence Audit
+
+### The Claim
+
+**state surviving serialization → persistent state differentiation**
+
+### What the restart experiment can establish
+
+1. **Persistence of stored data:** The state string survives serialization/deserialization. ✅ Directly established.
+2. **Persistence of mechanism state:** The reloaded state produces the same responses as the original. ✅ Directly established (if reproducibility test passes).
+3. **Persistence of response differences:** History-difference survives restart. ✅ Directly established (if persistence ratio > 0.9).
+4. **Persistence of developmental effect:** The state has undergone irreversible, history-dependent transformation. ❌ This is interpretation, not measurement.
+
+### What remains interpretation
+
+The leap from (3) to (4) is theoretical. The experiment measures whether response differences persist. Whether this constitutes "developmental change" is a framework imposed on the measurement.
+
+### Verdict
+
+The restart test is valid for establishing (1), (2), and (3). It cannot establish (4). This is acceptable if the reporting protocol explicitly separates measurement from interpretation.
+
+**No correction needed** — the existing documentation already separates these levels.
+
+---
+
+## 6. Temporal Prior Audit
+
+### The Prior
+
+The sliding window assumes ordered observations: `o_1, o_2, o_3, ...`
+
+### Is this prior unavoidable?
+
+**Yes, for a sequential substrate.** Sequential processing requires ordering. This is an ARCHITECTURAL_PRIOR.
+
+### Is it explicit?
+
+**Yes.** The foundations document lists temporal order as an ARCHITECTURAL_PRIOR.
+
+### Is it testable?
+
+**Partially.** Condition C tests whether temporal contiguity matters by shuffling within trials. But shuffling within trials preserves between-trial order. A stronger test would randomize from the start.
+
+### Mandatory Correction 7
+
+Strengthen Condition C to include a variant where observations are randomized from the beginning of the stream, not just within trials. This tests whether any temporal structure is necessary, not just contiguity within trials.
+
+---
+
+## 7. Finite Alphabet Audit
+
+### What assumptions does Σ introduce?
+
+1. **Discreteness:** Symbols are discrete, not continuous. This is unavoidable for a string-based substrate.
+2. **Finite size:** |Σ| < ∞. This bounds the state space.
+3. **Symbol identity:** Each symbol is distinct. This introduces a minimal notion of "difference" (symbol a ≠ symbol b).
+
+### Is discreteness unavoidable?
+
+**Yes, for Phase 1.** A string-based substrate requires discrete symbols. Continuous values would require a different representation (vectors), which has been deferred.
+
+### Does alphabet size matter?
+
+**Yes.** Larger alphabets reduce collision probability in the sliding window, potentially reducing history-dependence. Smaller alphabets increase collisions. The experiment must test multiple alphabet sizes.
+
+### Does naming introduce semantics?
+
+**No,** if symbols are unlabeled and treated as opaque. The names 'a', 'b', 'c' are arbitrary. What matters is that they are distinct.
+
+### Is the alphabet part of environment or architecture?
+
+**Architecture.** The alphabet is chosen by the researcher and fixed before the experiment. It is an ARCHITECTURAL_PRIOR.
+
+### Robustness test
+
+Test with at least two alphabet sizes (e.g., |Σ| = 2 and |Σ| = 3) and two stream generation rules. If history-difference persists across these variations, the effect is not alphabet-specific.
+
+**No correction needed** — the design already includes parameter robustness testing.
+
+---
+
+## 8. Stream-Generator Audit
+
+### What "structured" means operationally
+
+"Structured" means the stream has regularities that are not trivially random but not trivially deterministic. Operationally:
+- The stream is generated by a fixed deterministic process with a fixed seed.
+- The process produces patterns that repeat with variation.
+- The patterns are not generated from discrete objects with identities.
+
+### Is the structure researcher-designed?
+
+**Yes.** The stream generation rule is chosen by the researcher. This is an ARCHITECTURAL_PRIOR.
+
+### Can the substrate exploit frequency regularities trivially?
+
+**Yes.** The most-frequent-follower response naturally exploits frequency regularities. If the stream has strong frequency structure, the response function will appear to "work" without genuine history-dependence.
+
+**Mitigation:** The shuffled-temporal control (C) tests whether temporal structure matters. If shuffled temporal produces similar results, frequency alone is sufficient.
+
+### Does the stream accidentally contain human-imposed categories?
+
+**Risk.** The stream generation rule may accidentally encode patterns that correspond to human categories (e.g., alternating patterns, repeating blocks). The researcher must verify that the stream does not contain semantic structure.
+
+### Would the same conclusions hold for multiple streams?
+
+**Unknown.** This requires the stream robustness test (multiple stream generation rules).
+
+### Mandatory Correction 8
+
+Specify a minimal defensible set of stream families:
+1. **Markov chain:** P(o_t | o_{t-1}) fixed, no longer-range dependencies.
+2. **Cyclic:** Deterministic cycle with noise.
+3. **Context-free:** Simple grammar (e.g., `a^n b^n` pattern).
+
+If history-difference persists across all three, the effect is not stream-specific.
+
+---
+
+## 9. Statistical Criteria Audit
+
+### Current criteria
+
+| Criterion | Threshold |
+|-----------|-----------|
+| History-difference | μ_d > 0.5 |
+| Persistence | Ratio > 0.9 |
+| Control isolation | μ_d(A) > μ_d(B,C,D,E) by 2σ |
+| Sample size | N ≥ 10 runs per condition |
+
+### Is 0.5 an appropriate null expectation?
+
+**No, not in the current formulation.** If Run Y always produces `⊥` and Run X usually produces symbols, the null expectation for μ_d is close to 1.0 (or whatever fraction of steps where Run X has followers). The threshold μ_d > 0.5 is meaningless because μ_d will almost certainly exceed 0.5 by construction.
+
+**Correct null:** The null hypothesis is that Run X and Run Y produce the same response distribution. For the current asymmetric design, this null is violated by construction.
+
+### What is the correct null distribution?
+
+The correct null is that the two runs are exchangeable given their initial states. Under this null, d_i are Bernoulli with p = P(r^X_i ≠ r^Y_i | s^X_0, s^Y_0). The null distribution of μ_d depends on the specific initial states.
+
+### Is 2σ sufficient?
+
+**Unknown.** Without knowing the control distribution, 2σ is arbitrary. The controls should be used to establish an empirical null distribution, and the threshold should be based on that distribution (e.g., 95th percentile).
+
+### Is N ≥ 10 sufficient?
+
+**Probably insufficient.** For binary measurements with potential pseudoreplication (multiple steps within a single run are not independent), N ≥ 10 runs may not provide adequate power. The experiment should report confidence intervals, not just point estimates.
+
+### Are repeated seeds independent experimental units?
+
+**No.** Runs with different seeds are independent, but steps within a single run are not. The analysis must account for this nesting (run as random effect, or bootstrap over runs).
+
+### Does the protocol suffer from pseudoreplication?
+
+**Yes.** The shared sequence of length M produces M correlated binary outcomes. Treating these as independent observations inflates the apparent sample size. The analysis should aggregate at the run level (e.g., mean μ_d per run) rather than at the step level.
+
+### Mandatory Correction 9
+
+1. Redesign the measurement to eliminate the asymmetry (see Audit 1). Once symmetric, μ_d > 0.5 is a meaningful null (random guessing).
+2. Replace the 2σ criterion with an empirical percentile from the control distribution (e.g., μ_d(A) > 95th percentile of μ_d(controls)).
+3. Increase sample size or use bootstrap confidence intervals over runs.
+4. Report run-level aggregates, not step-level aggregates.
+
+---
+
+## 10. Terminology / Provenance Audit
+
+### Forbidden terminology search
+
+| Term | Found in docs? | Found in proposed architecture? | Status |
+|------|----------------|--------------------------------|--------|
+| learning | Yes (as forbidden) | No | OK |
+| knowledge | Yes (as forbidden) | No | OK |
+| understanding | Yes (as forbidden) | No | OK |
+| representation | Yes (as forbidden) | No | OK |
+| adaptation | Yes (as forbidden) | No | OK |
+| intelligence | Yes (as forbidden) | No | OK |
+| object | Yes (as forbidden) | No | OK |
+| concept | Yes (as forbidden) | No | OK |
+| distinction | Yes (as forbidden) | No | OK |
+| meaning | Yes (as forbidden) | No | OK |
+| semantic | Yes (as forbidden) | No | OK |
+| self | Yes (as forbidden) | No | OK |
+| identity | Yes (as forbidden) | No | OK |
+| agency | Yes (as forbidden) | No | OK |
+| goal | Yes (as forbidden) | No | OK |
+| usefulness | No | No | OK |
+
+### Problematic term: LEARNED_REPRESENTATION
+
+**Status:** Theoretically loaded.
+
+**Why:** "Learned" implies knowledge acquisition. "Representation" implies standing for something external. Both are interpretations, not neutral descriptions.
+
+**Current use:** Tags the substrate state s_t.
+
+**Problem:** The state is a historical trace modified by the deterministic update rule. It is not "learned" in any knowledge-acquisition sense. Calling it "learned" smuggles in an interpretation.
+
+**Proposed replacement:** `PERSISTED_STATE` or `ACCUMULATED_STATE`
+
+### Mandatory Correction 10
+
+Replace `LEARNED_REPRESENTATION` with `PERSISTED_STATE` throughout all documentation and proposed implementation.
+
+---
+
+## 11. Provenance Audit
+
+### Current categories
+
+| Kind | Status | Assessment |
+|------|--------|------------|
+| **ARCHITECTURAL_PRIOR** | OK | Neutral. Describes researcher choices. |
+| **ACQUIRED_EXPERIENCE** | OK | Neutral. Describes observation stream. |
+| **LEARNED_REPRESENTATION** | **PROBLEM** | Theoretically loaded. Implies knowledge acquisition and representation. |
+
+### Do provenance categories introduce ontology?
+
+**Yes, minimally.** The term `LEARNED_REPRESENTATION` introduces the concepts of "learning" and "representation" into the provenance system. These are not neutral categories — they are interpretations of what the state is.
+
+### Does the provenance system exceed the experiment?
+
+**No, with the correction.** If `LEARNED_REPRESENTATION` is replaced with `PERSISTED_STATE`, the provenance system describes exactly what the experiment measures: architectural choices, acquired data, and persisted state.
+
+### Mandatory Correction 11
+
+Replace `LEARNED_REPRESENTATION` with `PERSISTED_STATE` in all documentation and proposed implementation.
+
+---
+
+## 12. Observer-System Audit
+
+### Current status
+
+The foundations document states: "Observer systems as instruments of recognition — Hermes, visualization, and analysis tools collect, measure, compare, visualize, and document. They do not define what NÆRA is, and they must not translate unknown behavior into human concepts prematurely."
+
+### Is this principle enforced in the proposed architecture?
+
+**Partially.** The execution plan mentions observer tools but does not explicitly define their boundaries.
+
+### What observer systems must not do
+
+- Define what NÆRA is.
+- Translate unknown behavior into human concepts prematurely.
+- Become part of the substrate unless explicitly defined as such.
+- Inject interpretations into the mechanism or measurement.
+
+### What observer systems must do
+
+- Record raw events.
+- Preserve provenance.
+- Calculate predefined measurements.
+- Visualize state and response.
+- Expose anomalies.
+- Preserve negative results.
+
+### Verdict
+
+The principle is stated but not fully integrated into the implementation architecture. The execution plan should explicitly define observer boundaries.
+
+**No mandatory correction** — but the implementation should include an explicit observer-interface specification that enforces these boundaries.
+
+---
+
+## 13. Measurement → Recognition → Interpretation Boundary
+
+### The three levels
+
+| Level | What it is | Example |
+|-------|------------|---------|
+| **Raw observation** | Direct output of the mechanism | `r^X_i = "a"`, `r^Y_i = ⊥` |
+| **Operational measurement** | Quantified comparison of observations | `d_i = 1`, `μ_d = 0.73` |
+| **Recognition** | Description of what the measurement shows | "The mechanism's output depends on its initial state" |
+| **Theoretical interpretation** | Framework applied to the result | "This constitutes persistent state differentiation" |
+
+### What EXP003 can establish without theoretical inflation
+
+**Current valid statement (with corrections):**
+> "A deterministic string-based mechanism produces different responses when run with accumulated state versus a history-less but response-capable state, and this difference persists across restart and exceeds control baselines."
+
+### What EXP003 cannot establish
+
+- "The mechanism has developed."
+- "The mechanism has learned."
+- "The mechanism shows persistent state differentiation" (this is an interpretation of the measurement).
+- "The mechanism has concepts."
+
+### The current problem
+
+The current measurement (before correction) cannot even establish the valid statement because the comparison is asymmetric. After correction, the valid statement is achievable.
+
+### Verdict
+
+The boundary is conceptually clear in the documentation but operationally violated by the asymmetric measurement. Once the measurement is corrected, the boundary is maintainable.
+
+---
+
+## 14. Smallest Valid Experiment
+
+### Can the experiment be simplified?
+
+**Yes, slightly.** The current design includes 5 controls (A–E). After correcting the asymmetry, some controls may be redundant.
+
+### What can be removed?
+
+| Component | Can it be removed? | Why/Why not |
+|-----------|-------------------|-------------|
+| **Condition B (no-memory)** | **Yes, redesign** | Current B is invalid due to asymmetry. After correction, B tests persistence. If the primary measurement already requires persistence, B may be redundant. But it provides a clean baseline, so keep it. |
+| **Condition C (shuffled)** | **No** | Tests temporal prior. Necessary. |
+| **Condition D (random state)** | **Yes, if redesign ensures random symbols don't create followers** | If random initialization is guaranteed to produce no followers (e.g., random symbols that never form valid query sequences), D is valid. Otherwise, replace with a deterministic "scrambled history" control. |
+| **Condition E (no-update)** | **No** | Tests state modification. Necessary. |
+| **Secondary measurements** | **Yes** | State string length, response match rate, state prefix overlap are optional. Remove them to reduce complexity. |
+
+### What cannot be removed
+
+- The primary measurement (history-difference).
+- At least one control for each prior (persistence, temporal, state initialization, state modification).
+- The restart test.
+- The provenance system.
+
+### Recommended minimal design
+
+| Component | Status |
+|-----------|--------|
+| Primary measurement | History-difference (corrected for symmetry) |
+| Condition A | Persistent baseline |
+| Condition B | No-memory (reset to history-less but response-capable state) |
+| Condition C | Shuffled temporal |
+| Condition D | Scrambled history (deterministic permutation of s_N) |
+| Condition E | No-update |
+| Restart test | Required |
+| Provenance | Three kinds (with PERSISTED_STATE) |
+
+---
+
+## 15. Mandatory Corrections
+
+| # | Correction | Severity | Where |
+|---|------------|----------|-------|
+| 1 | **Redesign response/comparison to eliminate asymmetry.** Run Y must be able to produce symbol responses, not just `⊥`. | **FUNDAMENTAL** | Measurement protocol, final design, implementation spec |
+| 2 | **Resolve tie-breaking in response function.** Specify deterministic rule (e.g., first in Σ order). | **HIGH** | Minimal substrate spec, implementation spec |
+| 3 | **Redesign Condition B.** Reset to history-less but response-capable state, not ∅. | **HIGH** | Final design, measurement protocol, implementation spec |
+| 4 | **Replace `LEARNED_REPRESENTATION` with `PERSISTED_STATE`.** | **MEDIUM** | All documents, proposed implementation |
+| 5 | **Strengthen Condition C.** Add complete-randomization variant (not just within-trial shuffle). | **MEDIUM** | Final design, measurement protocol |
+| 6 | **Specify stream families.** Define at least 3 stream generation rules for robustness. | **MEDIUM** | Minimal substrate spec, implementation spec |
+| 7 | **Revise statistical criteria.** Replace μ_d > 0.5 with empirical percentile from controls. Replace 2σ with 95th percentile. Report run-level aggregates. | **HIGH** | Measurement protocol, implementation spec |
+| 8 | **Increase sample size or use bootstrap.** N ≥ 10 may be insufficient. Report confidence intervals. | **MEDIUM** | Measurement protocol, implementation spec |
+| 9 | **Redesign Condition D.** Ensure random initialization does not create spurious followers, or replace with scrambled-history control. | **MEDIUM** | Final design, measurement protocol |
+| 10 | **Add observer-interface specification.** Explicitly define what observer tools can and cannot do. | **LOW** | Foundations document, implementation spec |
+
+---
+
+## Final Verdict
+
+### A. APPROVE FOR IMPLEMENTATION
+### B. CONDITIONAL APPROVAL
+### C. HALT / REDESIGN
+
+**Verdict: B. CONDITIONAL APPROVAL**
+
+The experiment is fundamentally sound: it tests whether a deterministic mechanism's output depends on its initial state and accumulated data. The minimal substrate removes serious circularity risks. The controls are conceptually adequate.
+
+However, **the current protocol cannot produce informative evidence** because the primary measurement is asymmetric by construction. Run Y (blank state) produces `⊥` responses while Run X (populated state) produces symbols. This makes μ_d > 0.5 trivially achievable. The experiment would measure state non-emptiness, not history-dependence.
+
+**The experiment does not need to be redesigned from scratch.** It needs 10 mandatory corrections (listed above) that eliminate the asymmetry, resolve ambiguities, and strengthen the statistical protocol.
+
+### What must happen before implementation
+
+1. Correct the measurement asymmetry (Correction 1).
+2. Resolve the tie-breaking rule (Correction 2).
+3. Redesign Condition B (Correction 3).
+4. Replace `LEARNED_REPRESENTATION` with `PERSISTED_STATE` (Correction 4).
+5. Strengthen Condition C (Correction 5).
+6. Specify stream families (Correction 6).
+7. Revise statistical criteria (Correction 7).
+8. Address sample size (Correction 8).
+9. Redesign Condition D (Correction 9).
+10. Add observer-interface specification (Correction 10).
+
+After these corrections, the experiment should be re-audited before implementation authorization.
+
+---
+
+## Explicit Statement
+
+> **Implementation is NOT authorized yet.**
+>
+> **NO CODE WAS MODIFIED.**
+>
+> The current protocol contains a fundamental methodological flaw (asymmetric measurement) that must be corrected before implementation. The experiment is not redesigned — it is repaired. After corrections, a final approval session is required.
+
+---
+
+*Document status: Final adversarial execution audit complete. CONDITIONAL APPROVAL with 10 mandatory corrections. No code modified. Implementation is NOT authorized.*
