@@ -1,0 +1,1425 @@
+Last login: Sun Aug 30 16:55:21 on ttys003
+echo "=== NAERA / HERMES ARCHITECTURE INSPECTION ==="
+echo "DATE: $(date)"
+echo
+
+echo "=== 1. WORKSPACE ROOTS ==="
+for d in \
+  "$HOME/Workspace" \
+  "$HOME/Workspace/02_AI_Lab" \
+  "$HOME/Workspace/03_Projects" \
+  "$HOME/Workspace/99_Sandbox" \
+  "$HOME/Hermes" \
+  "$HOME/.hermes" \
+  "$HOME/.hermes/naera"
+do
+  if [ -e "$d" ]; then
+    echo "[EXISTS] $d"
+  else
+    echo "[MISSING] $d"
+  fi
+done
+echo
+
+echo "=== 2. NAERA CANDIDATE LOCATIONS ==="
+for d in \
+  "$HOME/Workspace/02_AI_Lab/NAERA" \
+  "$HOME/Hermes/NAERA" \
+  "$HOME/.hermes/naera"
+do
+  if [ -d "$d" ]; then
+    echo
+    echo "--- $d ---"
+    find "$d" -maxdepth 2 -type d -print 2>/dev/null | sort
+    echo "Files:"
+    find "$d" -maxdepth 2 -type f -print 2>/dev/null | sort | head -200
+  fi
+done
+echo
+
+echo "=== 3. HERMES WORKSPACE STRUCTURE ==="
+if [ -d "$HOME/Hermes" ]; then
+  find "$HOME/Hermes" -maxdepth 3 \
+    \( -name .git -o -name .venv -o -name node_modules \) -prune -o \
+    -print 2>/dev/null | sort%                                                  mostafa@MMostafa ~ % echo "=== NAERA / HERMES ARCHITECTURE INSPECTION ==="
+=== NAERA / HERMES ARCHITECTURE INSPECTION ===
+mostafa@MMostafa ~ % echo "DATE: $(date)"
+DATE: Sun Aug 30 22:45:48 +0330 2026
+mostafa@MMostafa ~ % echo
+
+mostafa@MMostafa ~ % 
+mostafa@MMostafa ~ % echo "=== 1. WORKSPACE ROOTS ==="
+=== 1. WORKSPACE ROOTS ===
+mostafa@MMostafa ~ % for d in \
+for>   "$HOME/Workspace" \
+for>   "$HOME/Workspace/02_AI_Lab" \
+for>   "$HOME/Workspace/03_Projects" \
+for>   "$HOME/Workspace/99_Sandbox" \
+for>   "$HOME/Hermes" \
+for>   "$HOME/.hermes" \
+for>   "$HOME/.hermes/naera"
+for> do
+for>   if [ -e "$d" ]; then
+for then>     echo "[EXISTS] $d"
+for then>   else
+for else>     echo "[MISSING] $d"
+for else>   fi
+for> done
+[EXISTS] /Users/mostafa/Workspace
+[EXISTS] /Users/mostafa/Workspace/02_AI_Lab
+[EXISTS] /Users/mostafa/Workspace/03_Projects
+[EXISTS] /Users/mostafa/Workspace/99_Sandbox
+[MISSING] /Users/mostafa/Hermes
+[EXISTS] /Users/mostafa/.hermes
+[EXISTS] /Users/mostafa/.hermes/naera
+mostafa@MMostafa ~ % echo
+
+mostafa@MMostafa ~ % 
+mostafa@MMostafa ~ % echo "=== 2. NAERA CANDIDATE LOCATIONS ==="
+=== 2. NAERA CANDIDATE LOCATIONS ===
+mostafa@MMostafa ~ % for d in \
+for>   "$HOME/Workspace/02_AI_Lab/NAERA" \
+for>   "$HOME/Hermes/NAERA" \
+for>   "$HOME/.hermes/naera"
+for> do
+for>   if [ -d "$d" ]; then
+for then>     echo
+for then>     echo "--- $d ---"
+for then>     find "$d" -maxdepth 2 -type d -print 2>/dev/null | sort
+for then>     echo "Files:"
+for then>     find "$d" -maxdepth 2 -type f -print 2>/dev/null | sort | head -200
+for then>   fi
+for> done
+
+--- /Users/mostafa/.hermes/naera ---
+/Users/mostafa/.hermes/naera
+/Users/mostafa/.hermes/naera/active
+/Users/mostafa/.hermes/naera/active/exp017_emp001_causal_apparatus
+/Users/mostafa/.hermes/naera/active/observatory
+/Users/mostafa/.hermes/naera/active/substrate
+/Users/mostafa/.hermes/naera/docs
+/Users/mostafa/.hermes/naera/docs/exp012_empirical_autonomy_program
+/Users/mostafa/.hermes/naera/docs/exp013_observatory_audit
+/Users/mostafa/.hermes/naera/docs/exp014_observatory_v04
+/Users/mostafa/.hermes/naera/docs/exp018_canonical_baseline
+/Users/mostafa/.hermes/naera/docs/exp019_canonical_freeze_hermes_rehearsal
+/Users/mostafa/.hermes/naera/docs/exp020_canonical_freeze_provenance_resolution
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization
+/Users/mostafa/.hermes/naera/manifest
+Files:
+/Users/mostafa/.hermes/naera/active/__init__.py
+/Users/mostafa/.hermes/naera/active/common.py
+/Users/mostafa/.hermes/naera/manifest/NAERA_CANONICAL_BASELINE_v1.0_MANIFEST.json
+mostafa@MMostafa ~ % echo
+
+mostafa@MMostafa ~ % 
+mostafa@MMostafa ~ % echo "=== 3. HERMES WORKSPACE STRUCTURE ==="
+=== 3. HERMES WORKSPACE STRUCTURE ===
+mostafa@MMostafa ~ % if [ -d "$HOME/Hermes" ]; then
+then>   find "$HOME/Hermes" -maxdepth 3 \
+then>     \( -name .git -o -name .venv -o -name node_modules \) -prune -o \
+then>     -print 2>/dev/null | sort | head -500
+then> fi
+mostafa@MMostafa ~ % echo
+
+mostafa@MMostafa ~ % 
+mostafa@MMostafa ~ % echo "=== 4. HERMES HIDDEN RUNTIME ==="
+=== 4. HERMES HIDDEN RUNTIME ===
+mostafa@MMostafa ~ % if [ -d "$HOME/.hermes" ]; then
+then>   find "$HOME/.hermes" -maxdepth 3 \
+then>     \( -name node_modules -o -name .venv \) -prune -o \
+then>     -print 2>/dev/null | sort | head -500
+then> fi
+echo
+
+echo "=== 5. HERMES EXECUTABLES / COMMANDS ==="
+command -v hermes 2>/dev/null || true
+command -v hermes-acp 2>/dev/null || true
+command -v aion 2>/dev/null || true
+echo
+
+echo "=== 6. HERMES-RELATED PROCESSES ==="
+ps aux | grep -i '[h]ermes' || true
+echo
+
+echo "=== 7. HERMES CONFIG / MANIFEST CANDIDATES ==="
+find "$HOME/Hermes" "$HOME/.hermes" \
+  -maxdepth 4 -type f \
+  \( -iname '*config*' -o -iname '*manifest*' -o -iname '*state*' \
+     -o -iname '*workspace*' -o -iname '*runtime*' -o -iname '*.yaml' \
+     -o -iname '*.yml' -o -iname '*.json' -o -iname '*.toml' \) \
+  -print 2>/dev/null | sort | head -500
+echo
+
+echo "=== 8. NAERA SOURCE DISCOVERY ==="
+find "$HOME/Workspace" \
+  -maxdepth 6 -type d \
+  -iname 'naera' \
+  -print 2>/dev/null | sort
+echo
+
+echo "=== 9. DSH DISCOVERY ==="
+find "$HOME/Workspace" \
+  -maxdepth 7 -type d \
+  -iname '*DSH*' \
+  -print 2>/dev/null | sort
+echo
+
+echo "=== 10. GIT STATUS — NAERA CANDIDATES ==="
+for d in \
+  "$HOME/Workspace//Users/mostafa/.hermes
+/Users/mostafa/.hermes/.DS_Store
+/Users/mostafa/.hermes/.curator_backups
+/Users/mostafa/.hermes/.curator_backups/blobs
+/Users/mostafa/.hermes/.curator_backups/blobs/015d3f4540e894f4ff8a379715e51e282d7f70a889029823877c83d13602babd
+/Users/mostafa/.hermes/.curator_backups/blobs/02c35c3392dcb14bdec72210daa46c247d4b1bd0a5e651f469182afb21d835d0
+/Users/mostafa/.hermes/.curator_backups/blobs/07ffd008438fd73986cfe437c5547f09eb47a2f1f3dfd0064e7b144d156e87f1
+/Users/mostafa/.hermes/.curator_backups/blobs/0c86532c199742e6b0458cae33025ed845e3191e486f5464b5fd6e528e04934c
+/Users/mostafa/.hermes/.curator_backups/blobs/186003555162a21a02f4ece662ac8dada20df7fa3bbb5fea6cada5b50dde0aa3
+/Users/mostafa/.hermes/.curator_backups/blobs/23f3529bb37f7a4090c69e56f381cfe26c4b4fdb011015705fdb382ef4500c10
+/Users/mostafa/.hermes/.curator_backups/blobs/24fb5404838fea9dfab9a4f1258a790227d2842b9e7e1e15ad0ab612ab43223d
+/Users/mostafa/.hermes/.curator_backups/blobs/2578ca75197fb08909e8c7f6a6b59b154fb76714cf2743b059d5b3f171438963
+/Users/mostafa/.hermes/.curator_backups/blobs/35d9311a021e53d1da1b8588a30f9df9c031de7a88bed7a2e78be5ab11988e91
+/Users/mostafa/.hermes/.curator_backups/blobs/3b2b265033386a334e0ffc28a6157d974baad0493062568b6f76a7930b4c4737
+/Users/mostafa/.hermes/.curator_backups/blobs/3d522b438cd10b5bc9ef9d01948220907af237de860eef6575b2b6b285a60743
+/Users/mostafa/.hermes/.curator_backups/blobs/3e0a6cfd996612af2a7f43f1c02502b13b57f0e74b6fca20834616466943abe0
+/Users/mostafa/.hermes/.curator_backups/blobs/42df7b246acc3367872594828e071ded61c964773eb522d8ce5fa64e4b38c102
+/Users/mostafa/.hermes/.curator_backups/blobs/439f0d1fa5f5ca99db23247006c4e39cd3ece7b3cf0c4813ec9ec9d462be8707
+/Users/mostafa/.hermes/.curator_backups/blobs/44074f2f7f774e4d93d0fce3f2af2b5a7a30589c43f7802c40fa49b2f96befee
+/Users/mostafa/.hermes/.curator_backups/blobs/469ef53338488b7fc40958ad89af2202c982e02e23bde51523f2211056f5b5c2
+/Users/mostafa/.hermes/.curator_backups/blobs/47df4d337f746062b25e3fa7443af18975eec64d23e9002518d704d71ceb805c
+/Users/mostafa/.hermes/.curator_backups/blobs/481d663d6d3dec4a032db43046e9e57958632a98918b76546b92e3932780730a
+/Users/mostafa/.hermes/.curator_backups/blobs/4c384663f2946cc2cad7387903f9142be1310f65a63516680397af60aeda1e10
+/Users/mostafa/.hermes/.curator_backups/blobs/4d9691db04901129743830958ea0de3fe3b4b3828d42c8d8c2bd153c36452325
+/Users/mostafa/.hermes/.curator_backups/blobs/4ffe0be6e2604c83dc3e76a4ac695a9929f3663b79fa511e41b166caecbb582f
+/Users/mostafa/.hermes/.curator_backups/blobs/50b8bcde66550ca5f7cc7ffae928b9596637cfcbf3c81cd98581af3008417d16
+/Users/mostafa/.hermes/.curator_backups/blobs/56161fba92aece8510b98921c95a247ac0969c21fa6daa03c80ca4b74744770c
+/Users/mostafa/.hermes/.curator_backups/blobs/570d1b6232a0851c50179d33e6f6d0f6c3b0b840e31d5e884146f9380a4a0fa1
+/Users/mostafa/.hermes/.curator_backups/blobs/5b43365121e0000c44ec832e8dcfea4dde0ebd2bf07049dbde1a615d94d93d8e
+/Users/mostafa/.hermes/.curator_backups/blobs/5f675ab8b3bbe40599d9dea28aa630f6e79b9c0c99b180c997b7b95c6749b7f7
+/Users/mostafa/.hermes/.curator_backups/blobs/622d63c05d0fab9931da010bd1bd87d5e4c86372666492337d2b8bed82683aeb
+/Users/mostafa/.hermes/.curator_backups/blobs/63fbfae5374f257d57c6367a9df55c54608f569d30f95ce8d1849afcee3bba6f
+/Users/mostafa/.hermes/.curator_backups/blobs/6428890e851eb9ca69f2a1f8f4c5cdbcb0d246a9c97da7b031d54cc68f10a817
+/Users/mostafa/.hermes/.curator_backups/blobs/645d85512281403b19d8df58c67f66049193093f4c533337e93acc74a062a253
+/Users/mostafa/.hermes/.curator_backups/blobs/649b02c5a8f3c9d142ad9704a8e446505c3237379696a249a47b08c536480582
+/Users/mostafa/.hermes/.curator_backups/blobs/655d000a064832e23a33db5b575054604061cf59edd64ae025b293a72456e345
+/Users/mostafa/.hermes/.curator_backups/blobs/661e8fd531dc9b7a53b7e4382ba7407dbe314597ca75c2aabd21e4b1c31930fc
+/Users/mostafa/.hermes/.curator_backups/blobs/66ae5f30bc49119ac2b08b8dc4ea6d4d77b0d43bc91b3509e6d9708907cb20f7
+/Users/mostafa/.hermes/.curator_backups/blobs/6824d16fd456ec927d9f0f9b463fba1c28dd61fac66685c56da73a2bd66f4e7c
+/Users/mostafa/.hermes/.curator_backups/blobs/6b3dc4acc47c3f08be935246daa3c62370b8b5eb402ae603544fdd5786badf66
+/Users/mostafa/.hermes/.curator_backups/blobs/6c59cae8bf39fbc5371e8051abbf0ee4f16144371021375320f7c7db0e1ef143
+/Users/mostafa/.hermes/.curator_backups/blobs/7008aec72a204237eaee7d3806f141d775b527ab51fd5c40e0ca111276fa1eac
+/Users/mostafa/.hermes/.curator_backups/blobs/73f0bb61d169381cdc5ce0e78a427d6ca0c833e1eded354382596314b8e4ed18
+/Users/mostafa/.hermes/.curator_backups/blobs/780afaf72cefa78672619eded9b1af3f382298ec3bd77b7132bcc9b6e4b9b71c
+/Users/mostafa/.hermes/.curator_backups/blobs/7a6915e816c8c970b591b08dd10c26bc04b2465944a6e73d23d442444ea26adb
+/Users/mostafa/.hermes/.curator_backups/blobs/7b66f166b4db1165b09ed4276ac7642021f86273b09fde82b11e7a3b91bb5fc6
+/Users/mostafa/.hermes/.curator_backups/blobs/7cf5cba8f22c2ec8d6fdb2b77cf2d8f02cfe8eda9de9c7a092aead182d1d2d26
+/Users/mostafa/.hermes/.curator_backups/blobs/7e84dcf06bc0f27910cf1ec8f63a85de5c620cfce8a089769eb5a71fca04d5dd
+/Users/mostafa/.hermes/.curator_backups/blobs/7e868623fe5b90ad017c33266c6e1176b0c6c70f9b3286c9ef307bc60b0cd92b
+/Users/mostafa/.hermes/.curator_backups/blobs/7fe9df1238d8107cc7b05cb9f044e3a13a67af402b86d7f6a883ccd6164b0304
+/Users/mostafa/.hermes/.curator_backups/blobs/806684a63faba75eef546c57714834738043422f8ba6807592a86ab9bc8fa626
+/Users/mostafa/.hermes/.curator_backups/blobs/80d867cf92483058dbfed7f5e57b728615c8797da0a32109c4f01dbcf7dd2e89
+/Users/mostafa/.hermes/.curator_backups/blobs/87d142989b8e2647b32f686ef9c294a9d7c897657e67dd8054d9c7efe23ce6eb
+/Users/mostafa/.hermes/.curator_backups/blobs/898bc38926e5bb9887b899f1957dbb81e8e7cc2c3cf2cc01874766473244fa46
+/Users/mostafa/.hermes/.curator_backups/blobs/8c2b89d2cfb7caf5915e76fbd59fe663a9389dc0b44b5e6fcb9fa1d61f2a9557
+/Users/mostafa/.hermes/.curator_backups/blobs/9134ac2137fb96acfbc4e1729a95138f65976b8794531b8f60204c33b07d1586
+/Users/mostafa/.hermes/.curator_backups/blobs/93c091b48fd3148423b8900226a26364375ecb695cbf8652bab6258255fe6055
+/Users/mostafa/.hermes/.curator_backups/blobs/96988689a748cf0661af581cd4f9ef7ef0989cb7481d0ad89565a7b6906b56b0
+/Users/mostafa/.hermes/.curator_backups/blobs/9851a9b723d1d4d418f883f27838b3aac29595e663fa1e5862119f3c56dc40ab
+/Users/mostafa/.hermes/.curator_backups/blobs/9a1d7a8a65c4b924904ae685a8bcdca25f49fcc7504dfcacf220c66d7eac6992
+/Users/mostafa/.hermes/.curator_backups/blobs/9e3e0f1d881a78ccfc22185b9dfa9f7a97bd7be34f7866901154edd2fa53c316
+/Users/mostafa/.hermes/.curator_backups/blobs/a026501354c8543d8038cb8e49f150146f7a9a4686dbb7780b57abf4500b49cf
+/Users/mostafa/.hermes/.curator_backups/blobs/a37e92dcde3f2ebb4fc9a1d4c6ff7f7617c0355cb96b56ef9ef90088333a6bc4
+/Users/mostafa/.hermes/.curator_backups/blobs/a63e2600f56a147bee021ba84d3924b6f005883cc6fca17262af9468416b1895
+/Users/mostafa/.hermes/.curator_backups/blobs/a7712a559376329007192ad4c4c3546201f9811f492d4c90886fe284ae487e0c
+/Users/mostafa/.hermes/.curator_backups/blobs/a91748052559454e5aee98f9e73a604a13a4810bd7e025d123c16804ac782563
+/Users/mostafa/.hermes/.curator_backups/blobs/aae56cbc1fa8eb6a5df533faae81ad0ee9fcb728fa9526713ceb5b558759da2e
+/Users/mostafa/.hermes/.curator_backups/blobs/ac09df2c435e7d9a892bda3338273300f931fa07637d88c359c2ec84ad4138ba
+/Users/mostafa/.hermes/.curator_backups/blobs/ad0307425551970ce2022ad932013924631b597933e69cb0e9ef72c0f46a50d1
+/Users/mostafa/.hermes/.curator_backups/blobs/b27b6ef9e99bd5914113b209384804b7233109a8b1ad4523269be21434737068
+/Users/mostafa/.hermes/.curator_backups/blobs/b30f9af4adee2e50ed9a7c75d61e1790dffcee53027486fb52d4fda27fac5ebe
+/Users/mostafa/.hermes/.curator_backups/blobs/b3aa0ba6298bdae4483c517b9aafc36bec47ec63b7c644d30f74ca592ac09491
+/Users/mostafa/.hermes/.curator_backups/blobs/bd0ca56d50e3dda01c818c410933b906c355c4b27da0758a588cca2d48107922
+/Users/mostafa/.hermes/.curator_backups/blobs/bec1630d28209c275940a1937902256bdc3fe35bd4353dcaa84ed59ceb8a7bfe
+/Users/mostafa/.hermes/.curator_backups/blobs/c394da0a1b6d5892c469be8d1902f5b2c791feb74a080f534bbf2d3d73427c7a
+/Users/mostafa/.hermes/.curator_backups/blobs/c664e45b53aa7f819b3489296f5f79c329548f5671ce00e972e3d6c790a36041
+/Users/mostafa/.hermes/.curator_backups/blobs/c796a48ea48dfb399ac968410022cc06938b0c1f8fcecb267e6859b087a2cdc0
+/Users/mostafa/.hermes/.curator_backups/blobs/c7a0afa907273afbfc948004a6cefad3c66c7c1a4cb251a19b08ca39ebc25609
+/Users/mostafa/.hermes/.curator_backups/blobs/c86d17b000c255150ff070e133c1f60bae393e8ff0746d412f60296987e1858e
+/Users/mostafa/.hermes/.curator_backups/blobs/cf2395528e13a33a8587c8b9398b7a7d4ce3d2161c3eed625d5b2bd67963a86c
+/Users/mostafa/.hermes/.curator_backups/blobs/d54fac6818273d4cfd6345c5aedce54f38516b53d930ea21ac13e28a836f7b14
+/Users/mostafa/.hermes/.curator_backups/blobs/da5bc42ffa7ae5ca6851b4397a93823ef473ece75f261fec7ded3af6b74aaec5
+/Users/mostafa/.hermes/.curator_backups/blobs/dad8bd39e006581df6ba4a995f23d4dd7de4d1e43736b0b6f3dbd7b9e5b3f205
+/Users/mostafa/.hermes/.curator_backups/blobs/dd5509f7b2b2b9c6998a5a1e02663760c8a38d5a50138da095b4280a7ade674b
+/Users/mostafa/.hermes/.curator_backups/blobs/def245771f13f12eab188b7c78a4783a9c318a62fdc095774d45bba2f88925e2
+/Users/mostafa/.hermes/.curator_backups/blobs/e4890e5490063dc8e32e35bb0748333df80e65aaa7f727c8614dee48baf6737b
+/Users/mostafa/.hermes/.curator_backups/blobs/e66660da1a877f3eeca24cf545728ffe9cb74ac2489c8bef1a94ffc624e56d2a
+/Users/mostafa/.hermes/.curator_backups/blobs/e743fcd74dbc3f8c3e57cffb649808aca0de90ec7b066f152b3339f67d2016dd
+/Users/mostafa/.hermes/.curator_backups/blobs/e8ac76677d150c466554fbb5bf1ddef2cbb79ae32b41f794bd7cdb1e8e8eaa7a
+/Users/mostafa/.hermes/.curator_backups/blobs/ebe258030b92321a0f399c1346da4f5fd73f1c09d4dc154a7ab0a196784bafff
+/Users/mostafa/.hermes/.curator_backups/blobs/ec6a615f19088eabe3c9cf3ce2c7092b19baf606f38953343d1e6fed8d05f854
+/Users/mostafa/.hermes/.curator_backups/blobs/ecfda37e787980b90d3fc27fdd2114dba8aa51fe3fbee3fcac15d3de73f2461d
+/Users/mostafa/.hermes/.curator_backups/blobs/ef8a3283797af8baf1ad76a88589b7d718522876d9df7cdc563dd9038c202665
+/Users/mostafa/.hermes/.curator_backups/blobs/efc701019e5b5361a2291f77a8866838f1160f8b30fd0c7582e5b3067ba49104
+/Users/mostafa/.hermes/.curator_backups/blobs/fba19cc35ebe4e5852bdb30410f3dd74c61e0519b3d723fc65f8894909b231c6
+/Users/mostafa/.hermes/.env
+/Users/mostafa/.hermes/.env.backup-20260822-231609
+/Users/mostafa/.hermes/.env.backup-light
+/Users/mostafa/.hermes/.env.before-final-cleanup-20260822-231728
+/Users/mostafa/.hermes/.env.before-lightweight-20260822-230619
+/Users/mostafa/.hermes/.hermes_history
+/Users/mostafa/.hermes/.mcp-discovery.lock
+/Users/mostafa/.hermes/.npm_lock_hash_fcdad8330cd1
+/Users/mostafa/.hermes/.scratch_tip_shown
+/Users/mostafa/.hermes/.update_check
+/Users/mostafa/.hermes/.update_exit_code
+/Users/mostafa/.hermes/SOUL.md
+/Users/mostafa/.hermes/_diag.py
+/Users/mostafa/.hermes/_verify_heal.py
+/Users/mostafa/.hermes/_verify_heal2.py
+/Users/mostafa/.hermes/archive_external_skills
+/Users/mostafa/.hermes/archive_external_skills/find-skills
+/Users/mostafa/.hermes/archive_external_skills/find-skills/SKILL.md
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-audio-tts
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-audio-tts/SKILL.md
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-audio-tts/references
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-audio-tts/scripts
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-deploy
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-deploy/SKILL.md
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-deploy/reference
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-deploy/scripts
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-deploy/templates
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-text
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-text/SKILL.md
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-text/references
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-text/scripts
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-vision
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-vision/SKILL.md
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-vision/references
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-vision/scripts
+/Users/mostafa/.hermes/assets
+/Users/mostafa/.hermes/assets/avatar.png
+/Users/mostafa/.hermes/attachments
+/Users/mostafa/.hermes/attachments/Zangwill-ArtAudience-1999 (1).pdf
+/Users/mostafa/.hermes/audio_cache
+/Users/mostafa/.hermes/auth.json
+/Users/mostafa/.hermes/auth.lock
+/Users/mostafa/.hermes/backups
+/Users/mostafa/.hermes/backups/archive
+/Users/mostafa/.hermes/backups/archive/config.yaml.backup
+/Users/mostafa/.hermes/backups/archive/config.yaml.backup-20260822-231609
+/Users/mostafa/.hermes/backups/archive/config.yaml.backup-before-lfm-opt
+/Users/mostafa/.hermes/backups/archive/config.yaml.backup-final-20260822-045753
+/Users/mostafa/.hermes/backups/archive/config.yaml.backup-light-20260822-231351
+/Users/mostafa/.hermes/backups/archive/config.yaml.backup.20260820-044110
+/Users/mostafa/.hermes/backups/baseline-20260822
+/Users/mostafa/.hermes/backups/baseline-20260822/config.yaml
+/Users/mostafa/.hermes/backups/baseline-20260822/hermes-doctor.txt
+/Users/mostafa/.hermes/backups/baseline-20260822/ollama-models.txt
+/Users/mostafa/.hermes/backups/baseline-20260822/profiles.txt
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant
+/Users/mostafa/.hermes/backups/hermes-agent-before-clean-sync-2026-08-28.tar.gz
+/Users/mostafa/.hermes/backups/hermes-local-changes-2026-08-28.patch
+/Users/mostafa/.hermes/backups/light-cleanup-20260822-231942
+/Users/mostafa/.hermes/backups/light-cleanup-20260822-231942/.env
+/Users/mostafa/.hermes/backups/light-cleanup-20260822-231942/config.yaml
+/Users/mostafa/.hermes/bin
+/Users/mostafa/.hermes/bin/tirith
+/Users/mostafa/.hermes/bin/uv
+/Users/mostafa/.hermes/bin/uvx
+/Users/mostafa/.hermes/bootstrap-cache
+/Users/mostafa/.hermes/bootstrap-cache/install-main.sh
+/Users/mostafa/.hermes/bot_relay
+/Users/mostafa/.hermes/bot_relay/locks
+/Users/mostafa/.hermes/bot_relay/locks/arash-critical-reviewer.lock
+/Users/mostafa/.hermes/bot_relay/locks/burhan-research-assistant.lock
+/Users/mostafa/.hermes/bot_relay/locks/default.lock
+/Users/mostafa/.hermes/bot_relay/locks/neda-multilingual-editor.lock
+/Users/mostafa/.hermes/cache
+/Users/mostafa/.hermes/cache/audio
+/Users/mostafa/.hermes/cache/banner_snapshot.json
+/Users/mostafa/.hermes/cache/blocked-scripts
+/Users/mostafa/.hermes/cache/blocked-scripts/blocked-1788053259-2c5448fe.sh
+/Users/mostafa/.hermes/cache/blocked-scripts/blocked-1788053660-d6eb0423.sh
+/Users/mostafa/.hermes/cache/blocked-scripts/blocked-1788053708-2a8a3512.sh
+/Users/mostafa/.hermes/cache/blocked-scripts/blocked-1788066993-4a6cdefa.sh
+/Users/mostafa/.hermes/cache/blocked-scripts/blocked-1788097453-a2ad6497.sh
+/Users/mostafa/.hermes/cache/blocked-scripts/blocked-1788097465-d70f0fbd.sh
+/Users/mostafa/.hermes/cache/browser-use
+/Users/mostafa/.hermes/cache/browser-use/workspace
+/Users/mostafa/.hermes/cache/computer_use
+/Users/mostafa/.hermes/cache/computer_use/elements_20a9c3ad6ce845c4b266c772ec6eddd6.json
+/Users/mostafa/.hermes/cache/computer_use/elements_68496b785a3847f39a3c346133d612bc.json
+/Users/mostafa/.hermes/cache/computer_use/elements_c4c461c0e78f40ec9f2bfaff9edc47bc.json
+/Users/mostafa/.hermes/cache/computer_use/elements_c5003183be04407095ce88271ce76aa5.json
+/Users/mostafa/.hermes/cache/computer_use/elements_d595111c5df94333aabb06650e11ad96.json
+/Users/mostafa/.hermes/cache/computer_use/elements_d5fd629ed23c4d8c90e77f83ebaed224.json
+/Users/mostafa/.hermes/cache/computer_use/elements_e139140662aa461e8d637a6f73e47700.json
+/Users/mostafa/.hermes/cache/computer_use/elements_fbc7dbcc4609487d99b9a4ec1cd05c4a.json
+/Users/mostafa/.hermes/cache/delegation
+/Users/mostafa/.hermes/cache/delegation/live
+/Users/mostafa/.hermes/cache/delegation/subagent-summary-0-20260825_224851_140567.txt
+/Users/mostafa/.hermes/cache/delegation/subagent-summary-0-20260825_233201_305190.txt
+/Users/mostafa/.hermes/cache/delegation/subagent-summary-0-20260826_001459_477769.txt
+/Users/mostafa/.hermes/cache/delegation/subagent-summary-0-20260826_211447_517106.txt
+/Users/mostafa/.hermes/cache/delegation/subagent-summary-0-20260828_072246_825314.txt
+/Users/mostafa/.hermes/cache/delegation/subagent-summary-0-20260829_094959_894321.txt
+/Users/mostafa/.hermes/cache/delegation/subagent-summary-0-20260830_204011_532902.txt
+/Users/mostafa/.hermes/cache/documents
+/Users/mostafa/.hermes/cache/exec
+/Users/mostafa/.hermes/cache/exec/stdout-4b74fa82c4cb.txt
+/Users/mostafa/.hermes/cache/images
+/Users/mostafa/.hermes/cache/local_endpoint_probes.json
+/Users/mostafa/.hermes/cache/mcp_schema_cache.json
+/Users/mostafa/.hermes/cache/model_catalog.json
+/Users/mostafa/.hermes/cache/nous_recommended_cache.json
+/Users/mostafa/.hermes/cache/openrouter_model_metadata.json
+/Users/mostafa/.hermes/cache/plugin_toolset_keys.json
+/Users/mostafa/.hermes/cache/reasoning_caps.json
+/Users/mostafa/.hermes/cache/schema_columns.json
+/Users/mostafa/.hermes/cache/screenshots
+/Users/mostafa/.hermes/cache/spillover
+/Users/mostafa/.hermes/cache/spillover/terminal_n6s4dcydzm2f.txt
+/Users/mostafa/.hermes/cache/terminal-output
+/Users/mostafa/.hermes/cache/terminal-output/out-1787608944-83102-ea50.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787679542-98568-2850.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787679542-98568-ef50.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787683174-98568-a110.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787687505-98568-4190.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787689274-45609-1f90.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787689883-45609-1b90.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787697898-45609-d650.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787744888-92480-bc50.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787844861-3337-8ad0.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787860623-59002-71d0.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787860648-59002-3950.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787886162-39051-e750.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787916696-39051-ffd0.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787923653-39051-acd0.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787937780-78678-9910.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1787981164-60459-e290.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1788053448-96052-7ad0.log
+/Users/mostafa/.hermes/cache/terminal-output/out-1788109062-78178-6d10.log
+/Users/mostafa/.hermes/cache/tool_discovery_cache.json
+/Users/mostafa/.hermes/cache/videos
+/Users/mostafa/.hermes/cache/vision
+/Users/mostafa/.hermes/cache/web
+/Users/mostafa/.hermes/cache/web/books.google.ru-018bd701b2.md
+/Users/mostafa/.hermes/cache/web/books.google.ru-37693204a5.md
+/Users/mostafa/.hermes/cache/web/books.google.ru-378eb00f95.md
+/Users/mostafa/.hermes/cache/web/books.google.ru-55205feac5.md
+/Users/mostafa/.hermes/cache/web/books.google.ru-6aebef01f1.md
+/Users/mostafa/.hermes/cache/web/books.google.ru-c73aca1117.md
+/Users/mostafa/.hermes/cache/web/books.google.ru-f2c373d44d.md
+/Users/mostafa/.hermes/cache/web/guides.loc.gov-e82cd7f9ae.md
+/Users/mostafa/.hermes/cache/web/hermes-agent.nousresearch.com-0592db4dcb.md
+/Users/mostafa/.hermes/cache/web/hermes-agent.nousresearch.com-190dda007e.md
+/Users/mostafa/.hermes/cache/web/hermes-agent.nousresearch.com-1e99d05386.md
+/Users/mostafa/.hermes/cache/web/hermes-agent.nousresearch.com-44e2a10df6.md
+/Users/mostafa/.hermes/cache/web/hermes-agent.nousresearch.com-83c7ceeec8.md
+/Users/mostafa/.hermes/cache/web/hermes-agent.nousresearch.com-9bd273d932.md
+/Users/mostafa/.hermes/channel_directory.json
+/Users/mostafa/.hermes/checkpoints
+/Users/mostafa/.hermes/checkpoints/.last_prune
+/Users/mostafa/.hermes/checkpoints/store
+/Users/mostafa/.hermes/checkpoints/store/HEAD
+/Users/mostafa/.hermes/checkpoints/store/branches
+/Users/mostafa/.hermes/checkpoints/store/config
+/Users/mostafa/.hermes/checkpoints/store/description
+/Users/mostafa/.hermes/checkpoints/store/hooks
+/Users/mostafa/.hermes/checkpoints/store/indexes
+/Users/mostafa/.hermes/checkpoints/store/info
+/Users/mostafa/.hermes/checkpoints/store/ledgers
+/Users/mostafa/.hermes/checkpoints/store/objects
+/Users/mostafa/.hermes/checkpoints/store/packed-refs
+/Users/mostafa/.hermes/checkpoints/store/projects
+/Users/mostafa/.hermes/checkpoints/store/refs
+/Users/mostafa/.hermes/config.yaml
+/Users/mostafa/.hermes/config.yaml.backup-20260827
+/Users/mostafa/.hermes/config.yaml.bak-labyrinth
+/Users/mostafa/.hermes/config.yaml.bak.20260823_013622
+/Users/mostafa/.hermes/config.yaml.before-local-fast-20260827-215555
+/Users/mostafa/.hermes/config.yaml.corrupt.20260827-193114.bak
+/Users/mostafa/.hermes/config.yaml.corrupt.20260827-214404.bak
+/Users/mostafa/.hermes/config_archive_final
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-auxiliary-fix-20260822-224454
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-context-fix
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-context-tune-20260822-052017
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-final-lfm-opt
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-final-model-tune
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-final-rollback
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-hermes-context-fix-20260822-052132
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-lightweight-20260822-230619
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-memory-tune
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-rollback-20260822
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-simple-patch
+/Users/mostafa/.hermes/config_archive_final/config.yaml.corrupt.20260820-044115.bak
+/Users/mostafa/.hermes/config_archive_final/config.yaml.corrupt.20260822-045824.bak
+/Users/mostafa/.hermes/config_archive_final/config.yaml.experimental-broken-20260822-053219
+/Users/mostafa/.hermes/context_length_cache.yaml
+/Users/mostafa/.hermes/cron
+/Users/mostafa/.hermes/cron/.fire-02e9ec2a39c25d89913a8b502dd89994.lock
+/Users/mostafa/.hermes/cron/.fire-22272566ec5e5faeb7a1a5ff997f4206.lock
+/Users/mostafa/.hermes/cron/.fire-2587ff51c7bf52db9482eab8e4a7ea2a.lock
+/Users/mostafa/.hermes/cron/.fire-3ee687c4ec3e5aff8565db80f1502769.lock
+/Users/mostafa/.hermes/cron/.fire-4b15ae25b85f569380c45668059f5b55.lock
+/Users/mostafa/.hermes/cron/.fire-4fdf08f752745cd6ac8321762a59cf8d.lock
+/Users/mostafa/.hermes/cron/.fire-8c5998ccf59a570fbb1d812634cd61f3.lock
+/Users/mostafa/.hermes/cron/.fire-94ee2dee27925cb3b689c0f4cc421b55.lock
+/Users/mostafa/.hermes/cron/.fire-a32f4be7773e54e8a01cfea0e5cb3bb5.lock
+/Users/mostafa/.hermes/cron/.fire-dc9b6d9cc1f455539d90ee929519387a.lock
+/Users/mostafa/.hermes/cron/.fire-e7d318b1071e5f4fbe3b8d76b1da0816.lock
+/Users/mostafa/.hermes/cron/.fire-e99a135b9bf75887b1b1041ca0a66e16.lock
+/Users/mostafa/.hermes/cron/.jobs.lock
+/Users/mostafa/.hermes/cron/.tick.lock
+/Users/mostafa/.hermes/cron/executions.db
+/Users/mostafa/.hermes/cron/jobs.json
+/Users/mostafa/.hermes/cron/notepad.db
+/Users/mostafa/.hermes/cron/output
+/Users/mostafa/.hermes/cron/output/019127317ecd
+/Users/mostafa/.hermes/cron/output/09cc0956ee4d
+/Users/mostafa/.hermes/cron/output/29d520a69140
+/Users/mostafa/.hermes/cron/output/33abc424e155
+/Users/mostafa/.hermes/cron/output/44b4ae6ca41c
+/Users/mostafa/.hermes/cron/output/522bda61fe7a
+/Users/mostafa/.hermes/cron/output/558bdb21fe19
+/Users/mostafa/.hermes/cron/output/5a2f7745a688
+/Users/mostafa/.hermes/cron/output/7ffde8e5fcbf
+/Users/mostafa/.hermes/cron/output/acf8c3564ca3
+/Users/mostafa/.hermes/cron/output/cda5e3101bb3
+/Users/mostafa/.hermes/cron/output/e91dcefb2618
+/Users/mostafa/.hermes/cron/ticker_heartbeat
+/Users/mostafa/.hermes/cron/ticker_last_success
+/Users/mostafa/.hermes/cron/usage_audit.jsonl
+/Users/mostafa/.hermes/dashboard-themes
+/Users/mostafa/.hermes/dashboard-themes/chronos-forge.yaml
+/Users/mostafa/.hermes/desktop
+/Users/mostafa/.hermes/desktop-build-stamp.json
+/Users/mostafa/.hermes/desktop-plugins
+/Users/mostafa/.hermes/desktop/interrupted_turns.json
+/Users/mostafa/.hermes/disabled-skills
+/Users/mostafa/.hermes/disabled-skills/apple
+/Users/mostafa/.hermes/disabled-skills/apple/DESCRIPTION.md
+/Users/mostafa/.hermes/disabled-skills/apple/apple-notes
+/Users/mostafa/.hermes/disabled-skills/apple/apple-reminders
+/Users/mostafa/.hermes/disabled-skills/apple/findmy
+/Users/mostafa/.hermes/disabled-skills/apple/imessage
+/Users/mostafa/.hermes/disabled-skills/autonomous-ai-agents
+/Users/mostafa/.hermes/disabled-skills/autonomous-ai-agents/DESCRIPTION.md
+/Users/mostafa/.hermes/disabled-skills/autonomous-ai-agents/claude-code
+/Users/mostafa/.hermes/disabled-skills/autonomous-ai-agents/codex
+/Users/mostafa/.hermes/disabled-skills/autonomous-ai-agents/computer-use
+/Users/mostafa/.hermes/disabled-skills/autonomous-ai-agents/hermes-agent
+/Users/mostafa/.hermes/disabled-skills/autonomous-ai-agents/merge-reconciler
+/Users/mostafa/.hermes/disabled-skills/autonomous-ai-agents/opencode
+/Users/mostafa/.hermes/disabled-skills/creative
+/Users/mostafa/.hermes/disabled-skills/creative/DESCRIPTION.md
+/Users/mostafa/.hermes/disabled-skills/creative/architecture-diagram
+/Users/mostafa/.hermes/disabled-skills/creative/ascii-art
+/Users/mostafa/.hermes/disabled-skills/creative/ascii-video
+/Users/mostafa/.hermes/disabled-skills/creative/baoyu-infographic
+/Users/mostafa/.hermes/disabled-skills/creative/claude-design
+/Users/mostafa/.hermes/disabled-skills/creative/comfyui
+/Users/mostafa/.hermes/disabled-skills/creative/design-md
+/Users/mostafa/.hermes/disabled-skills/creative/excalidraw
+/Users/mostafa/.hermes/disabled-skills/creative/humanizer
+/Users/mostafa/.hermes/disabled-skills/creative/manim-video
+/Users/mostafa/.hermes/disabled-skills/creative/p5js
+/Users/mostafa/.hermes/disabled-skills/creative/popular-web-designs
+/Users/mostafa/.hermes/disabled-skills/creative/pretext
+/Users/mostafa/.hermes/disabled-skills/creative/sketch
+/Users/mostafa/.hermes/disabled-skills/creative/songwriting-and-ai-music
+/Users/mostafa/.hermes/disabled-skills/creative/touchdesigner-mcp
+/Users/mostafa/.hermes/disabled-skills/devops
+/Users/mostafa/.hermes/disabled-skills/devops/sdlc-review
+/Users/mostafa/.hermes/disabled-skills/email
+/Users/mostafa/.hermes/disabled-skills/email/DESCRIPTION.md
+/Users/mostafa/.hermes/disabled-skills/email/email-inbox-triage
+/Users/mostafa/.hermes/disabled-skills/email/himalaya
+/Users/mostafa/.hermes/disabled-skills/github
+/Users/mostafa/.hermes/disabled-skills/github/DESCRIPTION.md
+/Users/mostafa/.hermes/disabled-skills/github/codebase-inspection
+/Users/mostafa/.hermes/disabled-skills/github/github-auth
+/Users/mostafa/.hermes/disabled-skills/github/github-code-review
+/Users/mostafa/.hermes/disabled-skills/github/github-issue-to-pr
+/Users/mostafa/.hermes/disabled-skills/github/github-issues
+/Users/mostafa/.hermes/disabled-skills/github/github-pr-workflow
+/Users/mostafa/.hermes/disabled-skills/github/github-repo-management
+/Users/mostafa/.hermes/disabled-skills/index-cache
+/Users/mostafa/.hermes/disabled-skills/index-cache/anthropics_skills_skills_.json
+/Users/mostafa/.hermes/disabled-skills/index-cache/lobehub_index.json
+/Users/mostafa/.hermes/disabled-skills/index-cache/openai_skills_skills_.json
+/Users/mostafa/.hermes/disabled-skills/media
+/Users/mostafa/.hermes/disabled-skills/media/DESCRIPTION.md
+/Users/mostafa/.hermes/disabled-skills/media/gif-search
+/Users/mostafa/.hermes/disabled-skills/media/songsee
+/Users/mostafa/.hermes/disabled-skills/media/youtube-content
+/Users/mostafa/.hermes/disabled-skills/mlops
+/Users/mostafa/.hermes/disabled-skills/mlops/DESCRIPTION.md
+/Users/mostafa/.hermes/disabled-skills/mlops/evaluation
+/Users/mostafa/.hermes/disabled-skills/mlops/huggingface-hub
+/Users/mostafa/.hermes/disabled-skills/mlops/inference
+/Users/mostafa/.hermes/disabled-skills/mlops/models
+/Users/mostafa/.hermes/disabled-skills/note-taking
+/Users/mostafa/.hermes/disabled-skills/note-taking/DESCRIPTION.md
+/Users/mostafa/.hermes/disabled-skills/note-taking/obsidian
+/Users/mostafa/.hermes/disabled-skills/productivity
+/Users/mostafa/.hermes/disabled-skills/productivity/DESCRIPTION.md
+/Users/mostafa/.hermes/disabled-skills/productivity/airtable
+/Users/mostafa/.hermes/disabled-skills/productivity/box
+/Users/mostafa/.hermes/disabled-skills/productivity/document-to-action-items
+/Users/mostafa/.hermes/disabled-skills/productivity/docx
+/Users/mostafa/.hermes/disabled-skills/productivity/google-workspace
+/Users/mostafa/.hermes/disabled-skills/productivity/maps
+/Users/mostafa/.hermes/disabled-skills/productivity/meeting-action-items
+/Users/mostafa/.hermes/disabled-skills/productivity/nano-pdf
+/Users/mostafa/.hermes/disabled-skills/productivity/notion
+/Users/mostafa/.hermes/disabled-skills/productivity/ocr-and-documents
+/Users/mostafa/.hermes/disabled-skills/productivity/pdf
+/Users/mostafa/.hermes/disabled-skills/productivity/powerpoint
+/Users/mostafa/.hermes/disabled-skills/productivity/product-price-monitor
+/Users/mostafa/.hermes/disabled-skills/productivity/session-librarian
+/Users/mostafa/.hermes/disabled-skills/productivity/teams-meeting-pipeline
+/Users/mostafa/.hermes/disabled-skills/productivity/weekly-review-planning
+/Users/mostafa/.hermes/disabled-skills/productivity/xlsx
+/Users/mostafa/.hermes/disabled-skills/research
+/Users/mostafa/.hermes/disabled-skills/research/DESCRIPTION.md
+/Users/mostafa/.hermes/disabled-skills/research/arxiv
+/Users/mostafa/.hermes/disabled-skills/research/blocked-page-recovery
+/Users/mostafa/.hermes/disabled-skills/research/blogwatcher
+/Users/mostafa/.hermes/disabled-skills/research/competitor-news-monitor
+/Users/mostafa/.hermes/disabled-skills/research/grounded-citations
+/Users/mostafa/.hermes/disabled-skills/research/llm-wiki
+/Users/mostafa/.hermes/disabled-skills/research/research-paper-writing
+/Users/mostafa/.hermes/disabled-skills/smart-home
+/Users/mostafa/.hermes/disabled-skills/smart-home/DESCRIPTION.md
+/Users/mostafa/.hermes/disabled-skills/smart-home/openhue
+/Users/mostafa/.hermes/disabled-skills/social-media
+/Users/mostafa/.hermes/disabled-skills/social-media/DESCRIPTION.md
+/Users/mostafa/.hermes/disabled-skills/social-media/xurl
+/Users/mostafa/.hermes/disabled-skills/software-development
+/Users/mostafa/.hermes/disabled-skills/software-development/dogfood
+/Users/mostafa/.hermes/disabled-skills/software-development/hermes-agent-skill-authoring
+/Users/mostafa/.hermes/disabled-skills/software-development/inspecting-hermes-desktop-dom
+/Users/mostafa/.hermes/disabled-skills/software-development/node-inspect-debugger
+/Users/mostafa/.hermes/disabled-skills/software-development/plan
+/Users/mostafa/.hermes/disabled-skills/software-development/python-debugpy
+/Users/mostafa/.hermes/disabled-skills/software-development/requesting-code-review
+/Users/mostafa/.hermes/disabled-skills/software-development/simplify-code
+/Users/mostafa/.hermes/disabled-skills/software-development/spike
+/Users/mostafa/.hermes/disabled-skills/software-development/systematic-debugging
+/Users/mostafa/.hermes/disabled-skills/software-development/test-driven-development
+/Users/mostafa/.hermes/disk-cleanup
+/Users/mostafa/.hermes/disk-cleanup/cleanup.log
+/Users/mostafa/.hermes/disk-cleanup/tracked.json
+/Users/mostafa/.hermes/disk-cleanup/tracked.json.bak
+/Users/mostafa/.hermes/gateway-starts.log
+/Users/mostafa/.hermes/gateway.lock
+/Users/mostafa/.hermes/gateway.pid
+/Users/mostafa/.hermes/gateway.sock
+/Users/mostafa/.hermes/gateway_state.json
+/Users/mostafa/.hermes/hermes-agent
+/Users/mostafa/.hermes/hermes-agent/.bytecode-fingerprint
+/Users/mostafa/.hermes/hermes-agent/.coderabbit.yaml
+/Users/mostafa/.hermes/hermes-agent/.dockerignore
+/Users/mostafa/.hermes/hermes-agent/.env.example
+/Users/mostafa/.hermes/hermes-agent/.envrc
+/Users/mostafa/.hermes/hermes-agent/.git
+/Users/mostafa/.hermes/hermes-agent/.git/FETCH_HEAD
+/Users/mostafa/.hermes/hermes-agent/.git/HEAD
+/Users/mostafa/.hermes/hermes-agent/.git/ORIG_HEAD
+/Users/mostafa/.hermes/hermes-agent/.git/config
+/Users/mostafa/.hermes/hermes-agent/.git/description
+/Users/mostafa/.hermes/hermes-agent/.git/hooks
+/Users/mostafa/.hermes/hermes-agent/.git/index
+/Users/mostafa/.hermes/hermes-agent/.git/info
+/Users/mostafa/.hermes/hermes-agent/.git/logs
+/Users/mostafa/.hermes/hermes-agent/.git/objects
+/Users/mostafa/.hermes/hermes-agent/.git/packed-refs
+/Users/mostafa/.hermes/hermes-agent/.git/refs
+/Users/mostafa/.hermes/hermes-agent/.gitattributes
+/Users/mostafa/.hermes/hermes-agent/.github
+/Users/mostafa/.hermes/hermes-agent/.github/ISSUE_TEMPLATE
+/Users/mostafa/.hermes/hermes-agent/.github/PULL_REQUEST_TEMPLATE.md
+/Users/mostafa/.hermes/hermes-agent/.github/actionlint.yaml
+/Users/mostafa/.hermes/hermes-agent/.github/actions
+/Users/mostafa/.hermes/hermes-agent/.github/dependabot.yml
+/Users/mostafa/.hermes/hermes-agent/.github/scripts
+/Users/mostafa/.hermes/hermes-agent/.github/workflows
+/Users/mostafa/.hermes/hermes-agent/.gitignore
+/Users/mostafa/.hermes/hermes-agent/.hadolint.yaml
+/Users/mostafa/.hermes/hermes-agent/.hermes-bootstrap-complete
+/Users/mostafa/.hermes/hermes-agent/.install_method
+/Users/mostafa/.hermes/hermes-agent/.mailmap
+/Users/mostafa/.hermes/hermes-agent/.npmrc
+/Users/mostafa/.hermes/hermes-agent/.nvmrc
+/Users/mostafa/.hermes/hermes-agent/.prettierignore
+/Users/mostafa/.hermes/hermes-agent/.prettierrc
+/Users/mostafa/.hermes/hermes-agent/.python-version
+/Users/mostafa/.hermes/hermes-agent/.web_ui_build.lock
+/Users/mostafa/.hermes/hermes-agent/AGENTS.md
+/Users/mostafa/.hermes/hermes-agent/CONTRIBUTING.es.md
+/Users/mostafa/.hermes/hermes-agent/CONTRIBUTING.md
+/Users/mostafa/.hermes/hermes-agent/Dockerfile
+/Users/mostafa/.hermes/hermes-agent/LICENSE
+/Users/mostafa/.hermes/hermes-agent/README.es.md
+/Users/mostafa/.hermes/hermes-agent/README.md
+/Users/mostafa/.hermes/hermes-agent/README.ur-pk.md
+/Users/mostafa/.hermes/hermes-agent/README.zh-CN.md
+/Users/mostafa/.hermes/hermes-agent/SECURITY.es.md
+mostafa@MMostafa ~ % echo
+
+mostafa@MMostafa ~ % 
+mostafa@MMostafa ~ % echo "=== 5. HERMES EXECUTABLES / COMMANDS ==="
+=== 5. HERMES EXECUTABLES / COMMANDS ===
+mostafa@MMostafa ~ % command -v hermes 2>/dev/null || true
+/Users/mostafa/.local/bin/hermes
+mostafa@MMostafa ~ % command -v hermes-acp 2>/dev/null || true
+/Users/mostafa/.local/bin/hermes-acp
+mostafa@MMostafa ~ % command -v aion 2>/dev/null || true
+mostafa@MMostafa ~ % echo
+
+mostafa@MMostafa ~ % 
+mostafa@MMostafa ~ % echo "=== 6. HERMES-RELATED PROCESSES ==="
+=== 6. HERMES-RELATED PROCESSES ===
+mostafa@MMostafa ~ % ps aux | grep -i '[h]ermes' || true
+mostafa          77290  21.8  1.6 1865646080 130880   ??  S     4:07PM  52:38.80 /Applications/Hermes.app/Contents/Frameworks/Hermes Helper (Renderer).app/Contents/MacOS/Hermes Helper (Renderer) --type=renderer --user-data-dir=/Users/mostafa/Library/Application Support/Hermes --standard-schemes=hermes-media --secure-schemes=hermes-media --fetch-schemes=hermes-media --streaming-schemes=hermes-media --app-path=/Applications/Hermes.app/Contents/Resources/app.asar --enable-sandbox --lang=en-US --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1788055533617513 --launch-time-ticks=37899927252 --shared-files --field-trial-handle=1718379636,r,17770478167048346276,2880642943598927203,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708990060038890 --seatbelt-client=62
+mostafa          34545  11.5  0.6 412067408  51696   ??  S    10:04PM   2:00.27 /Users/mostafa/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main --profile default serve --host 127.0.0.1 --port 0
+mostafa          77258   1.3  0.3 460983040  27456   ??  S     4:07PM  18:29.89 /Applications/Hermes.app/Contents/Frameworks/Hermes Helper.app/Contents/MacOS/Hermes Helper --type=gpu-process --user-data-dir=/Users/mostafa/Library/Application Support/Hermes --gpu-preferences=SAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAwAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=1718379636,r,17770478167048346276,2880642943598927203,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708988185955192 --seatbelt-client=31
+mostafa          78178   1.1  0.5 412535408  43280   ??  S     4:07PM  14:53.63 /Users/mostafa/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main --profile neda-multilingual-editor serve --host 127.0.0.1 --port 0
+mostafa          77259   0.6  0.2 460833120  13072   ??  S     4:07PM   0:12.70 /Applications/Hermes.app/Contents/Frameworks/Hermes Helper.app/Contents/MacOS/Hermes Helper --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=network --user-data-dir=/Users/mostafa/Library/Application Support/Hermes --standard-schemes=hermes-media --secure-schemes=hermes-media --fetch-schemes=hermes-media --streaming-schemes=hermes-media --shared-files --field-trial-handle=1718379636,r,17770478167048346276,2880642943598927203,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708989122997041 --seatbelt-client=31
+mostafa          41064   0.2  0.3 411464336  21056   ??  S    10:29PM   0:07.68 /Users/mostafa/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main --profile arash-critical-reviewer serve --host 127.0.0.1 --port 0
+mostafa          77256   0.2  0.8 1866090064  67856   ??  S     4:07PM   5:06.01 /Applications/Hermes.app/Contents/MacOS/Hermes
+mostafa          18572   0.0  0.0 411176704   3808   ??  Ss    8:27PM   0:00.05 /Users/mostafa/.hermes/hermes-agent/venv/bin/python /var/folders/9c/39q43q0n5w303wngs8mgqdl40000gn/T/hermes_kernel_08rmr9hg/hermes_kernel_runner.py
+mostafa          79055   0.0  0.1 411977280  10192 s002  S+    4:10PM   2:05.57 /Users/mostafa/.hermes/hermes-agent/venv/bin/python /Users/mostafa/.hermes/hermes-agent/hermes dashboard
+mostafa          77939   0.0  0.1 460817440   9072   ??  S     4:07PM   0:28.72 /Applications/Hermes.app/Contents/Frameworks/Hermes Helper.app/Contents/MacOS/Hermes Helper --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=audio --message-loop-type-ui --user-data-dir=/Users/mostafa/Library/Application Support/Hermes --standard-schemes=hermes-media --secure-schemes=hermes-media --fetch-schemes=hermes-media --streaming-schemes=hermes-media --shared-files --field-trial-handle=1718379636,r,17770478167048346276,2880642943598927203,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708990997080739 --seatbelt-client=36
+mostafa          76833   0.0  0.2 412034208  17024   ??  S     4:02PM   1:40.02 /Users/mostafa/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main gateway run --external-supervisor
+mostafa          76832   0.0  0.0 410779504   3776   ??  S     4:02PM   0:00.11 /Users/mostafa/.hermes/hermes-agent/venv/bin/python -m hermes_cli.stderr_timestamp --error-log /Users/mostafa/.hermes/logs/gateway.error.log -- /Users/mostafa/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main gateway run --external-supervisor
+mostafa@MMostafa ~ % echo
+
+mostafa@MMostafa ~ % 
+mostafa@MMostafa ~ % echo "=== 7. HERMES CONFIG / MANIFEST CANDIDATES ==="
+=== 7. HERMES CONFIG / MANIFEST CANDIDATES ===
+mostafa@MMostafa ~ % find "$HOME/Hermes" "$HOME/.hermes" \
+>   -maxdepth 4 -type f \
+>   \( -iname '*config*' -o -iname '*manifest*' -o -iname '*state*' \
+>      -o -iname '*workspace*' -o -iname '*runtime*' -o -iname '*.yaml' \
+>      -o -iname '*.yml' -o -iname '*.json' -o -iname '*.toml' \) \
+>   -print 2>/dev/null | sort | head -500
+echo
+
+echo "=== 8. NAERA SOURCE DISCOVERY ==="
+find "$HOME/Workspace" \
+  -maxdepth 6 -type d \
+  -iname 'naera' \
+  -print 2>/dev/null | sort
+echo
+
+echo "=== 9. DSH DISCOVERY ==="
+find "$HOME/Workspace" \
+  -maxdepth 7 -type d \
+  -iname '*DSH*' \
+  -print 2>/dev/null | sort
+echo
+
+echo "=== 10. GIT STATUS — NAERA CANDIDATES ==="
+for d in \
+  "$HOME/Workspace/02_AI_Lab/NAERA" \
+  "$HOME/.hermes/naera" \
+  "$HOME/Hermes"
+do
+  if [ -d "$d/.git" ]; then
+    echo
+    echo "--- $d ---"
+    git -C "$d" status --short --branch 2>/dev/null || true
+    git -C "$d" remote -v 2>/dev/null || true
+  elif [ -d "$d" ]; then
+    echo "[NOT A GIT REPOSITORY] $d"
+  fi
+done
+echo
+
+echo "=== 11. NAERA CANONICAL / EXPERIMENT MARKERS ==="
+for root in \
+  "$HOME/Workspace/02_AI_Lab/NAERA" \
+  "$HOME/.hermes/naera"
+do
+  if [ -d "$root" ]; then
+    echo
+    echo "--- $root ---"
+    find "$root" -type f \
+      \( -iname '*CANONICAL*' -o -iname '*EXP017*' -o -iname '*EXP018*' \
+         -o -/Users/mostafa/.hermes/archive_external_skills/qwencloud-deploy/scripts/record_state.py
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-deploy/templates/ros_single.yaml
+/Users/mostafa/.hermes/archive_external_skills/qwencloud-deploy/templates/ros_single_rds.yaml
+/Users/mostafa/.hermes/auth.json
+/Users/mostafa/.hermes/backups/archive/config.yaml.backup
+/Users/mostafa/.hermes/backups/archive/config.yaml.backup-20260822-231609
+/Users/mostafa/.hermes/backups/archive/config.yaml.backup-before-lfm-opt
+/Users/mostafa/.hermes/backups/archive/config.yaml.backup-final-20260822-045753
+/Users/mostafa/.hermes/backups/archive/config.yaml.backup-light-20260822-231351
+/Users/mostafa/.hermes/backups/archive/config.yaml.backup.20260820-044110
+/Users/mostafa/.hermes/backups/baseline-20260822/config.yaml
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/.skills_prompt_snapshot.json
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/auth.json
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/config.yaml
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/config.yaml.backup.20260822_023518
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/config.yaml.before-scholar-patch.20260822_023630
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/context_length_cache.yaml
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/models_dev_cache.json
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/ollama_cloud_models_cache.json
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/profile.yaml
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/provider_models_cache.json
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/state.db
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/state.db-shm
+/Users/mostafa/.hermes/backups/baseline-20260822/research-assistant/state.db-wal
+/Users/mostafa/.hermes/backups/light-cleanup-20260822-231942/config.yaml
+/Users/mostafa/.hermes/cache/banner_snapshot.json
+/Users/mostafa/.hermes/cache/computer_use/elements_20a9c3ad6ce845c4b266c772ec6eddd6.json
+/Users/mostafa/.hermes/cache/computer_use/elements_68496b785a3847f39a3c346133d612bc.json
+/Users/mostafa/.hermes/cache/computer_use/elements_c4c461c0e78f40ec9f2bfaff9edc47bc.json
+/Users/mostafa/.hermes/cache/computer_use/elements_c5003183be04407095ce88271ce76aa5.json
+/Users/mostafa/.hermes/cache/computer_use/elements_d595111c5df94333aabb06650e11ad96.json
+/Users/mostafa/.hermes/cache/computer_use/elements_d5fd629ed23c4d8c90e77f83ebaed224.json
+/Users/mostafa/.hermes/cache/computer_use/elements_e139140662aa461e8d637a6f73e47700.json
+/Users/mostafa/.hermes/cache/computer_use/elements_fbc7dbcc4609487d99b9a4ec1cd05c4a.json
+/Users/mostafa/.hermes/cache/local_endpoint_probes.json
+/Users/mostafa/.hermes/cache/mcp_schema_cache.json
+/Users/mostafa/.hermes/cache/model_catalog.json
+/Users/mostafa/.hermes/cache/nous_recommended_cache.json
+/Users/mostafa/.hermes/cache/openrouter_model_metadata.json
+/Users/mostafa/.hermes/cache/plugin_toolset_keys.json
+/Users/mostafa/.hermes/cache/reasoning_caps.json
+/Users/mostafa/.hermes/cache/schema_columns.json
+/Users/mostafa/.hermes/cache/tool_discovery_cache.json
+/Users/mostafa/.hermes/channel_directory.json
+/Users/mostafa/.hermes/checkpoints/store/config
+/Users/mostafa/.hermes/checkpoints/store/ledgers/0d20165b91ff0422.json
+/Users/mostafa/.hermes/checkpoints/store/ledgers/8a67b920e7c85d48.json
+/Users/mostafa/.hermes/checkpoints/store/ledgers/bc9944d43784f38b.json
+/Users/mostafa/.hermes/checkpoints/store/projects/0d20165b91ff0422.json
+/Users/mostafa/.hermes/checkpoints/store/projects/8a67b920e7c85d48.json
+/Users/mostafa/.hermes/checkpoints/store/projects/bc9944d43784f38b.json
+/Users/mostafa/.hermes/config.yaml
+/Users/mostafa/.hermes/config.yaml.backup-20260827
+/Users/mostafa/.hermes/config.yaml.bak-labyrinth
+/Users/mostafa/.hermes/config.yaml.bak.20260823_013622
+/Users/mostafa/.hermes/config.yaml.before-local-fast-20260827-215555
+/Users/mostafa/.hermes/config.yaml.corrupt.20260827-193114.bak
+/Users/mostafa/.hermes/config.yaml.corrupt.20260827-214404.bak
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-auxiliary-fix-20260822-224454
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-context-fix
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-context-tune-20260822-052017
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-final-lfm-opt
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-final-model-tune
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-final-rollback
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-hermes-context-fix-20260822-052132
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-lightweight-20260822-230619
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-memory-tune
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-rollback-20260822
+/Users/mostafa/.hermes/config_archive_final/config.yaml.before-simple-patch
+/Users/mostafa/.hermes/config_archive_final/config.yaml.corrupt.20260820-044115.bak
+/Users/mostafa/.hermes/config_archive_final/config.yaml.corrupt.20260822-045824.bak
+/Users/mostafa/.hermes/config_archive_final/config.yaml.experimental-broken-20260822-053219
+/Users/mostafa/.hermes/context_length_cache.yaml
+/Users/mostafa/.hermes/cron/jobs.json
+/Users/mostafa/.hermes/dashboard-themes/chronos-forge.yaml
+/Users/mostafa/.hermes/desktop-build-stamp.json
+/Users/mostafa/.hermes/desktop/interrupted_turns.json
+/Users/mostafa/.hermes/disabled-skills/index-cache/anthropics_skills_skills_.json
+/Users/mostafa/.hermes/disabled-skills/index-cache/lobehub_index.json
+/Users/mostafa/.hermes/disabled-skills/index-cache/openai_skills_skills_.json
+/Users/mostafa/.hermes/disk-cleanup/tracked.json
+/Users/mostafa/.hermes/gateway_state.json
+/Users/mostafa/.hermes/hermes-agent/.coderabbit.yaml
+/Users/mostafa/.hermes/hermes-agent/.git/config
+/Users/mostafa/.hermes/hermes-agent/.github/ISSUE_TEMPLATE/bug_report.yml
+/Users/mostafa/.hermes/hermes-agent/.github/ISSUE_TEMPLATE/config.yml
+/Users/mostafa/.hermes/hermes-agent/.github/ISSUE_TEMPLATE/feature_request.yml
+/Users/mostafa/.hermes/hermes-agent/.github/ISSUE_TEMPLATE/setup_help.yml
+/Users/mostafa/.hermes/hermes-agent/.github/actionlint.yaml
+/Users/mostafa/.hermes/hermes-agent/.github/dependabot.yml
+/Users/mostafa/.hermes/hermes-agent/.github/scripts/run-workspace-checks.mjs
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/ci-review-comment.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/ci.yaml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/contributor-check.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/deploy-site.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/docker-lint.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/docker.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/docs-site-checks.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/e2e-desktop.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/history-check.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/infographic-check.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/install-e2e-run.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/install-e2e.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/installer-tests.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/js-autofix.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/js-tests.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/label-rerun.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/lint.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/lockfile-diff.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/nix.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/osv-scanner.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/publish-e2e-evidence.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/review-labels.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/rust-tests.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/skills-index-freshness.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/skills-index.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/supply-chain-audit.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/tests-os.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/tests.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/uv-lockfile-check.yml
+/Users/mostafa/.hermes/hermes-agent/.github/workflows/windows-venv-e2e.yml
+/Users/mostafa/.hermes/hermes-agent/.hadolint.yaml
+/Users/mostafa/.hermes/hermes-agent/__pycache__/hermes_state.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/__pycache__/hermes_state_common.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/__pycache__/hermes_state_portability.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/__pycache__/hermes_state_schema.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/__pycache__/hermes_state_search.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/agent/__pycache__/agent_runtime_helpers.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/agent/__pycache__/relay_runtime.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/agent/__pycache__/runtime_cwd.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/agent/__pycache__/turn_retry_state.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/agent/agent_runtime_helpers.py
+/Users/mostafa/.hermes/hermes-agent/agent/codex_runtime.py
+/Users/mostafa/.hermes/hermes-agent/agent/lsp/workspace.py
+/Users/mostafa/.hermes/hermes-agent/agent/pet/manifest.py
+/Users/mostafa/.hermes/hermes-agent/agent/pet/state.py
+/Users/mostafa/.hermes/hermes-agent/agent/relay_runtime.py
+/Users/mostafa/.hermes/hermes-agent/agent/runtime_cwd.py
+/Users/mostafa/.hermes/hermes-agent/agent/turn_retry_state.py
+/Users/mostafa/.hermes/hermes-agent/apps/bootstrap-installer/eslint.config.mjs
+/Users/mostafa/.hermes/hermes-agent/apps/bootstrap-installer/package.json
+/Users/mostafa/.hermes/hermes-agent/apps/bootstrap-installer/tsconfig.json
+/Users/mostafa/.hermes/hermes-agent/apps/bootstrap-installer/tsconfig.node.json
+/Users/mostafa/.hermes/hermes-agent/apps/bootstrap-installer/vite.config.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/components.json
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/eslint.config.mjs
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/package.json
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/playwright.config.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/tsconfig.e2e.json
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/tsconfig.electron.json
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/tsconfig.json
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/vite.config.ts
+/Users/mostafa/.hermes/hermes-agent/apps/desktop/vitest.config.ts
+/Users/mostafa/.hermes/hermes-agent/apps/shared/eslint.config.mjs
+/Users/mostafa/.hermes/hermes-agent/apps/shared/package.json
+/Users/mostafa/.hermes/hermes-agent/apps/shared/tsconfig.json
+/Users/mostafa/.hermes/hermes-agent/cli-config.yaml.example
+/Users/mostafa/.hermes/hermes-agent/contributors/emails/switchstatement@gmail.com
+/Users/mostafa/.hermes/hermes-agent/datagen-config-examples/trajectory_compression.yaml
+/Users/mostafa/.hermes/hermes-agent/datagen-config-examples/web_research.yaml
+/Users/mostafa/.hermes/hermes-agent/docker-compose.windows.yml
+/Users/mostafa/.hermes/hermes-agent/docker-compose.yml
+/Users/mostafa/.hermes/hermes-agent/docs/rfcs/plugin-config-state-bridge.md
+/Users/mostafa/.hermes/hermes-agent/eslint.config.shared.mjs
+/Users/mostafa/.hermes/hermes-agent/gateway/__pycache__/config.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/gateway/__pycache__/session_state.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/gateway/assets/status_phrases.yaml
+/Users/mostafa/.hermes/hermes-agent/gateway/config.py
+/Users/mostafa/.hermes/hermes-agent/gateway/display_config.py
+/Users/mostafa/.hermes/hermes-agent/gateway/relay/command_manifest.py
+/Users/mostafa/.hermes/hermes-agent/gateway/runtime_footer.py
+/Users/mostafa/.hermes/hermes-agent/gateway/session_state.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/config.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/config.cpython-313.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/config_defaults.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/config_defaults.cpython-313.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/fallback_config.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/mcp_config.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/moa_config.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/runtime_provider.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/skills_config.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/sqlite_runtime.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/__pycache__/tools_config.cpython-311.pyc
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/codex_runtime_plugin_migration.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/codex_runtime_switch.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/config.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/config_defaults.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/config_migrations.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/data/plugin_index.json
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/fallback_config.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/mcp_config.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/moa_config.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/observability/relay_runtime.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/runtime_provider.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/skills_config.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/sqlite_runtime.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/subcommands/config.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/tools_config.py
+/Users/mostafa/.hermes/hermes-agent/hermes_cli/windows_ssh_runtime.py
+/Users/mostafa/.hermes/hermes-agent/hermes_state.py
+/Users/mostafa/.hermes/hermes-agent/hermes_state_common.py
+/Users/mostafa/.hermes/hermes-agent/hermes_state_portability.py
+/Users/mostafa/.hermes/hermes-agent/hermes_state_schema.py
+/Users/mostafa/.hermes/hermes-agent/hermes_state_search.py
+/Users/mostafa/.hermes/hermes-agent/locales/af.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/ar.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/de.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/en.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/es.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/fr.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/ga.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/hu.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/it.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/ja.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/ko.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/pt.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/ru.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/tr.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/uk.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/zh-hant.yaml
+/Users/mostafa/.hermes/hermes-agent/locales/zh.yaml
+/Users/mostafa/.hermes/hermes-agent/mcp-research-data/ue_bench_rows.json
+/Users/mostafa/.hermes/hermes-agent/mcp-research-data/ue_bench_summary.json
+/Users/mostafa/.hermes/hermes-agent/mcp-research-data/ue_discovery_rows.json
+/Users/mostafa/.hermes/hermes-agent/mcp-research-data/ue_hard_haiku_rows.json
+/Users/mostafa/.hermes/hermes-agent/mcp-research-data/ue_hard_rows.json
+/Users/mostafa/.hermes/hermes-agent/nix/configMergeScript.nix
+/Users/mostafa/.hermes/hermes-agent/nix/node-gyp-11-4-0-package-lock.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/.package-lock.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/abbrev/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/acorn-jsx/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/acorn/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/agent-base/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/aggregate-error/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/ajv/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/ansi-escapes/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/ansi-regex/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/ansi-styles/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/app-builder-lib/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/app-builder-lib/scheme.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/aproba/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/are-we-there-yet/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/argparse/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/aria-hidden/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/aria-query/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/asn1js/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/assertion-error/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/assign-symbols/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/assistant-cloud/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/assistant-stream/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/async-exit-hook/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/async/bower.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/async/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/asynckit/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/at-least-node/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/attr-accept/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/auto-bind/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/aws4/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/axios/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/babel-plugin-react-compiler/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/bail/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/balanced-match/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/base64-js/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/baseline-browser-mapping/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/bidi-js/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/binary-search-bounds/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/bippy/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/bluebird/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/boolean/.eslintrc.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/boolean/.npmpackagejsonlintrc.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/boolean/.releaserc.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/boolean/licenseCheck.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/boolean/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/boolean/tsconfig.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/brace-expansion/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/browserslist/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/buffer-from/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/buffer/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/builder-util-runtime/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/builder-util/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/bytestreamjs/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cacache/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cacheable-lookup/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cacheable-request/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/call-bind-apply-helpers/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/call-bind-apply-helpers/tsconfig.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/camelcase/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/caniuse-lite/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/ccount/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/chai/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/chalk/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/character-entities-html4/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/character-entities-legacy/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/character-entities/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/character-reference-invalid/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/chownr/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/chromium-pickle-js/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/ci-info/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/ci-info/vendors.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/class-variance-authority/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/clean-stack/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cli-boxes/boxes.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cli-boxes/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cli-cursor/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cli-truncate/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cliui/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/clone-response/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/clsx/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cmdk/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/code-excerpt/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/color-convert/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/color-name/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/color-support/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/colord/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/combined-stream/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/comma-separated-tokens/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/commander/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/compare-version/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/concurrently/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/console-control-strings/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/convert-source-map/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/convert-to-spaces/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cookie-es/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/core-util-is/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cose-base/bower.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cose-base/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cose-base/webpack.config.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/crelt/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/crelt/rollup.config.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/cross-dirname/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cross-env/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cross-spawn-windows-exe/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cross-spawn/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/css-tree/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cssesc/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/csstype/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cytoscape-cose-bilkent/bower.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cytoscape-cose-bilkent/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cytoscape-cose-bilkent/webpack.config.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/cytoscape-fcose/bower.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cytoscape-fcose/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cytoscape-fcose/webpack.config.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/cytoscape/.size-snapshot.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cytoscape/.travis.yml
+/Users/mostafa/.hermes/hermes-agent/node_modules/cytoscape/eslint.config.mjs
+/Users/mostafa/.hermes/hermes-agent/node_modules/cytoscape/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/cytoscape/playwright.config.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/cytoscape/rollup.config.mjs
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-array/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-axis/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-brush/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-chord/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-color/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-contour/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-delaunay/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-dispatch/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-drag/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-dsv/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-ease/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-fetch/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-force/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-format/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-geo/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-hierarchy/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-interpolate/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-path/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-polygon/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-quadtree/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-random/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-sankey/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-scale-chromatic/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-scale/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-selection/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-shape/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-time-format/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-time/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-timer/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-transition/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3-zoom/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/d3/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/dagre-d3-es/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/data-urls/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/dayjs/.editorconfig
+/Users/mostafa/.hermes/hermes-agent/node_modules/dayjs/locale.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/dayjs/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/debug/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/decamelize/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/decimal.js/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/decode-named-character-reference/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/decompress-response/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/deep-is/.travis.yml
+/Users/mostafa/.hermes/hermes-agent/node_modules/deep-is/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/deepmerge/.editorconfig
+/Users/mostafa/.hermes/hermes-agent/node_modules/deepmerge/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/deepmerge/rollup.config.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/defer-to-connect/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/define-data-property/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/define-data-property/tsconfig.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/define-properties/.editorconfig
+/Users/mostafa/.hermes/hermes-agent/node_modules/define-properties/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/delaunator/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/delayed-stream/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/delegates/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/dequal/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/detect-libc/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/detect-node-es/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/detect-node/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/devlop/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/dijkstrajs/.travis.yml
+/Users/mostafa/.hermes/hermes-agent/node_modules/dijkstrajs/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/dir-compare/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/dmg-builder/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/dnd-core/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/dom-accessibility-api/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/dom-serializer/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/domelementtype/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/domhandler/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/dompurify/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/domutils/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/dotenv-expand/config.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/dotenv-expand/config.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/dotenv-expand/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/dotenv-expand/tea.yaml
+/Users/mostafa/.hermes/hermes-agent/node_modules/dotenv/config.d.ts
+/Users/mostafa/.hermes/hermes-agent/node_modules/dotenv/config.js
+/Users/mostafa/.hermes/hermes-agent/node_modules/dotenv/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/driver.js/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/dunder-proto/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/dunder-proto/tsconfig.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/duplexer2/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/eastasianwidth/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/ejs/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/electron-builder-squirrel-windows/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/electron-builder/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/electron-publish/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/electron-to-chromium/chromium-versions.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/electron-to-chromium/full-chromium-versions.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/electron-to-chromium/full-versions.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/electron-to-chromium/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/electron-to-chromium/versions.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/electron-winstaller/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/emoji-regex/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/emojibase-data/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/emojibase/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/empathic/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/encoding/.travis.yml
+/Users/mostafa/.hermes/hermes-agent/node_modules/encoding/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/end-of-stream/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/enhanced-resolve/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/entities/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/env-paths/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/environment/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/err-code/.editorconfig
+/Users/mostafa/.hermes/hermes-agent/node_modules/err-code/.eslintrc.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/err-code/.travis.yml
+/Users/mostafa/.hermes/hermes-agent/node_modules/err-code/bower.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/err-code/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/es-define-property/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/es-define-property/tsconfig.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/es-errors/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/es-errors/tsconfig.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/es-module-lexer/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/es-object-atoms/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/es-object-atoms/tsconfig.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/es-set-tostringtag/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/es-set-tostringtag/tsconfig.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/es-toolkit/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/es6-error/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/esbuild/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/escalade/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/escape-string-regexp/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-plugin-perfectionist/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-plugin-react-hooks/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-plugin-react-refresh/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-plugin-unused-imports/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-scope/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint-visitor-keys/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/eslint/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/espree/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/esquery/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/esrecurse/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/estraverse/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/estree-util-is-identifier-name/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/estree-walker/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/esutils/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/expect-type/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/exponential-backoff/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/extend-shallow/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/extend/.editorconfig
+/Users/mostafa/.hermes/hermes-agent/node_modules/extend/.jscs.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/extend/.travis.yml
+/Users/mostafa/.hermes/hermes-agent/node_modules/extend/component.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/extend/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/extract-zip/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/fast-deep-equal/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/fast-json-stable-stringify/.eslintrc.yml
+/Users/mostafa/.hermes/hermes-agent/node_modules/fast-json-stable-stringify/.travis.yml
+/Users/mostafa/.hermes/hermes-agent/node_modules/fast-json-stable-stringify/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/fast-levenshtein/package.json
+/Users/mostafa/.hermes/hermes-agent/node_modules/fast-uri/eslint.config.js
+mostafa@MMostafa ~ % echo
+
+mostafa@MMostafa ~ % 
+mostafa@MMostafa ~ % echo "=== 8. NAERA SOURCE DISCOVERY ==="
+=== 8. NAERA SOURCE DISCOVERY ===
+mostafa@MMostafa ~ % find "$HOME/Workspace" \
+>   -maxdepth 6 -type d \
+>   -iname 'naera' \
+>   -print 2>/dev/null | sort
+/Users/mostafa/Workspace/02_AI_Lab/Agent_Experiments/DSH/DSH_Workspace/naera
+mostafa@MMostafa ~ % echo
+
+mostafa@MMostafa ~ % 
+mostafa@MMostafa ~ % echo "=== 9. DSH DISCOVERY ==="
+=== 9. DSH DISCOVERY ===
+mostafa@MMostafa ~ % find "$HOME/Workspace" \
+>   -maxdepth 7 -type d \
+>   -iname '*DSH*' \
+>   -print 2>/dev/null | sort
+echo
+
+echo "=== 10. GIT STATUS — NAERA CANDIDATES ==="
+for d in \
+  "$HOME/Workspace/02_AI_Lab/NAERA" \
+  "$HOME/.hermes/naera" \
+  "$HOME/Hermes"
+do
+  if [ -d "$d/.git" ]; then
+    echo
+    echo "--- $d ---"
+    git -C "$d" status --short --branch 2>/dev/null || true
+    git -C "$d" remote -v 2>/dev/null || true
+  elif [ -d "$d" ]; then
+    echo "[NOT A GIT REPOSITORY] $d"
+  fi
+done
+echo
+
+echo "=== 11. NAERA CANONICAL / EXPERIMENT MARKERS ==="
+for root in \
+  "$HOME/Workspace/02_AI_Lab/NAERA" \
+  "$HOME/.hermes/naera"
+do
+  if [ -d "$root" ]; then
+    echo
+    echo "--- $root ---"
+    find "$root" -type f \
+      \( -iname '*CANONICAL*' -o -iname '*EXP017*' -o -iname '*EXP018*' \
+         -o -iname '*EXP019*' -o -iname '*EXP020*' -o -iname '*EXP021*' \
+         -o -iname '*EXP022*' -o -iname '*prereg*' \) \
+      -print 2>/dev/null | sort | head -300
+  fi
+done
+echo
+
+echo "=== 12. DISK / PERMISSION SUMMARY ==="
+for d in \
+  "$HOME/Workspace/02_AI_Lab" \
+  "$HOME/Hermes"/Users/mostafa/Workspace/02_AI_Lab/Agent_Experiments/DSH
+/Users/mostafa/Workspace/02_AI_Lab/Agent_Experiments/DSH/DSH_Workspace
+mostafa@MMostafa ~ % echo
+
+mostafa@MMostafa ~ % 
+mostafa@MMostafa ~ % echo "=== 10. GIT STATUS — NAERA CANDIDATES ==="
+=== 10. GIT STATUS — NAERA CANDIDATES ===
+mostafa@MMostafa ~ % for d in \
+for>   "$HOME/Workspace/02_AI_Lab/NAERA" \
+for>   "$HOME/.hermes/naera" \
+for>   "$HOME/Hermes"
+for> do
+for>   if [ -d "$d/.git" ]; then
+for then>     echo
+for then>     echo "--- $d ---"
+for then>     git -C "$d" status --short --branch 2>/dev/null || true
+for then>     git -C "$d" remote -v 2>/dev/null || true
+for then>   elif [ -d "$d" ]; then
+for elif-then>     echo "[NOT A GIT REPOSITORY] $d"
+for elif-then>   fi
+for> done
+[NOT A GIT REPOSITORY] /Users/mostafa/.hermes/naera
+mostafa@MMostafa ~ % echo
+
+mostafa@MMostafa ~ % 
+mostafa@MMostafa ~ % echo "=== 11. NAERA CANONICAL / EXPERIMENT MARKERS ==="
+=== 11. NAERA CANONICAL / EXPERIMENT MARKERS ===
+mostafa@MMostafa ~ % for root in \
+for>   "$HOME/Workspace/02_AI_Lab/NAERA" \
+for>   "$HOME/.hermes/naera"
+for> do
+for>   if [ -d "$root" ]; then
+for then>     echo
+for then>     echo "--- $root ---"
+for then>     find "$root" -type f \
+for then>       \( -iname '*CANONICAL*' -o -iname '*EXP017*' -o -iname '*EXP018*' \
+for then>          -o -iname '*EXP019*' -o -iname '*EXP020*' -o -iname '*EXP021*' \
+for then>          -o -iname '*EXP022*' -o -iname '*prereg*' \) \
+for then>       -print 2>/dev/null | sort | head -300
+for then>   fi
+for> done
+
+--- /Users/mostafa/.hermes/naera ---
+/Users/mostafa/.hermes/naera/docs/exp018_canonical_baseline/01_NAERA_EXP018_PROJECT_STATE_RECONSTRUCTION_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp018_canonical_baseline/02_NAERA_EXP018_EXP017_FINAL_APPARATUS_AUDIT_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp018_canonical_baseline/03_NAERA_CANONICAL_BASELINE_SPEC_v1.0.md
+/Users/mostafa/.hermes/naera/docs/exp018_canonical_baseline/04_NAERA_CANONICAL_BASELINE_MANIFEST_SPEC_v1.0.md
+/Users/mostafa/.hermes/naera/docs/exp018_canonical_baseline/08_NAERA_EXP018_PROVENANCE_GRAPH_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp018_canonical_baseline/09_NAERA_EXP018_AUTHORIZATION_BOUNDARY_AUDIT_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp018_canonical_baseline/10_NAERA_EXP018_HOSTILE_RED_TEAM_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp018_canonical_baseline/11_NAERA_EXP018_DECISION_MATRIX_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp018_canonical_baseline/12_NAERA_EXP018_FINAL_RECOMMENDATION_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp018_canonical_baseline/NAERA_CANONICAL_BASELINE_v1.0_MANIFEST.json
+/Users/mostafa/.hermes/naera/docs/exp018_canonical_baseline/NAERA_EXP018_SYNTHESIS_v0.1.json
+/Users/mostafa/.hermes/naera/docs/exp019_canonical_freeze_hermes_rehearsal/01_NAERA_EXP019_PROJECT_STATE_RECONSTRUCTION_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp019_canonical_freeze_hermes_rehearsal/02_NAERA_CANONICAL_FREEZE_AUDIT_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp019_canonical_freeze_hermes_rehearsal/12_NAERA_EXP019_DEEP_RED_TEAM_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp019_canonical_freeze_hermes_rehearsal/13_NAERA_EXP019_GO_NO_GO_MATRIX_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp019_canonical_freeze_hermes_rehearsal/14_NAERA_EXP019_FINAL_RECOMMENDATION_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp019_canonical_freeze_hermes_rehearsal/NAERA_EXP019_SYNTHESIS_v0.1.json
+/Users/mostafa/.hermes/naera/docs/exp020_canonical_freeze_provenance_resolution/01_NAERA_EXP020_PROJECT_STATE_RECONSTRUCTION_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp020_canonical_freeze_provenance_resolution/02_NAERA_EXP020_PROVENANCE_RESOLUTION_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp020_canonical_freeze_provenance_resolution/03_NAERA_EXP020_GIT_TRACKING_POLICY_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp020_canonical_freeze_provenance_resolution/04_NAERA_EXP020_CANONICAL_FREEZE_AUDIT_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp020_canonical_freeze_provenance_resolution/05_NAERA_EXP020_BASELINE_REPRODUCTION_REPORT_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp020_canonical_freeze_provenance_resolution/06_NAERA_EXP020_HERMES_MIGRATION_REHEARSAL_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp020_canonical_freeze_provenance_resolution/07_NAERA_EXP020_HERMES_CONTAMINATION_AUDIT_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp020_canonical_freeze_provenance_resolution/08_NAERA_EXP020_HERMES_NAERA_BOUNDARY_SPEC_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp020_canonical_freeze_provenance_resolution/09_NAERA_EXP020_EMP001_STATUS_AUDIT_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp020_canonical_freeze_provenance_resolution/10_NAERA_EXP020_FINAL_RED_TEAM_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp020_canonical_freeze_provenance_resolution/11_NAERA_EXP020_DECISION_MATRIX_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp020_canonical_freeze_provenance_resolution/NAERA_EXP020_SYNTHESIS_v0.1.json
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization/01_NAERA_EXP021_PROJECT_STATE_RECONSTRUCTION_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization/02_NAERA_EXP021_FINAL_FREEZE_INTEGRITY_AUDIT_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization/03_NAERA_EXP021_MIGRATION_BOUNDARY_CONTRACT_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization/04_NAERA_EXP021_CONTAMINATION_BOUNDARY_AUDIT_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization/05_NAERA_EXP021_AUTHORIZATION_MODEL_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization/06_NAERA_EXP021_HERMES_ROLE_ARCHITECTURE_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization/07_NAERA_EXP021_POST_MIGRATION_VERIFICATION_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization/08_NAERA_EXP021_ROLLBACK_PROTOCOL_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization/09_NAERA_EXP021_EMP001_HERMES_INTEGRATION_BOUNDARY_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization/10_NAERA_EXP021_OBSERVATORY_COMPILER_BOUNDARY_AUDIT_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization/11_NAERA_EXP021_FINAL_RED_TEAM_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization/12_NAERA_EXP021_MIGRATION_DECISION_MATRIX_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization/13_NAERA_EXP021_FINAL_RECOMMENDATION_v0.1.md
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization/NAERA_EXP021_SYNTHESIS_v0.1.json
+/Users/mostafa/.hermes/naera/docs/exp021_hermes_migration_authorization/tests/exp021_level1_migration.py
+/Users/mostafa/.hermes/naera/manifest/NAERA_CANONICAL_BASELINE_v1.0_MANIFEST.json
+mostafa@MMostafa ~ % echo
+
+mostafa@MMostafa ~ % 
+mostafa@MMostafa ~ % echo "=== 12. DISK / PERMISSION SUMMARY ==="
+=== 12. DISK / PERMISSION SUMMARY ===
+mostafa@MMostafa ~ % for d in \
+for>   "$HOME/Workspace/02_AI_Lab" \
+for>   "$HOME/Hermes" \
+for>   "$HOME/.hermes"
+for> do
+for>   if [ -e "$d" ]; then
+for then>     echo "--- $d ---"
+for then>     ls -ld "$d"
+for then>     du -sh "$d" 2>/dev/null || true
+for then>   fi
+for> done
+--- /Users/mostafa/Workspace/02_AI_Lab ---
+drwxr-xr-x  14 mostafa  staff  448 Aug 29 01:36 /Users/mostafa/Workspace/02_AI_Lab
+3.7G	/Users/mostafa/Workspace/02_AI_Lab
+--- /Users/mostafa/.hermes ---
+drwx------@ 113 mostafa  staff  3616 Aug 30 22:44 /Users/mostafa/.hermes
+6.2G	/Users/mostafa/.hermes
+mostafa@MMostafa ~ % 
+mostafa@MMostafa ~ % echo
+
+mostafa@MMostafa ~ % echo "=== INSPECTION COMPLETE — NO FILES MODIFIED ==="
+=== INSPECTION COMPLETE — NO FILES MODIFIED ===
+mostafa@MMostafa ~ % 
